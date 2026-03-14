@@ -1,7 +1,7 @@
 name: Test Auto Publisher
 
 on:
-  workflow_dispatch: # هذا السطر يصنع لنا زراً يدوياً لتشغيل السكريبت متى شئنا للتجربة
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -16,12 +16,18 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: pip install feedparser
+        # أضفنا مكتبة جيميناي هنا
+        run: |
+          pip install feedparser
+          pip install google-generativeai
 
       - name: Run Main Script
+        # سحبنا المفتاح السري من الخزنة ليعمل مع الكود
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python main.py
 
-      - name: Save Memory (published.txt) back to GitHub
+      - name: Save Memory
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
