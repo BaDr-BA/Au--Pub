@@ -1,7 +1,7 @@
 import feedparser
 import os
 
-# أضفنا &max-results=500 لنجلب أكبر عدد ممكن من المقالات دفعة واحدة
+# رابط مدونتك
 BLOG_RSS_URL = "https://t8ngy.blogspot.com/feeds/posts/default?alt=rss&max-results=500"
 HISTORY_FILE = "published.txt"
 
@@ -15,29 +15,51 @@ def save_published_link(link):
     with open(HISTORY_FILE, "a") as file:
         file.write(link + "\n")
 
-def process_oldest_unpublished_post():
-    # 1. جلب كل المقالات من المدونة
-    feed = feedparser.parse(BLOG_RSS_URL)
+# هذه الوظيفة الجديدة السحرية التي ستجلب كل المقالات مهما كان عددها
+def get_all_posts():
+    all_entries = []
+    current_url = BLOG_RSS_URL
     
-    if len(feed.entries) == 0:
+    # الحلقة التكرارية: طالما هناك صفحة تالية، استمر في جلب المقالات
+    while current_url:
+        feed = feedparser.parse(current_url)
+        all_entries.extend(feed.entries)
+        
+        # البحث عن رابط "الصفحة التالية" في بلوجر
+        next_link = None
+        if 'links' in feed.feed:
+            for link in feed.feed.links:
+                if link.rel == 'next':
+                    next_link = link.href
+                    break
+                    
+        # تحديث الرابط للانتقال للصفحة التالية، أو التوقف إذا انتهت المقالات
+        current_url = next_link
+        
+    return all_entries
+
+def process_oldest_unpublished_post():
+    # 1. جلب كل المقالات من المدونة باستخدام الوظيفة الجديدة
+    all_entries = get_all_posts()
+    
+    if len(all_entries) == 0:
         print("المدونة فارغة أو هناك خطأ في الرابط.")
         return
     
-    # 2. قلب القائمة! بلوجر يعطينا الأحدث أولاً، نحن نعكسها لتصبح الأقدم أولاً
-    all_posts = reversed(feed.entries)
+    # 2. قلب القائمة لتصبح الأقدم أولاً
+    all_posts = reversed(all_entries)
     
-    # 3. جلب الذاكرة (الروابط التي نُشرت سابقاً)
+    # 3. جلب الذاكرة
     published_links = get_published_links()
     
-    # 4. البحث عن أول مقالة غير منشورة
     target_post = None
     
+    # 4. البحث عن أول مقالة غير منشورة
     for post in all_posts:
         if post.link not in published_links:
             target_post = post
-            break # وجدنا المقالة المطلوبة، نوقف البحث فوراً
+            break
             
-    # 5. التعامل مع المقالة التي وجدناها
     if target_post:
         title = target_post.title
         link = target_post.link
@@ -48,9 +70,7 @@ def process_oldest_unpublished_post():
         print(f"الرابط: {link}")
         print(f"القسم: {category}")
         
-        # ... (هنا سنضع كود الذكاء الاصطناعي والنشر لاحقاً) ...
-        
-        # حفظ الرابط في الذاكرة لكي لا ينشر غداً
+        # حفظ الرابط في الذاكرة
         save_published_link(link)
         print("✅ تم حفظ المقالة في الذاكرة بنجاح.")
         
