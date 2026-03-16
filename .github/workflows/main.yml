@@ -23,7 +23,8 @@ jobs:
 
       - name: Run Main Script
         env:
-          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }} # سحبنا قائمة المفاتيح
+          # هذا السطر السحري يمرر كل الـ Secrets للسكريبت بصيغة JSON
+          ALL_SECRETS: ${{ toJson(secrets) }}
         run: python main.py
 
       - name: Save Memory
