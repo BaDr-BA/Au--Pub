@@ -13,18 +13,17 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11' # تم التحديث لتجنب تحذير جوجل
 
       - name: Install Dependencies
-        # أضفنا مكتبة جيميناي هنا
         run: |
           pip install feedparser
-          pip install google-generativeai
+          pip install beautifulsoup4 # مكتبة سحب عناوين H2 و H3
+          pip install google-genai # مكتبة جيميناي الجديدة والمحدثة
 
       - name: Run Main Script
-        # سحبنا المفتاح السري من الخزنة ليعمل مع الكود
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }} # سحبنا قائمة المفاتيح
         run: python main.py
 
       - name: Save Memory
