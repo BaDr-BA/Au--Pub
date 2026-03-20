@@ -18,13 +18,15 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install feedparser
-          pip install beautifulsoup4 # مكتبة سحب عناوين H2 و H3
-          pip install google-genai # مكتبة جيميناي الجديدة والمحدثة
+          pip install beautifulsoup4
+          pip install google-genai
+          pip install requests # أضفنا هذه المكتبة للتواصل مع تليجرام
 
       - name: Run Main Script
         env:
-          # هذا السطر السحري يمرر كل الـ Secrets للسكريبت بصيغة JSON
           ALL_SECRETS: ${{ toJson(secrets) }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: python main.py
 
       - name: Save Memory
