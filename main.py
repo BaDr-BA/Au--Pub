@@ -1,29 +1,28 @@
 import feedparser
 import os
 import random
-import json # مكتبة جديدة لقراءة الـ Secrets المجمعة
+import json
+import requests # مكتبة تليجرام
 from bs4 import BeautifulSoup
 from google import genai
 
 BLOG_RSS_URL = "https://t8ngy.blogspot.com/feeds/posts/default?alt=rss&max-results=500"
 HISTORY_FILE = "published.txt"
 
-# --- 1. الطريقة الجديدة والذكية لجلب المفاتيح المنفصلة ---
-api_keys_list = []
+# --- جلب أسرار تليجرام ---
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID")
 
-# محاولة قراءة كل الـ Secrets التي مررها GitHub
+# --- 1. جلب مفاتيح جيميناي ---
+api_keys_list = []
 secrets_json = os.environ.get("ALL_SECRETS")
 
 if secrets_json:
     try:
-        # تحويل النص إلى قاموس (Dictionary)
         secrets_dict = json.loads(secrets_json)
-        
-        # البحث عن أي مفتاح يبدأ بـ GEMINI_API_KEY_
         for key_name, key_value in secrets_dict.items():
             if key_name.startswith("GEMINI_API_KEY_"):
                 api_keys_list.append(key_value)
-                
     except json.JSONDecodeError:
         print("❌ خطأ في قراءة الـ Secrets.")
 
@@ -83,6 +82,55 @@ def extract_headings(html_content):
             headings.append(text)
     return headings
 
+# --- الوظيفة الجديدة: استخراج الصورة من المقالة ---
+def extract_image_url(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    img_tag = soup.find('img') # يبحث عن أول صورة في المقالة
+    if img_tag and 'src' in img_tag.attrs:
+        return img_tag['src']
+    return None
+
+# --- وظيفة تليجرام الجديدة ---
+def send_to_telegram(image_url, ai_text, link, main_hashtag):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
+        print("❌ بيانات تليجرام غير مكتملة في الـ Secrets.")
+        return False
+        
+    # تجميع البوست بالشكل الذي طلبته (نص ثم رابط ثم هاشتاجات)
+    final_caption = f"{ai_text}\n\n🔗 الرابط:\n{link}\n\n{main_hashtag}"
+    
+    try:
+        print("🚀 جاري النشر على تليجرام...")
+        # إذا وجدنا صورة، نرسل الصورة ومعها النص
+        if image_url:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+            payload = {
+                "chat_id": TELEGRAM_CHANNEL_ID,
+                "photo": image_url,
+                "caption": final_caption
+            }
+        # إذا لم يكن هناك صورة، نرسل النص فقط
+        else:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            payload = {
+                "chat_id": TELEGRAM_CHANNEL_ID,
+                "text": final_caption,
+                "disable_web_page_preview": False
+            }
+            
+        response = requests.post(url, data=payload)
+        
+        if response.status_code == 200:
+            print("✅ تم النشر على تليجرام بنجاح!")
+            return True
+        else:
+            print(f"❌ فشل النشر على تليجرام: {response.text}")
+            return False
+            
+    except Exception as e:
+        print(f"❌ خطأ برمجي أثناء التواصل مع تليجرام: {e}")
+        return False
+
 # --- وظيفة توليد المحتوى (المحدثة والذكية جداً) ---
 def generate_social_media_post(title, category, headings):
     headings_text = "\n- ".join(headings) if headings else "لا توجد عناوين فرعية، اعتمد على العنوان الرئيسي فقط."
@@ -113,7 +161,7 @@ def generate_social_media_post(title, category, headings):
     """
     
     try:
-        print("🧠 جاري كتابة محتوى تسويقي احترافي يعتمد على علم النفس...")
+        print("🧠 جاري كتابة محتوى تسويقي احترافي ...")
         response = client.models.generate_content(
             model=selected_model,
             contents=prompt,
@@ -170,26 +218,29 @@ def process_oldest_unpublished_post():
             
         # سحب عناوين H2 و H3
         extracted_headings = extract_headings(html_content)
+        image_url = extract_image_url(html_content) # سحبنا الصورة هنا
         
         print("🎯 تم تحديد المقالة:")
         print(f"العنوان: {title}")
         print(f"القسم: {category}")
         print(f"📑 عدد العناوين الفرعية المستخرجة: {len(extracted_headings)}")
+        print(f"الصورة المستخرجة: {'نعم' if image_url else 'لا'}")
         
         # إرسال البيانات لجيميناي
         ai_content = generate_social_media_post(title, category, extracted_headings)
         
         if ai_content:
             main_hashtag = f"#{category.replace(' ', '_')}" 
-            final_post = f"{ai_content}\n\n{main_hashtag}"
             
-            print("\n📌 الشكل النهائي للبوست:\n")
-            print("========================================")
-            print(final_post)
-            print("========================================\n")
+            # --- أمر النشر الفعلي على تليجرام ---
+            is_posted = send_to_telegram(image_url, ai_content, link, main_hashtag)
             
-            save_published_link(link)
-            print("✅ تم الحفظ في الذاكرة بنجاح.")
+            # إذا نجح النشر، نحفظ المقالة في الذاكرة لكي لا تتكرر
+            if is_posted:
+                save_published_link(link)
+                print("✅ تم الحفظ في الذاكرة بنجاح.")
+            else:
+                print("⚠️ لم يتم الحفظ في الذاكرة بسبب فشل النشر.")
         else:
             print("❌ فشل توليد المحتوى.")
             
