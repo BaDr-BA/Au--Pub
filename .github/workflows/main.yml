@@ -27,6 +27,10 @@ jobs:
           ALL_SECRETS: ${{ toJson(secrets) }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          # أضفنا أسرار ميتا هنا 👇
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
         run: python main.py
 
       - name: Save Memory
