@@ -2,16 +2,21 @@ import feedparser
 import os
 import random
 import json
-import requests # مكتبة تليجرام
+import requests
+import time # ⏱️ مكتبة جديدة للانتظار العشوائي
+import re
 from bs4 import BeautifulSoup
 from google import genai
 
 BLOG_RSS_URL = "https://t8ngy.blogspot.com/feeds/posts/default?alt=rss&max-results=500"
 HISTORY_FILE = "published.txt"
 
-# --- جلب أسرار تليجرام ---
+# --- جلب الأسرار ---
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID")
+META_ACCESS_TOKEN = os.environ.get("META_ACCESS_TOKEN")
+FB_PAGE_ID = os.environ.get("FB_PAGE_ID")
+IG_ACCOUNT_ID = os.environ.get("IG_ACCOUNT_ID")
 
 # --- 1. جلب مفاتيح جيميناي ---
 api_keys_list = []
@@ -90,56 +95,6 @@ def extract_image_url(html_content):
         return img_tag['src']
     return None
 
-# --- وظيفة تليجرام المحدثة لترتيب العناصر بشكل مثالي ---
-def send_to_telegram(image_url, ai_text, link, main_hashtag):
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
-        print("❌ بيانات تليجرام غير مكتملة في الـ Secrets.")
-        return False
-        
-    import re # أداة للبحث داخل النصوص
-    
-    # 1. استخراج الهاشتاجات التي كتبها جيميناي من النص
-    ai_hashtags = re.findall(r'#\w+', ai_text)
-    
-    # 2. مسح هذه الهاشتاجات من النص ليكون النص صافياً تماماً
-    text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
-    
-    # 3. تجميع كل الهاشتاجات (هاشتاج القسم الأساسي + هاشتاجات جيميناي)
-    all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
-    
-    # 4. الترتيب المثالي الذي طلبته: النص الصافي -> الرابط -> كل الهاشتاجات تحت خالص
-    final_caption = f"{text_without_hashtags}\n\n🔗 الرابط:\n{link}\n\n{all_hashtags}"
-    
-    try:
-        print("🚀 جاري النشر على تليجرام بالترتيب الجديد...")
-        if image_url:
-            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
-            payload = {
-                "chat_id": TELEGRAM_CHANNEL_ID,
-                "photo": image_url,
-                "caption": final_caption
-            }
-        else:
-            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-            payload = {
-                "chat_id": TELEGRAM_CHANNEL_ID,
-                "text": final_caption,
-                "disable_web_page_preview": False
-            }
-            
-        response = requests.post(url, data=payload)
-        
-        if response.status_code == 200:
-            print("✅ تم النشر على تليجرام بنجاح!")
-            return True
-        else:
-            print(f"❌ فشل النشر على تليجرام: {response.text}")
-            return False
-            
-    except Exception as e:
-        print(f"❌ خطأ برمجي أثناء التواصل مع تليجرام: {e}")
-        return False
-
 # --- وظيفة توليد المحتوى (المحدثة والذكية جداً) ---
 def generate_social_media_post(title, category, headings):
     headings_text = "\n- ".join(headings) if headings else "لا توجد عناوين فرعية، اعتمد على العنوان الرئيسي فقط."
@@ -197,6 +152,152 @@ def generate_social_media_post(title, category, headings):
         print(f"❌ حدث خطأ أثناء الاتصال بـ Gemini: {e}")
         return None
 
+# --- وظيفة تليجرام المحدثة لترتيب العناصر بشكل مثالي ---
+def send_to_telegram(image_url, ai_text, link, main_hashtag):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
+        print("❌ بيانات تليجرام غير مكتملة في الـ Secrets.")
+        return False        
+    
+    # 1. استخراج الهاشتاجات التي كتبها جيميناي من النص
+    ai_hashtags = re.findall(r'#\w+', ai_text)
+    
+    # 2. مسح هذه الهاشتاجات من النص ليكون النص صافياً تماماً
+    text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
+    
+    # 3. تجميع كل الهاشتاجات (هاشتاج القسم الأساسي + هاشتاجات جيميناي)
+    all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
+    
+    # 4. الترتيب المثالي الذي طلبته: النص الصافي -> الرابط -> كل الهاشتاجات تحت خالص
+    final_caption = f"{text_without_hashtags}\n\n🔗 الرابط:\n{link}\n\n{all_hashtags}"
+    
+    try:
+        print("🚀 جاري النشر على تليجرام بالترتيب الجديد...")
+        if image_url:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+            payload = {
+                "chat_id": TELEGRAM_CHANNEL_ID,
+                "photo": image_url,
+                "caption": final_caption
+            }
+        else:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            payload = {
+                "chat_id": TELEGRAM_CHANNEL_ID,
+                "text": final_caption,
+                "disable_web_page_preview": False
+            }
+            
+        response = requests.post(url, data=payload)
+        
+        if response.status_code == 200:
+            print("✅ تم النشر على تليجرام بنجاح!")
+            return True
+        else:
+            print(f"❌ فشل النشر على تليجرام: {response.text}")
+            return False
+            
+    except Exception as e:
+        print(f"❌ خطأ برمجي أثناء التواصل مع تليجرام: {e}")
+        return False
+
+# --- 🔵 وظيفة فيسبوك (المنشور + الرابط في التعليق) ---
+def send_to_facebook(image_url, ai_text, link, main_hashtag):
+    if not META_ACCESS_TOKEN or not FB_PAGE_ID:
+        return False
+        
+    ai_hashtags = re.findall(r'#\w+', ai_text)
+    text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
+    all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
+    
+    # النص الأساسي بدون الرابط
+    fb_caption = f"{text_without_hashtags}\n\n{all_hashtags}"
+    
+    try:
+        print("\n🔵 جاري النشر على فيسبوك...")
+        if image_url:
+            # 1. نشر الصورة مع النص
+            url = f"https://graph.facebook.com/v19.0/{FB_PAGE_ID}/photos"
+            payload = {"url": image_url, "message": fb_caption, "access_token": META_ACCESS_TOKEN}
+            response = requests.post(url, data=payload).json()
+            
+            if "id" in response:
+                post_id = response["id"] # معرف المنشور
+                print("✅ تم نشر المنشور على فيسبوك بنجاح!")
+                
+                # 2. الانتظار العشوائي قبل التعليق (من 30 إلى 60 ثانية)
+                wait_time = random.randint(30, 60)
+                print(f"⏱️ ننتظر {wait_time} ثانية كالمحترفين للهروب من الخوارزميات...")
+                time.sleep(wait_time)
+                
+                # 3. وضع الرابط في التعليقات
+                comment_url = f"https://graph.facebook.com/v19.0/{post_id}/comments"
+                comment_payload = {"message": f"🔗 الموضوع كامل:\n{link}", "access_token": META_ACCESS_TOKEN}
+                comment_response = requests.post(comment_url, data=comment_payload)
+                
+                if comment_response.status_code == 200:
+                    print("💬 تم وضع الرابط في تعليق فيسبوك بنجاح!")
+                else:
+                    print("⚠️ فشل إضافة التعليق.")
+                return True
+            else:
+                print(f"❌ فشل النشر على فيسبوك: {response}")
+                return False
+    except Exception as e:
+        print(f"❌ خطأ في فيسبوك: {e}")
+        return False
+
+# --- 🟣 وظيفة إنستجرام (المنشور + الرابط في التعليق) ---
+def send_to_instagram(image_url, ai_text, link, main_hashtag):
+    if not META_ACCESS_TOKEN or not IG_ACCOUNT_ID:
+        return False
+        
+    if not image_url:
+        print("⚠️ إنستجرام يرفض النشر بدون صورة. تم التخطي.")
+        return False
+        
+    ai_hashtags = re.findall(r'#\w+', ai_text)
+    text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
+    all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
+    
+    ig_caption = f"{text_without_hashtags}\n\n{all_hashtags}"
+    
+    try:
+        print("\n🟣 جاري النشر على إنستجرام...")
+        # 1. تجهيز الصورة والنص (Container)
+        create_url = f"https://graph.facebook.com/v19.0/{IG_ACCOUNT_ID}/media"
+        create_payload = {"image_url": image_url, "caption": ig_caption, "access_token": META_ACCESS_TOKEN}
+        create_response = requests.post(create_url, data=create_payload).json()
+        
+        if "id" in create_response:
+            creation_id = create_response["id"]
+            
+            # 2. النشر الفعلي للمنشور
+            publish_url = f"https://graph.facebook.com/v19.0/{IG_ACCOUNT_ID}/media_publish"
+            publish_payload = {"creation_id": creation_id, "access_token": META_ACCESS_TOKEN}
+            publish_response = requests.post(publish_url, data=publish_payload).json()
+            
+            if "id" in publish_response:
+                ig_media_id = publish_response["id"]
+                print("✅ تم نشر المنشور على إنستجرام بنجاح!")
+                
+                # 3. الانتظار العشوائي للتعليق
+                wait_time = random.randint(30, 60)
+                print(f"⏱️ ننتظر {wait_time} ثانية لوضع التعليق في إنستجرام...")
+                time.sleep(wait_time)
+                
+                # 4. وضع التعليق
+                comment_url = f"https://graph.facebook.com/v19.0/{ig_media_id}/comments"
+                comment_payload = {"message": f"🔗 انسخ الرابط:\n{link}", "access_token": META_ACCESS_TOKEN}
+                requests.post(comment_url, data=comment_payload)
+                print("💬 تم وضع التعليق في إنستجرام بنجاح!")
+                return True
+        else:
+            print(f"❌ فشل النشر على إنستجرام: {create_response}")
+            return False
+    except Exception as e:
+        print(f"❌ خطأ في إنستجرام: {e}")
+        return False
+
 # --- الوظيفة الرئيسية المحدثة ---
 def process_oldest_unpublished_post():
     all_entries = get_all_posts()
@@ -241,17 +342,18 @@ def process_oldest_unpublished_post():
         if ai_content:
             main_hashtag = f"#{category.replace(' ', '_')}" 
             
-            # --- أمر النشر الفعلي على تليجرام ---
-            is_posted = send_to_telegram(image_url, ai_content, link, main_hashtag)
+            # 1. النشر على تليجرام
+            send_to_telegram(image_url, ai_content, link, main_hashtag)
             
-            # إذا نجح النشر، نحفظ المقالة في الذاكرة لكي لا تتكرر
-            if is_posted:
-                save_published_link(link)
-                print("✅ تم الحفظ في الذاكرة بنجاح.")
-            else:
-                print("⚠️ لم يتم الحفظ في الذاكرة بسبب فشل النشر.")
-        else:
-            print("❌ فشل توليد المحتوى.")
+            # 2. النشر على فيسبوك
+            send_to_facebook(image_url, ai_content, link, main_hashtag)
+            
+            # 3. النشر على إنستجرام
+            send_to_instagram(image_url, ai_content, link, main_hashtag)
+            
+            # حفظ في الذاكرة بعد الانتهاء
+            save_published_link(link)
+            print("\n✅ تم الحفظ في الذاكرة بنجاح. المهمة تمت!")
             
     else:
         print("🎉 لا يوجد مقالات جديدة لنشرها.")
