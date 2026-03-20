@@ -90,18 +90,28 @@ def extract_image_url(html_content):
         return img_tag['src']
     return None
 
-# --- وظيفة تليجرام الجديدة ---
+# --- وظيفة تليجرام المحدثة لترتيب العناصر بشكل مثالي ---
 def send_to_telegram(image_url, ai_text, link, main_hashtag):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
         print("❌ بيانات تليجرام غير مكتملة في الـ Secrets.")
         return False
         
-    # تجميع البوست بالشكل الذي طلبته (نص ثم رابط ثم هاشتاجات)
-    final_caption = f"{ai_text}\n\n🔗 الرابط:\n{link}\n\n{main_hashtag}"
+    import re # أداة للبحث داخل النصوص
+    
+    # 1. استخراج الهاشتاجات التي كتبها جيميناي من النص
+    ai_hashtags = re.findall(r'#\w+', ai_text)
+    
+    # 2. مسح هذه الهاشتاجات من النص ليكون النص صافياً تماماً
+    text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
+    
+    # 3. تجميع كل الهاشتاجات (هاشتاج القسم الأساسي + هاشتاجات جيميناي)
+    all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
+    
+    # 4. الترتيب المثالي الذي طلبته: النص الصافي -> الرابط -> كل الهاشتاجات تحت خالص
+    final_caption = f"{text_without_hashtags}\n\n🔗 الرابط:\n{link}\n\n{all_hashtags}"
     
     try:
-        print("🚀 جاري النشر على تليجرام...")
-        # إذا وجدنا صورة، نرسل الصورة ومعها النص
+        print("🚀 جاري النشر على تليجرام بالترتيب الجديد...")
         if image_url:
             url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
             payload = {
@@ -109,7 +119,6 @@ def send_to_telegram(image_url, ai_text, link, main_hashtag):
                 "photo": image_url,
                 "caption": final_caption
             }
-        # إذا لم يكن هناك صورة، نرسل النص فقط
         else:
             url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
             payload = {
