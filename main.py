@@ -200,7 +200,7 @@ def send_to_telegram(image_url, ai_text, link, main_hashtag):
         print(f"❌ خطأ برمجي أثناء التواصل مع تليجرام: {e}")
         return False
 
-# --- 🔵 وظيفة فيسبوك (المنشور + الرابط في التعليق) ---
+# --- 🔵 وظيفة فيسبوك (المحدثة للتعليقات) ---
 def send_to_facebook(image_url, ai_text, link, main_hashtag):
     if not META_ACCESS_TOKEN or not FB_PAGE_ID:
         return False
@@ -208,36 +208,33 @@ def send_to_facebook(image_url, ai_text, link, main_hashtag):
     ai_hashtags = re.findall(r'#\w+', ai_text)
     text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
     all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
-    
-    # النص الأساسي بدون الرابط
     fb_caption = f"{text_without_hashtags}\n\n{all_hashtags}"
     
     try:
         print("\n🔵 جاري النشر على فيسبوك...")
         if image_url:
-            # 1. نشر الصورة مع النص
             url = f"https://graph.facebook.com/v19.0/{FB_PAGE_ID}/photos"
             payload = {"url": image_url, "message": fb_caption, "access_token": META_ACCESS_TOKEN}
             response = requests.post(url, data=payload).json()
             
+            # --- التعديل هنا: سحب رقم المنشور الحقيقي وليس رقم الصورة ---
             if "id" in response:
-                post_id = response["id"] # معرف المنشور
+                # إذا رد فيسبوك بـ post_id نأخذه، وإلا نأخذ الـ id العادي
+                post_id = response.get("post_id", response.get("id"))
                 print("✅ تم نشر المنشور على فيسبوك بنجاح!")
                 
-                # 2. الانتظار العشوائي قبل التعليق (من 30 إلى 60 ثانية)
                 wait_time = random.randint(30, 60)
-                print(f"⏱️ ننتظر {wait_time} ثانية كالمحترفين للهروب من الخوارزميات...")
+                print(f"⏱️ ننتظر {wait_time} ثانية للهروب من الخوارزميات...")
                 time.sleep(wait_time)
                 
-                # 3. وضع الرابط في التعليقات
                 comment_url = f"https://graph.facebook.com/v19.0/{post_id}/comments"
-                comment_payload = {"message": f"🔗 الموضوع كامل:\n{link}", "access_token": META_ACCESS_TOKEN}
+                comment_payload = {"message": f"🔗 المموضوع كاملة من هنا:\n{link}", "access_token": META_ACCESS_TOKEN}
                 comment_response = requests.post(comment_url, data=comment_payload)
                 
                 if comment_response.status_code == 200:
                     print("💬 تم وضع الرابط في تعليق فيسبوك بنجاح!")
                 else:
-                    print("⚠️ فشل إضافة التعليق.")
+                    print(f"⚠️ فشل إضافة تعليق فيسبوك: {comment_response.text}")
                 return True
             else:
                 print(f"❌ فشل النشر على فيسبوك: {response}")
@@ -246,7 +243,7 @@ def send_to_facebook(image_url, ai_text, link, main_hashtag):
         print(f"❌ خطأ في فيسبوك: {e}")
         return False
 
-# --- 🟣 وظيفة إنستجرام (المنشور + الرابط في التعليق) ---
+# --- 🟣 وظيفة إنستجرام (المحدثة لمعالجة الصور) ---
 def send_to_instagram(image_url, ai_text, link, main_hashtag):
     if not META_ACCESS_TOKEN or not IG_ACCOUNT_ID:
         return False
@@ -258,12 +255,11 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
     ai_hashtags = re.findall(r'#\w+', ai_text)
     text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
     all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
-    
     ig_caption = f"{text_without_hashtags}\n\n{all_hashtags}"
     
     try:
         print("\n🟣 جاري النشر على إنستجرام...")
-        # 1. تجهيز الصورة والنص (Container)
+        # 1. تجهيز الصورة (Upload)
         create_url = f"https://graph.facebook.com/v19.0/{IG_ACCOUNT_ID}/media"
         create_payload = {"image_url": image_url, "caption": ig_caption, "access_token": META_ACCESS_TOKEN}
         create_response = requests.post(create_url, data=create_payload).json()
@@ -271,7 +267,11 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
         if "id" in create_response:
             creation_id = create_response["id"]
             
-            # 2. النشر الفعلي للمنشور
+            # --- التعديل هنا: إعطاء إنستجرام 15 ثانية لمعالجة الصورة ---
+            print("⏳ ننتظر 15 ثانية حتى يقوم إنستجرام بمعالجة الصورة في سيرفراته...")
+            time.sleep(15)
+            
+            # 2. النشر الفعلي (Publish)
             publish_url = f"https://graph.facebook.com/v19.0/{IG_ACCOUNT_ID}/media_publish"
             publish_payload = {"creation_id": creation_id, "access_token": META_ACCESS_TOKEN}
             publish_response = requests.post(publish_url, data=publish_payload).json()
@@ -280,19 +280,25 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
                 ig_media_id = publish_response["id"]
                 print("✅ تم نشر المنشور على إنستجرام بنجاح!")
                 
-                # 3. الانتظار العشوائي للتعليق
                 wait_time = random.randint(30, 60)
                 print(f"⏱️ ننتظر {wait_time} ثانية لوضع التعليق في إنستجرام...")
                 time.sleep(wait_time)
                 
-                # 4. وضع التعليق
+                # 3. وضع التعليق
                 comment_url = f"https://graph.facebook.com/v19.0/{ig_media_id}/comments"
                 comment_payload = {"message": f"🔗 انسخ الرابط:\n{link}", "access_token": META_ACCESS_TOKEN}
-                requests.post(comment_url, data=comment_payload)
-                print("💬 تم وضع التعليق في إنستجرام بنجاح!")
+                comment_response = requests.post(comment_url, data=comment_payload)
+                
+                if comment_response.status_code == 200:
+                    print("💬 تم وضع التعليق في إنستجرام بنجاح!")
+                else:
+                    print(f"⚠️ فشل إضافة تعليق إنستجرام: {comment_response.text}")
                 return True
+            else:
+                print(f"❌ فشل النشر النهائي على إنستجرام: {publish_response}")
+                return False
         else:
-            print(f"❌ فشل النشر على إنستجرام: {create_response}")
+            print(f"❌ فشل رفع الصورة على إنستجرام: {create_response}")
             return False
     except Exception as e:
         print(f"❌ خطأ في إنستجرام: {e}")
