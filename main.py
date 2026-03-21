@@ -228,7 +228,7 @@ def send_to_facebook(image_url, ai_text, link, main_hashtag):
                 time.sleep(wait_time)
                 
                 comment_url = f"https://graph.facebook.com/v19.0/{post_id}/comments"
-                comment_payload = {"message": f"🔗 المموضوع كاملة من هنا:\n{link}", "access_token": META_ACCESS_TOKEN}
+                comment_payload = {"message": f"🔗 الموضوع:\n{link}", "access_token": META_ACCESS_TOKEN}
                 comment_response = requests.post(comment_url, data=comment_payload)
                 
                 if comment_response.status_code == 200:
