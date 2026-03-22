@@ -20,17 +20,24 @@ jobs:
           pip install feedparser
           pip install beautifulsoup4
           pip install google-genai
-          pip install requests # أضفنا هذه المكتبة للتواصل مع تليجرام
+          pip install requests
+          pip install tweepy # أضفنا مكتبة تويتر السحرية 🐦
 
       - name: Run Main Script
         env:
           ALL_SECRETS: ${{ toJson(secrets) }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
-          # أضفنا أسرار ميتا هنا 👇
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          # أضفنا أسرار ثرادز وتويتر هنا 👇
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_ACCOUNT_ID: ${{ secrets.THREADS_ACCOUNT_ID }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         run: python main.py
 
       - name: Save Memory
