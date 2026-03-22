@@ -329,6 +329,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
         url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
         payload = {"media_type": "IMAGE", "image_url": image_url, "text": threads_caption, "access_token": THREADS_ACCESS_TOKEN}
         res = requests.post(url, data=payload).json()
+        print(f"📋 رد ثرادز (رفع الصورة): {res}")
         
         if "id" in res:
             creation_id = res["id"]
@@ -338,6 +339,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
             # 2. النشر الفعلي
             pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
             pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
+            print(f"📋 رد ثرادز (النشر): {pub_res}")
             
             if "id" in pub_res:
                 thread_id = pub_res["id"]
@@ -353,11 +355,21 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
                 rep_create = requests.post(rep_url, data=rep_payload).json()
                 
                 if "id" in rep_create:
-                    requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
+                    final_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
+                    print(f"💬 رد ثرادز (التعليق): {final_pub}")
                     print("💬 تم وضع الرابط في رد ثرادز!")
+                else:
+                    print(f"⚠️ فشل إنشاء الرد في ثرادز: {rep_create}")
                 return True
-    except Exception as e: print(f"❌ خطأ ثرادز: {e}")
-    return False
+            else:
+                print(f"❌ فشل النشر النهائي على ثرادز: {pub_res}")
+                return False
+        else:
+            print(f"❌ فشل رفع الصورة على ثرادز: {res}")
+            return False
+    except Exception as e:
+        print(f"❌ خطأ ثرادز: {e}")
+        return False
 
 # --- 🐦 وظيفة تويتر (الجديدة) ---
 def send_to_twitter(image_url, ai_text, link, main_hashtag):
