@@ -118,21 +118,22 @@ def generate_social_media_post(title, category, headings):
     {headings_text}
     
     شروط الكتابة الصارمة:
-    1. إياك أن تنسخ العناوين الفرعية كما هي، حللها وافهم "نية البحث" (Search Intent) والحلول التي تقدمها المقالة، ثم صُغ منها فكرة تسويقية واحدة قوية.
-    2. استخدم أسلوباً يخاطب اللاوعي (مثل إثارة الفضول، الخوف من تفويت الفرصة FOMO، أو تحقيق حلم وطموح).
-    3. لا تستخدم أكواد HTML أبداً مثل <br>. للنزول لسطر جديد، استخدم النزول العادي (Enter).
-    4. اجعل النص سلساً، ذكياً، وقصيراً إلى متوسط الطول (لا تكتب مقالاً داخل منشور).
-    5. استخدم إيموجي (1 إلى 3 كحد أقصى) لتزيين النص دون إزعاج العين.
-    6. 💡 الشرط الأهم (الحافز): في نهاية النص التسويقي، اكتب جملة تحفيزية ذكية جداً (Call to Action) تدفع القارئ للبحث عن التفاصيل، واختمها بإيموجي يشير للأسفل (👇). 
+    1. ⚠️ طول النص: يجب ألا يتجاوز المنشور بأكمله (بما فيه الهاشتاجات) 270 حرفاً كحد أقصى! كن مختصراً، ذكياً، سلساً، ومكثفاً.
+    2. إياك أن تنسخ العناوين الفرعية كما هي، حللها وافهم "نية البحث" (Search Intent) والحلول التي تقدمها المقالة، ثم صُغ منها فكرة تسويقية واحدة قوية.
+    3. استخدم أسلوباً يخاطب اللاوعي (مثل إثارة الفضول، الخوف من تفويت الفرصة FOMO، أو تحقيق حلم وطموح).
+    4. لا تستخدم أكواد HTML أبداً مثل <br>. للنزول لسطر جديد، استخدم النزول العادي (Enter).
+    5. لا تستخدم أي فواصل مثل --- أو ***.
+    6. استخدم إيموجي (1 إلى 5 كحد أقصى) لتزيين النص دون إزعاج العين.
+    7. 💡 الشرط الأهم (الحافز): في نهاية النص التسويقي، اكتب جملة تحفيزية ذكية جداً (Call to Action) تدفع القارئ للبحث عن التفاصيل، واختمها بإيموجي يشير للأسفل (👇). 
        (مثال للأسلوب: "اكتشف السر والتفاصيل الكاملة الآن 👇" أو "خطوات التنفيذ بانتظارك هنا 👇").
-    7. لا تكتب مطلقاً كلمات مثل [رابط] أو (Link) أو "اضغط على الرابط" أو "اقرأ المقالة" أو "[رابط المقالة]" أو "إليك الرابط" ولا تضع أقواساً، فقط الجملة التحفيزية والسهم 👇.
-    8. في نهاية النص، انزل سطرين واكتب 4 هاشتاجات (#) شائعة وقوية متعلقة بالموضوع.
-    9. لا تضف هاشتاج القسم "{category}"، أنا سأضيفه بنفسي.
-    10. لا تكتب أي مقدمات، أعطني المنشور النهائي جاهزاً.
+    8. لا تكتب مطلقاً كلمات مثل [رابط] أو (Link) أو "اضغط على الرابط" أو "اقرأ المقالة" أو "[رابط المقالة]" أو "إليك الرابط" ولا تضع أقواساً، فقط الجملة التحفيزية والسهم 👇.
+    9. في نهاية النص، انزل سطرين واكتب 4 هاشتاجات (#) شائعة وقوية متعلقة بالموضوع.
+    10. لا تضف هاشتاج القسم "{category}"، أنا سأضيفه بنفسي.
+    11. لا تكتب أي مقدمات، أعطني المنشور النهائي جاهزاً.
     """
     
     try:
-        print("🧠 جاري كتابة محتوى تسويقي احترافي ...")
+        print("🧠 جاري كتابة محتوى تسويقي احترافي وقصير ...")
         response = client.models.generate_content(
             model=selected_model,
             contents=prompt,
@@ -148,6 +149,8 @@ def generate_social_media_post(title, category, headings):
         clean_text = clean_text.replace("<br>", "\n") # تحويل br إلى نزول سطر سليم
         clean_text = clean_text.replace("<br/>", "\n") 
         clean_text = clean_text.replace("</br>", "")
+        clean_text = clean_text.replace("---", "") # إزالة الفواصل الآلية المزعجة
+        clean_text = clean_text.replace("***", "")
         clean_text = clean_text.replace("[رابط المقالة]", "") 
         clean_text = clean_text.replace("[الرابط]", "")
         
@@ -175,11 +178,8 @@ def send_to_telegram(image_url, ai_text, link, main_hashtag):
     # 2. مسح هذه الهاشتاجات من النص ليكون النص صافياً تماماً
     text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
     
-    # 3. تجميع كل الهاشتاجات (هاشتاج القسم الأساسي + هاشتاجات جيميناي)
-    all_hashtags = f"{main_hashtag} " + " ".join(ai_hashtags)
-    
-    # 4. الترتيب المثالي الذي طلبته: النص الصافي -> الرابط -> كل الهاشتاجات تحت خالص
-    final_caption = f"{text_without_hashtags}\n\n🔗 الرابط:\n{link}\n\n{all_hashtags}"
+    # 3. الترتيب لتليجرام: النص الصافي -> الرابط -> هاشتاج القسم فقط!
+    final_caption = f"{text_without_hashtags}\n\n🔗 الرابط:\n{link}\n\n{main_hashtag}"
     
     try:
         print("🚀 جاري النشر على تليجرام بالترتيب الجديد...")
@@ -320,8 +320,9 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
     if not THREADS_ACCESS_TOKEN or not THREADS_ACCOUNT_ID: return False
     if not image_url: return False
     
-    clean_text, all_hashtags = clean_text_for_platforms(ai_text, main_hashtag)
-    threads_caption = f"{clean_text}\n\n{all_hashtags}"
+    # تنظيف النص وأخذ النص الصافي فقط بدون هاشتاجات نهائياً لثرادز
+    clean_text, _ = clean_text_for_platforms(ai_text, main_hashtag)
+    threads_caption = f"{clean_text}"
     
     try:
         print("\n🧵 جاري النشر على ثرادز...")
@@ -409,6 +410,22 @@ def send_to_twitter(image_url, ai_text, link, main_hashtag):
     except Exception as e: print(f"❌ خطأ تويتر: {e}")
     return False
 
+# --- وظيفة إعادة المحاولة الذكية (المحاولتين) ---
+def run_with_retry(platform_func, *args):
+    platform_name = platform_func.__name__.replace("send_to_", "").capitalize()
+    
+    for attempt in range(1, 3): # محاولتين (1 ثم 2)
+        success = platform_func(*args)
+        if success:
+            return True # نجح، نخرج من الحلقة
+        else:
+            if attempt == 1:
+                print(f"⚠️ فشلت المحاولة الأولى لـ {platform_name}، ننتظر 15 ثانية ونجرب المحاولة الثانية...")
+                time.sleep(15)
+            else:
+                print(f"❌ فشلت المحاولة الثانية والأخيرة لـ {platform_name}. نتجاوزها.")
+    return False
+
 # --- الوظيفة الرئيسية المحدثة ---
 def process_oldest_unpublished_post():
     all_entries = get_all_posts()
@@ -453,20 +470,22 @@ def process_oldest_unpublished_post():
         if ai_content:
             main_hashtag = f"#{category.replace(' ', '_')}" 
             
+            # --- أوامر النشر بنظام المحاولتين (Retry Mechanism) ---
+            
             # 1. النشر على تليجرام
-            send_to_telegram(image_url, ai_content, link, main_hashtag)
+            run_with_retry(send_to_telegram, image_url, ai_content, link, main_hashtag)
             
             # 2. النشر على فيسبوك
-            send_to_facebook(image_url, ai_content, link, main_hashtag)
+            run_with_retry(send_to_facebook, image_url, ai_content, link, main_hashtag)
             
             # 3. النشر على إنستجرام
-            send_to_instagram(image_url, ai_content, link, main_hashtag)
+            run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag)
 
             # 4. النشر على ثريدز
-            send_to_threads(image_url, ai_content, link, main_hashtag)
+            run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag)
 
             # 5. النشر على تويتر
-            send_to_twitter(image_url, ai_content, link, main_hashtag)
+            run_with_retry(send_to_twitter, image_url, ai_content, link, main_hashtag)
             
             # حفظ في الذاكرة بعد الانتهاء
             save_published_link(link)
