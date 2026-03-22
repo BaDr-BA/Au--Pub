@@ -3,10 +3,11 @@ import os
 import random
 import json
 import requests
-import time # ⏱️ مكتبة جديدة للانتظار العشوائي
+import time
 import re
 from bs4 import BeautifulSoup
 from google import genai
+import tweepy # 🐦 مكتبة تويتر
 
 BLOG_RSS_URL = "https://t8ngy.blogspot.com/feeds/posts/default?alt=rss&max-results=500"
 HISTORY_FILE = "published.txt"
@@ -17,6 +18,12 @@ TELEGRAM_CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID")
 META_ACCESS_TOKEN = os.environ.get("META_ACCESS_TOKEN")
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID")
 IG_ACCOUNT_ID = os.environ.get("IG_ACCOUNT_ID")
+THREADS_ACCESS_TOKEN = os.environ.get("THREADS_ACCESS_TOKEN")
+THREADS_ACCOUNT_ID = os.environ.get("THREADS_ACCOUNT_ID")
+X_API_KEY = os.environ.get("X_API_KEY")
+X_API_SECRET = os.environ.get("X_API_SECRET")
+X_ACCESS_TOKEN = os.environ.get("X_ACCESS_TOKEN")
+X_ACCESS_SECRET = os.environ.get("X_ACCESS_SECRET")
 
 # --- 1. جلب مفاتيح جيميناي ---
 api_keys_list = []
@@ -304,6 +311,88 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
         print(f"❌ خطأ في إنستجرام: {e}")
         return False
 
+# --- 🧵 وظيفة ثرادز (الجديدة) ---
+def send_to_threads(image_url, ai_text, link, main_hashtag):
+    if not THREADS_ACCESS_TOKEN or not THREADS_ACCOUNT_ID: return False
+    if not image_url: return False
+    
+    clean_text, all_hashtags = clean_text_for_platforms(ai_text, main_hashtag)
+    threads_caption = f"{clean_text}\n\n{all_hashtags}"
+    
+    try:
+        print("\n🧵 جاري النشر على ثرادز...")
+        # 1. رفع الصورة
+        url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
+        payload = {"media_type": "IMAGE", "image_url": image_url, "text": threads_caption, "access_token": THREADS_ACCESS_TOKEN}
+        res = requests.post(url, data=payload).json()
+        
+        if "id" in res:
+            creation_id = res["id"]
+            print("⏳ ننتظر 15 ثانية لمعالجة الصورة في ثرادز...")
+            time.sleep(15)
+            
+            # 2. النشر الفعلي
+            pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
+            pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
+            
+            if "id" in pub_res:
+                thread_id = pub_res["id"]
+                print("✅ تم النشر على ثرادز!")
+                
+                wait = random.randint(30, 60)
+                print(f"⏱️ ننتظر {wait} ثانية للرد...")
+                time.sleep(wait)
+                
+                # 3. وضع الرابط في رد
+                rep_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
+                rep_payload = {"media_type": "TEXT", "text": f"🔗 الموضوع كامل:\n{link}", "reply_to_id": thread_id, "access_token": THREADS_ACCESS_TOKEN}
+                rep_create = requests.post(rep_url, data=rep_payload).json()
+                
+                if "id" in rep_create:
+                    requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
+                    print("💬 تم وضع الرابط في رد ثرادز!")
+                return True
+    except Exception as e: print(f"❌ خطأ ثرادز: {e}")
+    return False
+
+# --- 🐦 وظيفة تويتر (الجديدة) ---
+def send_to_twitter(image_url, ai_text, link, main_hashtag):
+    if not X_API_KEY: return False
+    
+    clean_text, all_hashtags = clean_text_for_platforms(ai_text, main_hashtag)
+    x_caption = f"{clean_text}\n\n{all_hashtags}"
+    
+    try:
+        print("\n🐦 جاري النشر على X (تويتر)...")
+        # إعداد تويتر
+        auth = tweepy.OAuth1UserHandler(X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET)
+        api = tweepy.API(auth)
+        client_x = tweepy.Client(consumer_key=X_API_KEY, consumer_secret=X_API_SECRET, access_token=X_ACCESS_TOKEN, access_token_secret=X_ACCESS_SECRET)
+        
+        # 1. تحميل الصورة ونشرها
+        if image_url:
+            img_data = requests.get(image_url).content
+            with open("temp.jpg", "wb") as f: f.write(img_data)
+            media = api.media_upload("temp.jpg")
+            tweet = client_x.create_tweet(text=x_caption[:280], media_ids=[media.media_id])
+            os.remove("temp.jpg")
+        else:
+            tweet = client_x.create_tweet(text=x_caption[:280])
+            
+        tweet_id = tweet.data['id']
+        print("✅ تم النشر على تويتر!")
+        
+        wait = random.randint(30, 60)
+        print(f"⏱️ ننتظر {wait} ثانية للرد...")
+        time.sleep(wait)
+        
+        # 2. وضع الرابط في رد
+        client_x.create_tweet(text=f"🔗 الموضوع كامل:\n{link}", in_reply_to_tweet_id=tweet_id)
+        print("💬 تم وضع الرابط في رد تويتر!")
+        return True
+    except Exception as e: print(f"❌ خطأ تويتر: {e}")
+    return False
+
 # --- الوظيفة الرئيسية المحدثة ---
 def process_oldest_unpublished_post():
     all_entries = get_all_posts()
@@ -356,6 +445,12 @@ def process_oldest_unpublished_post():
             
             # 3. النشر على إنستجرام
             send_to_instagram(image_url, ai_content, link, main_hashtag)
+
+            # 4. النشر على ثريدز
+            send_to_threads(image_url, ai_content, link, main_hashtag)
+
+            # 5. النشر على تويتر
+            send_to_twitter(image_url, ai_content, link, main_hashtag)
             
             # حفظ في الذاكرة بعد الانتهاء
             save_published_link(link)
