@@ -148,8 +148,6 @@ def generate_social_media_post(title, category, headings):
         clean_text = clean_text.replace("<br>", "\n") # تحويل br إلى نزول سطر سليم
         clean_text = clean_text.replace("<br/>", "\n") 
         clean_text = clean_text.replace("</br>", "")
-        
-        # إزالة الكلمات الوهمية إذا عاند وكتبها
         clean_text = clean_text.replace("[رابط المقالة]", "") 
         clean_text = clean_text.replace("[الرابط]", "")
         
@@ -158,6 +156,12 @@ def generate_social_media_post(title, category, headings):
     except Exception as e:
         print(f"❌ حدث خطأ أثناء الاتصال بـ Gemini: {e}")
         return None
+
+# --- وظائف النشر ---
+def clean_text_for_platforms(ai_text, main_hashtag):
+    hashtags = re.findall(r'#\w+', ai_text)
+    clean_text = re.sub(r'#\w+', '', ai_text).strip()
+    return clean_text, f"{main_hashtag} " + " ".join(hashtags)
 
 # --- وظيفة تليجرام المحدثة لترتيب العناصر بشكل مثالي ---
 def send_to_telegram(image_url, ai_text, link, main_hashtag):
