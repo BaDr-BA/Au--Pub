@@ -385,19 +385,24 @@ def send_to_twitter(image_url, ai_text, link, main_hashtag):
         auth = tweepy.OAuth1UserHandler(X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET)
         api = tweepy.API(auth)
         client_x = tweepy.Client(consumer_key=X_API_KEY, consumer_secret=X_API_SECRET, access_token=X_ACCESS_TOKEN, access_token_secret=X_ACCESS_SECRET)
-        
-        # 1. تحميل الصورة ونشرها
+
+        tweet = None
+        # 1. محاولة النشر مع الصورة
         if image_url:
-            img_data = requests.get(image_url).content
-            with open("temp.jpg", "wb") as f: f.write(img_data)
-            media = api.media_upload("temp.jpg")
-            tweet = client_x.create_tweet(text=x_caption[:280], media_ids=[media.media_id])
-            os.remove("temp.jpg")
+            try:
+                img_data = requests.get(image_url).content
+                with open("temp.jpg", "wb") as f: f.write(img_data)
+                media = api.media_upload("temp.jpg")
+                tweet = client_x.create_tweet(text=x_caption[:280], media_ids=[media.media_id])
+                os.remove("temp.jpg")
+            except Exception as img_err:
+                print(f"⚠️ تويتر رفض الصورة (سيرفراتهم متعبة)، سننشر النص فقط. الخطأ: {img_err}")
+                tweet = client_x.create_tweet(text=x_caption[:280])
         else:
             tweet = client_x.create_tweet(text=x_caption[:280])
             
         tweet_id = tweet.data['id']
-        print("✅ تم النشر على تويتر!")
+        print("✅ تم النشر على تويتر بنجاح!")
         
         wait = random.randint(30, 60)
         print(f"⏱️ ننتظر {wait} ثانية للرد...")
@@ -407,8 +412,9 @@ def send_to_twitter(image_url, ai_text, link, main_hashtag):
         client_x.create_tweet(text=f"🔗 الموضوع كامل:\n{link}", in_reply_to_tweet_id=tweet_id)
         print("💬 تم وضع الرابط في رد تويتر!")
         return True
-    except Exception as e: print(f"❌ خطأ تويتر: {e}")
-    return False
+    except Exception as e: 
+        print(f"❌ خطأ تويتر الشامل: {e}")
+        return False
 
 # --- وظيفة إعادة المحاولة الذكية (المحاولتين) ---
 def run_with_retry(platform_func, *args):
