@@ -1,7 +1,11 @@
-name: Test Auto Publisher
+name: Auto Publisher
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # يبقي زر التشغيل اليدوي موجوداً للتجارب
+  schedule:
+    # هذا السطر السحري (CRON) يجعل السكريبت يعمل تلقائياً كل 15 دقيقة!
+    # (يمكنك تغيير إلى */30 ليعمل كل نصف ساعة، أو */60 ليعمل كل ساعة)
+    - cron: '*/30 * * * *'
 
 jobs:
   run-script:
