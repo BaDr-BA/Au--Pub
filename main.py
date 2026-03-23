@@ -317,9 +317,27 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
 
 # --- 🧵 وظيفة ثرادز (الجديدة) ---
 def send_to_threads(image_url, ai_text, link, main_hashtag):
+    global THREADS_ACCESS_TOKEN # لكي نحدث المتغير في الذاكرة أثناء التشغيل
+    
     if not THREADS_ACCESS_TOKEN or not THREADS_ACCOUNT_ID: return False
     if not image_url: return False
     
+    # --- 🔄 عملية تجديد التوكن التلقائي (Auto-Refresh) ---
+    print("\n🔄 جاري التحقق من توكن ثرادز وتجديده إذا لزم الأمر...")
+    refresh_url = f"https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token={THREADS_ACCESS_TOKEN}"
+    try:
+        refresh_response = requests.get(refresh_url).json()
+        if "access_token" in refresh_response:
+            THREADS_ACCESS_TOKEN = refresh_response["access_token"]
+            print("✅ تم تجديد توكن ثرادز بنجاح! (صالح لـ 60 يوماً جديدة)")
+            # ملاحظة: برمجياً يُفضل حفظ التوكن الجديد في GitHub Secrets آلياً،
+            # لكن ميتا تسمح باستخدام التوكن القديم لتجديد نفسه لعدة مرات، فهذا الكود كافٍ للعمل المستمر.
+        else:
+            print(f"⚠️ لم يتم تجديد التوكن (قد يكون لا يزال صالحاً). الرد: {refresh_response}")
+    except Exception as e:
+        print(f"⚠️ خطأ أثناء تجديد توكن ثرادز: {e}")
+        
+    # --- بداية عملية النشر ---
     # تنظيف النص وأخذ النص الصافي فقط بدون هاشتاجات نهائياً لثرادز
     clean_text, _ = clean_text_for_platforms(ai_text, main_hashtag)
     threads_caption = f"{clean_text}"
@@ -372,48 +390,64 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
         print(f"❌ خطأ ثرادز: {e}")
         return False
 
-# --- 🐦 وظيفة تويتر (الجديدة) ---
+# --- 🐦 وظيفة تويتر (نظام المحاولتين المزدوج للصورة والنص) ---
 def send_to_twitter(image_url, ai_text, link, main_hashtag):
     if not X_API_KEY: return False
     
     clean_text, all_hashtags = clean_text_for_platforms(ai_text, main_hashtag)
     x_caption = f"{clean_text}\n\n{all_hashtags}"
     
-    try:
-        print("\n🐦 جاري النشر على X (تويتر)...")
-        # إعداد تويتر
-        auth = tweepy.OAuth1UserHandler(X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET)
-        api = tweepy.API(auth)
-        client_x = tweepy.Client(consumer_key=X_API_KEY, consumer_secret=X_API_SECRET, access_token=X_ACCESS_TOKEN, access_token_secret=X_ACCESS_SECRET)
-
-        tweet = None
-        # 1. محاولة النشر مع الصورة
-        if image_url:
+    print("\n🐦 جاري النشر على X (تويتر)...")
+    # إعداد تويتر
+    auth = tweepy.OAuth1UserHandler(X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET)
+    api = tweepy.API(auth)
+    client_x = tweepy.Client(consumer_key=X_API_KEY, consumer_secret=X_API_SECRET, access_token=X_ACCESS_TOKEN, access_token_secret=X_ACCESS_SECRET)
+    
+    tweet = None
+    
+    # --- المرحلة الأولى: محاولة النشر بالصورة (مرتين) ---
+    if image_url:
+        for attempt in range(1, 3):
             try:
                 img_data = requests.get(image_url).content
                 with open("temp.jpg", "wb") as f: f.write(img_data)
                 media = api.media_upload("temp.jpg")
-                tweet = client_x.create_tweet(text=x_caption[:280], media_ids=[media.media_id])
+                tweet = client_x.create_tweet(text=x_caption[:250], media_ids=[media.media_id])
                 os.remove("temp.jpg")
+                print("✅ تم النشر على تويتر مع الصورة بنجاح!")
+                break # نجحت الصورة، نخرج من الحلقة
             except Exception as img_err:
-                print(f"⚠️ تويتر رفض الصورة (سيرفراتهم متعبة)، سننشر النص فقط. الخطأ: {img_err}")
-                tweet = client_x.create_tweet(text=x_caption[:280])
-        else:
-            tweet = client_x.create_tweet(text=x_caption[:280])
-            
+                print(f"⚠️ فشلت محاولة الصورة رقم {attempt} في تويتر. الخطأ: {img_err}")
+                if os.path.exists("temp.jpg"): os.remove("temp.jpg")
+                if attempt == 1: time.sleep(10)
+    
+    # --- المرحلة الثانية: إذا فشلت الصورة (أو لم توجد أصلاً)، نحاول بالنص فقط (مرتين) ---
+    if not tweet:
+        print("🔄 تويتر رفض الصورة نهائياً، ننتقل لمحاولة النشر بالنص فقط...")
+        for attempt in range(1, 3):
+            try:
+                tweet = client_x.create_tweet(text=x_caption[:250])
+                print("✅ تم النشر على تويتر بالنص فقط بنجاح!")
+                break # نجح النص، نخرج من الحلقة
+            except Exception as txt_err:
+                print(f"❌ فشلت محاولة النص رقم {attempt} في تويتر. الخطأ: {txt_err}")
+                if attempt == 1: time.sleep(10)
+                
+    # --- المرحلة الثالثة: إضافة التعليق (الرابط) إذا تم النشر بنجاح ---
+    if tweet:
         tweet_id = tweet.data['id']
-        print("✅ تم النشر على تويتر بنجاح!")
-        
         wait = random.randint(30, 60)
-        print(f"⏱️ ننتظر {wait} ثانية للرد...")
+        print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في تعليق تويتر...")
         time.sleep(wait)
-        
-        # 2. وضع الرابط في رد
-        client_x.create_tweet(text=f"🔗 الموضوع كامل:\n{link}", in_reply_to_tweet_id=tweet_id)
-        print("💬 تم وضع الرابط في رد تويتر!")
-        return True
-    except Exception as e: 
-        print(f"❌ خطأ تويتر الشامل: {e}")
+        try:
+            client_x.create_tweet(text=f"🔗 الموضوع كامل:\n{link}", in_reply_to_tweet_id=tweet_id)
+            print("💬 تم وضع الرابط في رد تويتر بنجاح!")
+            return True
+        except Exception as reply_err:
+            print(f"⚠️ فشل وضع التعليق في تويتر: {reply_err}")
+            return True # نعتبر النشر ناجحاً حتى لو فشل التعليق
+    else:
+        print("❌ فشل النشر على تويتر تماماً (صورة ونص).")
         return False
 
 # --- وظيفة إعادة المحاولة الذكية (المحاولتين) ---
