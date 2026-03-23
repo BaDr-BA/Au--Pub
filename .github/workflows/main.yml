@@ -31,13 +31,14 @@ jobs:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
-          # أضفنا أسرار ثرادز وتويتر هنا 👇
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_ACCOUNT_ID: ${{ secrets.THREADS_ACCOUNT_ID }}
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
         run: python main.py
 
       - name: Save Memory
