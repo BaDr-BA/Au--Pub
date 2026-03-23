@@ -24,6 +24,8 @@ X_API_KEY = os.environ.get("X_API_KEY")
 X_API_SECRET = os.environ.get("X_API_SECRET")
 X_ACCESS_TOKEN = os.environ.get("X_ACCESS_TOKEN")
 X_ACCESS_SECRET = os.environ.get("X_ACCESS_SECRET")
+PINTEREST_ACCESS_TOKEN = os.environ.get("PINTEREST_ACCESS_TOKEN")
+PINTEREST_BOARD_ID = os.environ.get("PINTEREST_BOARD_ID")
 
 # --- 1. جلب مفاتيح جيميناي ---
 api_keys_list = []
@@ -466,6 +468,96 @@ def run_with_retry(platform_func, *args):
                 print(f"❌ فشلت المحاولة الثانية والأخيرة لـ {platform_name}. نتجاوزها.")
     return False
 
+# --- 📌 وظيفة بينتريست (التوكن اليدوي + اللوحة المزدوجة + الإنشاء التلقائي للوحات) ---
+def send_to_pinterest(image_url, title, ai_text, link, category):
+    PINTEREST_ACCESS_TOKEN = os.environ.get("PINTEREST_ACCESS_TOKEN")
+    PINTEREST_GENERAL_BOARD_ID = os.environ.get("PINTEREST_BOARD_ID")
+    
+    if not PINTEREST_ACCESS_TOKEN:
+        return False
+    if not image_url:
+        print("⚠️ بينتريست يرفض النشر بدون صورة. تم التخطي.")
+        return False
+
+    print("\n📌 جاري النشر على بينتريست...")
+    
+    headers = {
+        "Authorization": f"Bearer {PINTEREST_ACCESS_TOKEN}",
+        "Content-Type": "application/json"
+    }
+
+    # 1. 📝 تجهيز المنشور (Pin)
+    pin_description = ai_text[:490] + "..." if len(ai_text) > 490 else ai_text
+    pin_payload = {
+        "title": title[:100],
+        "description": pin_description,
+        "link": link,
+        "media_source": {"source_type": "image_url", "url": image_url}
+    }
+
+    success = False
+
+    # 2. 🎯 النشر في اللوحة العامة (General Board)
+    if PINTEREST_GENERAL_BOARD_ID:
+        pin_payload["board_id"] = PINTEREST_GENERAL_BOARD_ID
+        try:
+            print(f"📍 جاري النشر في اللوحة العامة ({PINTEREST_GENERAL_BOARD_ID})...")
+            res = requests.post("https://api.pinterest.com/v5/pins", headers=headers, json=pin_payload).json()
+            if "id" in res:
+                print("✅ تم النشر في اللوحة العامة لبينتريست بنجاح!")
+                success = True
+            else:
+                print(f"⚠️ فشل النشر في اللوحة العامة: {res}")
+        except Exception as e:
+            print(f"❌ خطأ أثناء النشر في اللوحة العامة: {e}")
+
+    # 3. 🔍 البحث عن لوحة القسم (Category Board) أو إنشاؤها
+    print(f"🔍 جاري البحث عن لوحة باسم القسم '{category}'...")
+    category_board_id = None
+    
+    try:
+        # جلب كل اللوحات في حسابك
+        boards_res = requests.get("https://api.pinterest.com/v5/boards", headers=headers).json()
+        if "items" in boards_res:
+            for board in boards_res["items"]:
+                if board["name"].lower() == category.lower():
+                    category_board_id = board["id"]
+                    print(f"✅ تم العثور على لوحة القسم موجودة مسبقاً ({category_board_id}).")
+                    break
+                    
+        # إذا لم يجد اللوحة، يقوم بإنشائها
+        if not category_board_id:
+            print(f"🛠️ لم يتم العثور على اللوحة. جاري إنشاء لوحة جديدة باسم '{category}'...")
+            create_board_payload = {"name": category, "description": f"مقالات قسم {category}"}
+            create_res = requests.post("https://api.pinterest.com/v5/boards", headers=headers, json=create_board_payload).json()
+            if "id" in create_res:
+                category_board_id = create_res["id"]
+                print(f"✅ تم إنشاء اللوحة الجديدة بنجاح ({category_board_id})!")
+            else:
+                print(f"⚠️ فشل إنشاء اللوحة الجديدة: {create_res}")
+                
+    except Exception as e:
+        print(f"❌ خطأ أثناء البحث/إنشاء اللوحة: {e}")
+
+    # 4. 🎯 النشر في لوحة القسم
+    if category_board_id:
+        print(f"⏱️ ننتظر 20 ثانية قبل النشر في لوحة القسم...")
+        time.sleep(20)
+        
+        pin_payload["board_id"] = category_board_id
+        try:
+            print(f"📍 جاري النشر في لوحة القسم '{category}'...")
+            res2 = requests.post("https://api.pinterest.com/v5/pins", headers=headers, json=pin_payload).json()
+            if "id" in res2:
+                print(f"✅ تم النشر في لوحة القسم '{category}' بنجاح!")
+                success = True
+            else:
+                print(f"⚠️ فشل النشر في لوحة القسم: {res2}")
+        except Exception as e:
+            print(f"❌ خطأ أثناء النشر في لوحة القسم: {e}")
+
+    return success
+
 # --- الوظيفة الرئيسية المحدثة ---
 def process_oldest_unpublished_post():
     all_entries = get_all_posts()
@@ -526,6 +618,9 @@ def process_oldest_unpublished_post():
 
             # 5. النشر على تويتر
             run_with_retry(send_to_twitter, image_url, ai_content, link, main_hashtag)
+
+            # 6. النشر على بينتريست (اللوحة العامة + القسم بإنشاء تلقائي)
+            run_with_retry(send_to_pinterest, image_url, title, ai_content, link, category)
             
             # حفظ في الذاكرة بعد الانتهاء
             save_published_link(link)
