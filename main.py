@@ -614,7 +614,7 @@ def process_oldest_unpublished_post():
             run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag)
 
             # 4. النشر على ثريدز
-            run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag)
+            # run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag)
 
             # 5. النشر على تويتر
             run_with_retry(send_to_twitter, image_url, ai_content, link, main_hashtag)
