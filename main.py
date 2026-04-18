@@ -49,7 +49,7 @@ if not api_keys_list:
 selected_api_key = random.choice(api_keys_list).strip()
 
 # 2. قائمة النماذج المجانية السريعة واختيار واحد عشوائياً
-models_list = ['gemma-3-27b-it', 'gemma-3-12b-it']
+models_list = ['gemma-4-31b-it', 'gemma-4-26b-a4b-it']
 selected_model = random.choice(models_list)
 
 print(f"🔑 تم العثور على ({len(api_keys_list)}) مفاتيح API.")
