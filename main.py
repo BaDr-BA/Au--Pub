@@ -34,7 +34,7 @@ PINTEREST_BOARD_ID = os.environ.get("PINTEREST_BOARD_ID")
 # GITHUB_PAT  = Personal Access Token بصلاحية "secrets" (اعمله من Settings > Developer settings > Personal access tokens)
 # GITHUB_REPO = اسم الريبو مثل "username/repo-name"
 GITHUB_PAT  = os.environ.get("GH_PAT")   # ملاحظة: لا تسميه GITHUB_TOKEN لأنه محجوز
-GITHUB_REPO = os.environ.get("GITHUB_REPO")
+GITHUB_REPO = os.environ.get("GH_REPO")
 
 # --- 1. جلب مفاتيح جيميناي ---
 api_keys_list = []
