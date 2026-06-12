@@ -847,13 +847,25 @@ def process_oldest_unpublished_post():
             if link not in published_data:
                 published_data[link] = set()
 
-            results = {
-                "telegram": run_with_retry(send_to_telegram, image_url, ai_content, link, main_hashtag),
-                "facebook": run_with_retry(send_to_facebook, image_url, ai_content, link, main_hashtag),
-                "instagram": run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag),
-                "threads": run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag),
-                "bluesky": run_with_retry(send_to_bluesky, image_url, ai_content, link, main_hashtag),
-            }
+            published_platforms = published_data.get(link, set())
+            missing_platforms = ALL_PLATFORMS - published_platforms
+
+            results = {}
+
+            if "telegram" in missing_platforms:
+                results["telegram"] = run_with_retry(send_to_telegram, image_url, ai_content, link, main_hashtag)
+
+            if "facebook" in missing_platforms:
+                results["facebook"] = run_with_retry(send_to_facebook, image_url, ai_content, link, main_hashtag)
+
+            if "instagram" in missing_platforms:
+                results["instagram"] = run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag)
+
+            if "threads" in missing_platforms:
+                results["threads"] = run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag)
+
+            if "bluesky" in missing_platforms:
+                results["bluesky"] = run_with_retry(send_to_bluesky, image_url, ai_content, link, main_hashtag)
 
             for platform, success in results.items():
                 if success:
