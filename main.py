@@ -643,10 +643,35 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
     clean_text, all_hashtags = clean_text_for_platforms(ai_text, main_hashtag)
     post_text = f"{clean_text}\n\n{all_hashtags}"
 
+    def find_facets(text):
+        """يحدد مواقع الهاشتاجات والروابط عشان تبقى clickable"""
+        facets = []
+        encoded = text.encode("utf-8")
+
+        # هاشتاجات
+        for match in re.finditer(r'#\w+', text):
+            start = len(text[:match.start()].encode("utf-8"))
+            end = len(text[:match.end()].encode("utf-8"))
+            facets.append({
+                "index": {"byteStart": start, "byteEnd": end},
+                "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": match.group()[1:]}]
+            })
+
+        # روابط
+        for match in re.finditer(r'https?://[^\s]+', text):
+            start = len(text[:match.start()].encode("utf-8"))
+            end = len(text[:match.end()].encode("utf-8"))
+            facets.append({
+                "index": {"byteStart": start, "byteEnd": end},
+                "features": [{"$type": "app.bsky.richtext.facet#link", "uri": match.group()}]
+            })
+
+        return facets
+
     try:
         print("\n🦋 جاري النشر على Bluesky...")
 
-        # 1. تسجيل الدخول وجلب التوكن
+        # 1. تسجيل الدخول
         session_res = requests.post(
             "https://bsky.social/xrpc/com.atproto.server.createSession",
             json={"identifier": BSKY_HANDLE, "password": BSKY_APP_PASSWORD}
@@ -664,7 +689,7 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             "Content-Type": "application/json"
         }
 
-        # 2. رفع الصورة لو موجودة
+        # 2. رفع الصورة
         image_blob = None
         if image_url:
             try:
@@ -683,13 +708,15 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             except Exception as e:
                 print(f"⚠️ فشل رفع الصورة: {e}")
 
-        # 3. إنشاء المنشور
+        # 3. المنشور الأساسي مع الفاسيتس
+        post_text_limited = post_text[:300]
         post_payload = {
             "repo": did,
             "collection": "app.bsky.feed.post",
             "record": {
                 "$type": "app.bsky.feed.post",
-                "text": post_text[:300],
+                "text": post_text_limited,
+                "facets": find_facets(post_text_limited),
                 "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 **({"embed": {
                     "$type": "app.bsky.embed.images",
@@ -709,17 +736,19 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             post_cid = post_res["cid"]
             print("✅ تم النشر على Bluesky بنجاح!")
 
-            # 4. وضع الرابط في رد
+            # 4. الرد بالرابط مع facet
             wait = random.randint(30, 60)
             print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
             time.sleep(wait)
 
+            reply_text = f"🔗 الموضوع كامل:\n{link}"
             reply_payload = {
                 "repo": did,
                 "collection": "app.bsky.feed.post",
                 "record": {
                     "$type": "app.bsky.feed.post",
-                    "text": f"🔗 الموضوع كامل:\n{link}",
+                    "text": reply_text,
+                    "facets": find_facets(reply_text),
                     "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                     "reply": {
                         "root": {"uri": post_uri, "cid": post_cid},
@@ -814,27 +843,6 @@ def process_oldest_unpublished_post():
 
         if ai_content:
             main_hashtag = f"#{category.replace(' ', '_')}"
-
-            # 1. تليجرام
-            run_with_retry(send_to_telegram, image_url, ai_content, link, main_hashtag)
-
-            # 2. فيسبوك
-            run_with_retry(send_to_facebook, image_url, ai_content, link, main_hashtag)
-
-            # 3. إنستجرام
-            run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag)
-
-            # 4. ثرادز
-            run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag)
-
-            # 5. Bluesky
-            run_with_retry(send_to_bluesky, image_url, ai_content, link, main_hashtag)
-
-            # 6. تويتر (فعّله لو عندك API)
-            # run_with_retry(send_to_twitter, image_url, ai_content, link, main_hashtag)
-
-            # 7. بينتريست (فعّله لو اتقبل الـ app)
-            # run_with_retry(send_to_pinterest, image_url, title, ai_content, link, category)
 
             if link not in published_data:
                 published_data[link] = set()
