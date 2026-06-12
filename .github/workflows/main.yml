@@ -25,7 +25,8 @@ jobs:
           pip install beautifulsoup4
           pip install google-genai
           pip install requests
-          pip install tweepy # أضفنا مكتبة تويتر السحرية 🐦
+          pip install tweepy
+          pip install PyNaCl
 
       - name: Run Main Script
         env:
@@ -43,6 +44,10 @@ jobs:
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ secrets.GH_REPO }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: python main.py
 
       - name: Save Memory
