@@ -28,6 +28,8 @@ X_ACCESS_TOKEN = os.environ.get("X_ACCESS_TOKEN")
 X_ACCESS_SECRET = os.environ.get("X_ACCESS_SECRET")
 PINTEREST_ACCESS_TOKEN = os.environ.get("PINTEREST_ACCESS_TOKEN")
 PINTEREST_BOARD_ID = os.environ.get("PINTEREST_BOARD_ID")
+BSKY_HANDLE = os.environ.get("BSKY_HANDLE")
+BSKY_APP_PASSWORD = os.environ.get("BSKY_APP_PASSWORD")
 
 # --- GitHub Secrets (لتحديث توكن ثرادز تلقائياً) ---
 # أضف هذين في GitHub Secrets:
@@ -619,6 +621,118 @@ def send_to_pinterest(image_url, title, ai_text, link, category):
 
     return success
 
+def send_to_bluesky(image_url, ai_text, link, main_hashtag):
+    if not BSKY_HANDLE or not BSKY_APP_PASSWORD:
+        print("⚠️ بيانات Bluesky غير مكتملة.")
+        return False
+
+    clean_text, all_hashtags = clean_text_for_platforms(ai_text, main_hashtag)
+    post_text = f"{clean_text}\n\n{all_hashtags}"
+
+    try:
+        print("\n🦋 جاري النشر على Bluesky...")
+
+        # 1. تسجيل الدخول وجلب التوكن
+        session_res = requests.post(
+            "https://bsky.social/xrpc/com.atproto.server.createSession",
+            json={"identifier": BSKY_HANDLE, "password": BSKY_APP_PASSWORD}
+        ).json()
+
+        if "accessJwt" not in session_res:
+            print(f"❌ فشل تسجيل الدخول على Bluesky: {session_res}")
+            return False
+
+        access_token = session_res["accessJwt"]
+        did = session_res["did"]
+
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json"
+        }
+
+        # 2. رفع الصورة لو موجودة
+        image_blob = None
+        if image_url:
+            try:
+                img_data = requests.get(image_url).content
+                upload_res = requests.post(
+                    "https://bsky.social/xrpc/com.atproto.repo.uploadBlob",
+                    headers={
+                        "Authorization": f"Bearer {access_token}",
+                        "Content-Type": "image/jpeg"
+                    },
+                    data=img_data
+                ).json()
+                if "blob" in upload_res:
+                    image_blob = upload_res["blob"]
+                    print("✅ تم رفع الصورة على Bluesky!")
+            except Exception as e:
+                print(f"⚠️ فشل رفع الصورة: {e}")
+
+        # 3. إنشاء المنشور
+        post_payload = {
+            "repo": did,
+            "collection": "app.bsky.feed.post",
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "text": post_text[:300],
+                "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                **({"embed": {
+                    "$type": "app.bsky.embed.images",
+                    "images": [{"image": image_blob, "alt": ""}]
+                }} if image_blob else {})
+            }
+        }
+
+        post_res = requests.post(
+            "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+            headers=headers,
+            json=post_payload
+        ).json()
+
+        if "uri" in post_res:
+            post_uri = post_res["uri"]
+            post_cid = post_res["cid"]
+            print("✅ تم النشر على Bluesky بنجاح!")
+
+            # 4. وضع الرابط في رد
+            wait = random.randint(30, 60)
+            print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
+            time.sleep(wait)
+
+            reply_payload = {
+                "repo": did,
+                "collection": "app.bsky.feed.post",
+                "record": {
+                    "$type": "app.bsky.feed.post",
+                    "text": f"🔗 الموضوع كامل:\n{link}",
+                    "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "reply": {
+                        "root": {"uri": post_uri, "cid": post_cid},
+                        "parent": {"uri": post_uri, "cid": post_cid}
+                    }
+                }
+            }
+
+            reply_res = requests.post(
+                "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+                headers=headers,
+                json=reply_payload
+            ).json()
+
+            if "uri" in reply_res:
+                print("💬 تم وضع الرابط في رد Bluesky!")
+            else:
+                print(f"⚠️ فشل الرد: {reply_res}")
+
+            return True
+        else:
+            print(f"❌ فشل النشر على Bluesky: {post_res}")
+            return False
+
+    except Exception as e:
+        print(f"❌ خطأ في Bluesky: {e}")
+        return False
 
 # ============================================================
 # وظيفة إعادة المحاولة الذكية
@@ -694,13 +808,16 @@ def process_oldest_unpublished_post():
             # 3. إنستجرام
             run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag)
 
-            # 4. ثرادز ✅ (مفعّل مع auto-refresh تلقائي)
+            # 4. ثرادز
             run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag)
 
-            # 5. تويتر (فعّله لو عندك API)
+            # 5. Bluesky
+            run_with_retry(send_to_bluesky, image_url, ai_content, link, main_hashtag)
+
+            # 6. تويتر (فعّله لو عندك API)
             # run_with_retry(send_to_twitter, image_url, ai_content, link, main_hashtag)
 
-            # 6. بينتريست (فعّله لو اتقبل الـ app)
+            # 7. بينتريست (فعّله لو اتقبل الـ app)
             # run_with_retry(send_to_pinterest, image_url, title, ai_content, link, category)
 
             save_published_link(link)
