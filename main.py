@@ -342,7 +342,7 @@ def send_to_facebook(image_url, ai_text, link, main_hashtag):
                 post_id = response.get("post_id", response.get("id"))
                 print("✅ تم نشر المنشور على فيسبوك بنجاح!")
 
-                wait_time = random.randint(30, 60)
+                wait_time = random.randint(90, 120)
                 print(f"⏱️ ننتظر {wait_time} ثانية للهروب من الخوارزميات...")
                 time.sleep(wait_time)
 
@@ -395,7 +395,7 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
                 ig_media_id = publish_response["id"]
                 print("✅ تم نشر المنشور على إنستجرام بنجاح!")
 
-                wait_time = random.randint(30, 60)
+                wait_time = random.randint(90, 120)
                 print(f"⏱️ ننتظر {wait_time} ثانية لوضع التعليق في إنستجرام...")
                 time.sleep(wait_time)
 
@@ -455,7 +455,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
                 thread_id = pub_res["id"]
                 print("✅ تم النشر على ثرادز!")
 
-                wait = random.randint(30, 60)
+                wait = random.randint(90, 120)
                 print(f"⏱️ ننتظر {wait} ثانية للرد...")
                 time.sleep(wait)
 
@@ -537,7 +537,7 @@ def send_to_twitter(image_url, ai_text, link, main_hashtag):
 
     if tweet:
         tweet_id = tweet.data['id']
-        wait = random.randint(30, 60)
+        wait = random.randint(90, 120)
         print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في تعليق تويتر...")
         time.sleep(wait)
         try:
@@ -737,7 +737,7 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             print("✅ تم النشر على Bluesky بنجاح!")
 
             # 4. الرد بالرابط مع facet
-            wait = random.randint(30, 60)
+            wait = random.randint(90, 120)
             print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
             time.sleep(wait)
 
@@ -847,7 +847,9 @@ def process_oldest_unpublished_post():
             if link not in published_data:
                 published_data[link] = set()
 
-            published_platforms = published_data.get(link, set())
+            if link not in published_data:
+                published_data[link] = set()
+            published_platforms = published_data[link]
             missing_platforms = ALL_PLATFORMS - published_platforms
 
             results = {}
