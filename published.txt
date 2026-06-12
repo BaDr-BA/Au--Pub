@@ -59,7 +59,7 @@ https://t8ngy.blogspot.com/2026/05/digital-twin-prompts.html | facebook,instagra
 https://t8ngy.blogspot.com/2026/05/ai-seo-optimization.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/local-ai-models.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-text-to-video.html | bluesky,facebook,instagram,telegram,threads
-https://t8ngy.blogspot.com/2026/05/ai-ecommerce-agents.html | facebook,instagram,telegram
+https://t8ngy.blogspot.com/2026/05/ai-ecommerce-agents.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-coding-tools.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/ai-scientific-research.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/make-money-ai-voice-cloning.html | facebook,instagram,telegram
