@@ -159,15 +159,29 @@ def refresh_threads_token():
 # ============================================================
 # وظائف الذاكرة وجلب المقالات
 # ============================================================
-def get_published_links():
+def get_published_data():
+    """يرجع dict: {link: set(platforms)}"""
+    data = {}
     if not os.path.exists(HISTORY_FILE):
-        return []
+        return data
     with open(HISTORY_FILE, "r") as file:
-        return [line.strip() for line in file.readlines()]
+        for line in file.readlines():
+            line = line.strip()
+            if not line:
+                continue
+            if "|" in line:
+                link, platforms = line.split("|", 1)
+                data[link.strip()] = set(p.strip() for p in platforms.split(","))
+            else:
+                data[line.strip()] = set()
+    return data
 
-def save_published_link(link):
-    with open(HISTORY_FILE, "a") as file:
-        file.write(link + "\n")
+def save_published_data(data):
+    """يحفظ الـ dict كامل في الملف"""
+    with open(HISTORY_FILE, "w") as file:
+        for link, platforms in data.items():
+            platforms_str = ",".join(sorted(platforms))
+            file.write(f"{link} | {platforms_str}\n")
 
 def get_all_posts():
     all_entries = []
@@ -766,11 +780,13 @@ def process_oldest_unpublished_post():
         return
 
     all_posts = list(reversed(all_entries))
-    published_links = get_published_links()
+    published_data = get_published_data()
+    ALL_PLATFORMS = {"telegram", "facebook", "instagram", "threads", "bluesky"}
     target_post = None
 
     for post in all_posts:
-        if post.link not in published_links:
+        published_platforms = published_data.get(post.link, set())
+        if published_platforms != ALL_PLATFORMS:
             target_post = post
             break
 
@@ -820,8 +836,24 @@ def process_oldest_unpublished_post():
             # 7. بينتريست (فعّله لو اتقبل الـ app)
             # run_with_retry(send_to_pinterest, image_url, title, ai_content, link, category)
 
-            save_published_link(link)
+            if link not in published_data:
+                published_data[link] = set()
+
+            results = {
+                "telegram": run_with_retry(send_to_telegram, image_url, ai_content, link, main_hashtag),
+                "facebook": run_with_retry(send_to_facebook, image_url, ai_content, link, main_hashtag),
+                "instagram": run_with_retry(send_to_instagram, image_url, ai_content, link, main_hashtag),
+                "threads": run_with_retry(send_to_threads, image_url, ai_content, link, main_hashtag),
+                "bluesky": run_with_retry(send_to_bluesky, image_url, ai_content, link, main_hashtag),
+            }
+
+            for platform, success in results.items():
+                if success:
+                    published_data[link].add(platform)
+
+            save_published_data(published_data)
             print("\n✅ تم الحفظ في الذاكرة بنجاح. المهمة تمت!")
+            print(f"📊 المنصات اللي اتنشر عليها: {published_data[link]}")
 
     else:
         print("🎉 لا يوجد مقالات جديدة لنشرها.")
