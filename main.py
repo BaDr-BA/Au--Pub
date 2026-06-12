@@ -342,7 +342,7 @@ def send_to_facebook(image_url, ai_text, link, main_hashtag):
                 post_id = response.get("post_id", response.get("id"))
                 print("✅ تم نشر المنشور على فيسبوك بنجاح!")
 
-                wait_time = random.randint(90, 120)
+                wait_time = random.randint(60, 90)
                 print(f"⏱️ ننتظر {wait_time} ثانية للهروب من الخوارزميات...")
                 time.sleep(wait_time)
 
@@ -395,7 +395,7 @@ def send_to_instagram(image_url, ai_text, link, main_hashtag):
                 ig_media_id = publish_response["id"]
                 print("✅ تم نشر المنشور على إنستجرام بنجاح!")
 
-                wait_time = random.randint(90, 120)
+                wait_time = random.randint(60, 90)
                 print(f"⏱️ ننتظر {wait_time} ثانية لوضع التعليق في إنستجرام...")
                 time.sleep(wait_time)
 
@@ -455,7 +455,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
                 thread_id = pub_res["id"]
                 print("✅ تم النشر على ثرادز!")
 
-                wait = random.randint(90, 120)
+                wait = random.randint(60, 90)
                 print(f"⏱️ ننتظر {wait} ثانية للرد...")
                 time.sleep(wait)
 
@@ -537,7 +537,7 @@ def send_to_twitter(image_url, ai_text, link, main_hashtag):
 
     if tweet:
         tweet_id = tweet.data['id']
-        wait = random.randint(90, 120)
+        wait = random.randint(60, 90)
         print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في تعليق تويتر...")
         time.sleep(wait)
         try:
@@ -737,7 +737,7 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             print("✅ تم النشر على Bluesky بنجاح!")
 
             # 4. الرد بالرابط مع facet
-            wait = random.randint(90, 120)
+            wait = random.randint(60, 90)
             print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
             time.sleep(wait)
 
