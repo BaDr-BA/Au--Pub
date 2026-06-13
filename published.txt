@@ -72,7 +72,7 @@ https://t8ngy.blogspot.com/2026/05/run-llm-locally.html | bluesky,facebook,insta
 https://t8ngy.blogspot.com/2026/05/earn-money-from-ai-sentiment-analysis.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-detectors.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/networking-and-cybersecurity.html | bluesky,facebook,instagram,telegram,threads
-https://t8ngy.blogspot.com/2026/05/make-money-ai.html | facebook,instagram,telegram
+https://t8ngy.blogspot.com/2026/05/make-money-ai.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-prompts.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/learn-programming-from-scratch.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/gemini-3-5-flash-specs.html | facebook,instagram,telegram
