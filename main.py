@@ -284,6 +284,15 @@ def clean_text_for_platforms(ai_text, main_hashtag):
     clean_text = re.sub(r'#\w+', '', ai_text).strip()
     return clean_text, f"{main_hashtag} " + " ".join(hashtags)
 
+def split_text_at_word(text, limit):
+    """يقطع النص عند آخر كلمة كاملة قبل الحد"""
+    if len(text) <= limit:
+        return text, None
+    cut = text[:limit]
+    last_space = cut.rfind(" ")
+    if last_space == -1:
+        return cut, text[limit:]
+    return text[:last_space], text[last_space:].strip()
 
 def send_to_telegram(image_url, ai_text, link, main_hashtag):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
@@ -433,10 +442,14 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
     try:
         print("\n🧵 جاري النشر على ثرادز...")
         url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
+        pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
+
+        # الجزء الأول من النص مع الصورة
+        part1, part2 = split_text_at_word(threads_caption, 495)
         payload = {
             "media_type": "IMAGE",
             "image_url": image_url,
-            "text": threads_caption,
+            "text": part1,
             "access_token": THREADS_ACCESS_TOKEN
         }
         res = requests.post(url, data=payload).json()
@@ -447,7 +460,6 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
             print("⏳ ننتظر 15 ثانية لمعالجة الصورة في ثرادز...")
             time.sleep(15)
 
-            pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
             pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
             print(f"📋 رد ثرادز (النشر): {pub_res}")
 
@@ -455,25 +467,41 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
                 thread_id = pub_res["id"]
                 print("✅ تم النشر على ثرادز!")
 
+                if part2:
+                    time.sleep(10)
+                    part2_final, _ = split_text_at_word(part2, 495)
+                    rep_payload = {
+                        "media_type": "TEXT",
+                        "text": part2_final,
+                        "reply_to_id": thread_id,
+                        "access_token": THREADS_ACCESS_TOKEN
+                    }
+                    rep_create = requests.post(url, data=rep_payload).json()
+                    if "id" in rep_create:
+                        requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
+                        print("📝 الجزء الثاني على ثرادز!")
+                        thread_id = rep_create["id"]
+                    time.sleep(10)
+
                 wait = random.randint(60, 90)
                 print(f"⏱️ ننتظر {wait} ثانية للرد...")
                 time.sleep(wait)
 
                 rep_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
-                rep_payload = {
+                link_payload = {
                     "media_type": "TEXT",
                     "text": f"🔗 الموضوع كامل:\n{link}",
                     "reply_to_id": thread_id,
                     "access_token": THREADS_ACCESS_TOKEN
                 }
-                rep_create = requests.post(rep_url, data=rep_payload).json()
+                link_create = requests.post(rep_url, data=link_payload).json()
 
-                if "id" in rep_create:
-                    final_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
+                if "id" in link_create:
+                    final_pub = requests.post(pub_url, data={"creation_id": link_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
                     print(f"💬 رد ثرادز (التعليق): {final_pub}")
                     print("💬 تم وضع الرابط في رد ثرادز!")
                 else:
-                    print(f"⚠️ فشل إنشاء الرد في ثرادز: {rep_create}")
+                    print(f"⚠️ فشل إنشاء الرد في ثرادز: {link_create}")
                 return True
             else:
                 print(f"❌ فشل النشر النهائي على ثرادز: {pub_res}")
@@ -708,15 +736,15 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             except Exception as e:
                 print(f"⚠️ فشل رفع الصورة: {e}")
 
-        # 3. المنشور الأساسي مع الفاسيتس
-        post_text_limited = post_text[:300]
+        # 3. المنشور الأساسي مع التقسيم الذكي
+        part1, part2 = split_text_at_word(post_text, 300)
         post_payload = {
             "repo": did,
             "collection": "app.bsky.feed.post",
             "record": {
                 "$type": "app.bsky.feed.post",
-                "text": post_text_limited,
-                "facets": find_facets(post_text_limited),
+                "text": part1,
+                "facets": find_facets(part1),
                 "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 **({"embed": {
                     "$type": "app.bsky.embed.images",
@@ -736,7 +764,28 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             post_cid = post_res["cid"]
             print("✅ تم النشر على Bluesky بنجاح!")
 
-            # 4. الرد بالرابط مع facet
+            if part2:
+                time.sleep(10)
+                part2_final, _ = split_text_at_word(part2, 300)
+                part2_payload = {
+                    "repo": did,
+                    "collection": "app.bsky.feed.post",
+                    "record": {
+                        "$type": "app.bsky.feed.post",
+                        "text": part2_final,
+                        "facets": find_facets(part2_final),
+                        "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        "reply": {"root": {"uri": post_uri, "cid": post_cid}, "parent": {"uri": post_uri, "cid": post_cid}}
+                    }
+                }
+                part2_res = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord", headers=headers, json=part2_payload).json()
+                if "uri" in part2_res:
+                    print("📝 الجزء الثاني على Bluesky!")
+                    post_uri = part2_res["uri"]
+                    post_cid = part2_res["cid"]
+                time.sleep(10)
+
+            # 4. الرد بالرابط
             wait = random.randint(60, 90)
             print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
             time.sleep(wait)
