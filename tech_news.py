@@ -148,8 +148,8 @@ def is_duplicate(new_title, published_titles):
 
     titles_text = "\n".join(f"- {t}" for t in published_titles)
     prompt = f"""
-    عندك مقالة جديدة عنوانها: "{new_title}"
-    وعندك قائمة مقالات تم نشرها مسبقاً:
+    لديك مقالة جديدة عنوانها: "{new_title}"
+    ولديك قائمة مقالات تم نشرها مسبقاً:
     {titles_text}
     
     هل الموضوع الرئيسي للمقالة الجديدة مطابق أو متشابه جداً لأي مقالة في القائمة؟
@@ -301,14 +301,14 @@ def send_to_threads(ai_text, link):
             rep_create = requests.post(url, data=rep_payload).json()
             if "id" not in rep_create:
                 print(f"⚠️ فشل الجزء {i}: {rep_create}")
-                break
+                continue
+            time.sleep(30)
             rep_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
             if "id" in rep_pub:
                 last_thread_id = rep_pub["id"]
                 print(f"📝 الجزء {i} على ثرادز!")
             else:
                 print(f"⚠️ فشل نشر الجزء {i}: {rep_pub}")
-                break
 
         return True
 
