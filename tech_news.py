@@ -189,13 +189,23 @@ def clean_text_for_platforms(ai_text):
     clean_text = re.sub(r'#\w+', '', ai_text).strip()
     return clean_text, " ".join(hashtags)
 
+def split_text_at_word(text, limit):
+    """يقطع النص عند آخر كلمة كاملة قبل الحد"""
+    if len(text) <= limit:
+        return text, None
+    cut = text[:limit]
+    last_space = cut.rfind(" ")
+    if last_space == -1:
+        return cut, text[limit:]
+    return text[:last_space], text[last_space:].strip()
+
 def send_to_telegram(ai_text, link):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHANNEL_ID:
         return False
     hashtags = re.findall(r'#\w+', ai_text)
     text_without_hashtags = re.sub(r'#\w+', '', ai_text).strip()
     all_hashtags = " ".join(hashtags)
-    final_text = f"{text_without_hashtags}\n\n🔗 المصدر:\n{link}\n\n{all_hashtags}"
+    final_text = f"{text_without_hashtags}\n\n{all_hashtags}"
     try:
         print("🚀 جاري النشر على تليجرام...")
         url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -221,34 +231,12 @@ def send_to_facebook(ai_text, link):
         payload = {"message": fb_caption, "access_token": META_ACCESS_TOKEN}
         res = requests.post(url, data=payload).json()
         if "id" in res:
-            post_id = res["id"]
             print("✅ فيسبوك!")
-            wait = random.randint(30, 60)
-            print(f"⏱️ ننتظر {wait} ثانية...")
-            time.sleep(wait)
-            comment_url = f"https://graph.facebook.com/v19.0/{post_id}/comments"
-            requests.post(comment_url, data={"message": f"🔗 المصدر:\n{link}", "access_token": META_ACCESS_TOKEN})
-            print("💬 تعليق فيسبوك!")
             return True
         print(f"❌ فيسبوك: {res}")
         return False
     except Exception as e:
         print(f"❌ خطأ فيسبوك: {e}")
-        return False
-
-def send_to_instagram(ai_text, link):
-    if not META_ACCESS_TOKEN or not IG_ACCOUNT_ID:
-        return False
-    clean_text, all_hashtags = clean_text_for_platforms(ai_text)
-    ig_caption = f"{clean_text}\n\n{all_hashtags}"
-    try:
-        print("\n🟣 جاري النشر على إنستجرام...")
-        # إنستجرام محتاج صورة للنشر العادي - هنستخدم carousel بصورة واحدة بيضاء
-        # أوننشر كـ caption only عن طريق reels - الأبسط نتخطاه لو مفيش صورة
-        print("⚠️ إنستجرام يحتاج صورة - تم التخطي للمقالات بدون صورة.")
-        return False
-    except Exception as e:
-        print(f"❌ خطأ إنستجرام: {e}")
         return False
 
 def send_to_threads(ai_text, link):
@@ -259,24 +247,25 @@ def send_to_threads(ai_text, link):
     try:
         print("\n🧵 جاري النشر على ثرادز...")
         url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
-        payload = {"media_type": "TEXT", "text": threads_text[:500], "access_token": THREADS_ACCESS_TOKEN}
+        pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
+        part1, part2 = split_text_at_word(threads_text, 495)
+        payload = {"media_type": "TEXT", "text": part1, "access_token": THREADS_ACCESS_TOKEN}
         res = requests.post(url, data=payload).json()
         if "id" in res:
             creation_id = res["id"]
             time.sleep(5)
-            pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
             pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
             if "id" in pub_res:
                 thread_id = pub_res["id"]
                 print("✅ ثرادز!")
-                wait = random.randint(90, 120)
-                print(f"⏱️ ننتظر {wait} ثانية للرد...")
-                time.sleep(wait)
-                rep_payload = {"media_type": "TEXT", "text": f"🔗 المصدر:\n{link}", "reply_to_id": thread_id, "access_token": THREADS_ACCESS_TOKEN}
-                rep_create = requests.post(url, data=rep_payload).json()
-                if "id" in rep_create:
-                    requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
-                    print("💬 رد ثرادز!")
+                if part2:
+                    time.sleep(10)
+                    part2_final, _ = split_text_at_word(part2, 495)
+                    rep_payload = {"media_type": "TEXT", "text": part2_final, "reply_to_id": thread_id, "access_token": THREADS_ACCESS_TOKEN}
+                    rep_create = requests.post(url, data=rep_payload).json()
+                    if "id" in rep_create:
+                        requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
+                        print("📝 الجزء الثاني على ثرادز!")
                 return True
         print(f"❌ ثرادز: {res}")
         return False
@@ -322,39 +311,44 @@ def send_to_bluesky(ai_text, link):
         did = session_res["did"]
         headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}
 
-        post_text_limited = post_text[:300]
+        part1, part2 = split_text_at_word(post_text, 300)
         post_payload = {
             "repo": did,
             "collection": "app.bsky.feed.post",
             "record": {
                 "$type": "app.bsky.feed.post",
-                "text": post_text_limited,
-                "facets": find_facets(post_text_limited),
-                "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+                "text": part1,
+                "facets": find_facets(part1),
+                "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             }
         }
-        post_res = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord", headers=headers, json=post_payload).json()
+        post_res = requests.post(
+            "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+            headers=headers,
+            json=post_payload
+        ).json()
         if "uri" in post_res:
             post_uri = post_res["uri"]
             post_cid = post_res["cid"]
-            print("✅ Bluesky!")
-            wait = random.randint(30, 60)
-            time.sleep(wait)
-            reply_text = f"🔗 المصدر:\n{link}"
-            reply_payload = {
-                "repo": did,
-                "collection": "app.bsky.feed.post",
-                "record": {
-                    "$type": "app.bsky.feed.post",
-                    "text": reply_text,
-                    "facets": find_facets(reply_text),
-                    "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                    "reply": {"root": {"uri": post_uri, "cid": post_cid}, "parent": {"uri": post_uri, "cid": post_cid}}
+            print("✅ تم النشر على Bluesky بنجاح!")
+            if part2:
+                time.sleep(10)
+                part2_payload = {
+                    "repo": did,
+                    "collection": "app.bsky.feed.post",
+                    "record": {
+                        "$type": "app.bsky.feed.post",
+                        "text": part2[:300],
+                        "facets": find_facets(part2[:300]),
+                        "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        "reply": {"root": {"uri": post_uri, "cid": post_cid}, "parent": {"uri": post_uri, "cid": post_cid}}
+                    }
                 }
-            }
-            reply_res = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord", headers=headers, json=reply_payload).json()
-            if "uri" in reply_res:
-                print("💬 رد Bluesky!")
+                part2_res = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord", headers=headers, json=part2_payload).json()
+                if "uri" in part2_res:
+                    print("📝 الجزء الثاني على Bluesky!")
+                    post_uri = part2_res["uri"]
+                    post_cid = part2_res["cid"]
             return True
         print(f"❌ Bluesky: {post_res}")
         return False
