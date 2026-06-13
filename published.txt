@@ -75,7 +75,7 @@ https://t8ngy.blogspot.com/2026/05/networking-and-cybersecurity.html | bluesky,f
 https://t8ngy.blogspot.com/2026/05/make-money-ai.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-prompts.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/learn-programming-from-scratch.html | bluesky,facebook,instagram,telegram,threads
-https://t8ngy.blogspot.com/2026/05/gemini-3-5-flash-specs.html | facebook,instagram,telegram
+https://t8ngy.blogspot.com/2026/05/gemini-3-5-flash-specs.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/gemini-3-5-flash-vs-gemini-3-1-pro.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/gemini-spark-ai-agent.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/develop-apps-with-gemini-api.html | facebook,instagram,telegram
