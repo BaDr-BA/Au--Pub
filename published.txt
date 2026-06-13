@@ -69,7 +69,7 @@ https://t8ngy.blogspot.com/2026/05/sell-ai-workflows.html | bluesky,facebook,ins
 https://t8ngy.blogspot.com/2026/05/ai-video Prompts.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-data-protection.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/run-llm-locally.html | bluesky,facebook,instagram,telegram,threads
-https://t8ngy.blogspot.com/2026/05/earn-money-from-ai-sentiment-analysis.html | facebook,instagram,telegram
+https://t8ngy.blogspot.com/2026/05/earn-money-from-ai-sentiment-analysis.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/ai-detectors.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/networking-and-cybersecurity.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/make-money-ai.html | facebook,instagram,telegram
