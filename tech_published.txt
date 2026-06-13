@@ -12,3 +12,4 @@ https://techcrunch.com/2026/06/13/the-fbi-built-its-own-replica-small-town-to-si
 https://techcrunch.com/2026/06/13/this-thin-under-pillow-speaker-helped-me-fall-asleep-without-earbuds/ | This thin under-pillow speaker helped me fall asleep without earbuds | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/ | OpenAI faces investigation from state attorneys general | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/ | Amazon CEO reportedly raised Anthropic model concerns before government crackdown | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/ | KPMG pulls report on AI usage due to apparent hallucinations | bluesky,facebook,telegram,threads
