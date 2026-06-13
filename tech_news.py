@@ -67,18 +67,26 @@ def get_published_data():
             line = line.strip()
             if not line:
                 continue
-            if "|" in line:
-                link, platforms = line.split("|", 1)
-                data[link.strip()] = set(p.strip() for p in platforms.split(","))
+            parts = line.split("|")
+            if len(parts) == 3:
+                link = parts[0].strip()
+                title = parts[1].strip()
+                platforms = set(p.strip() for p in parts[2].split(","))
+                data[link] = {"title": title, "platforms": platforms}
+            elif len(parts) == 2:
+                link = parts[0].strip()
+                platforms = set(p.strip() for p in parts[1].split(","))
+                data[link] = {"title": "", "platforms": platforms}
             else:
-                data[line.strip()] = set()
+                data[line.strip()] = {"title": "", "platforms": set()}
     return data
 
 def save_published_data(data):
     with open(HISTORY_FILE, "w") as f:
-        for link, platforms in data.items():
-            platforms_str = ",".join(sorted(platforms))
-            f.write(f"{link} | {platforms_str}\n")
+        for link, info in data.items():
+            title = info.get("title", "")
+            platforms_str = ",".join(sorted(info.get("platforms", set())))
+            f.write(f"{link} | {title} | {platforms_str}\n")
 
 
 # ============================================================
@@ -435,13 +443,12 @@ def run_with_retry(platform_func, *args):
             print(f"❌ فشلت المحاولة الثانية لـ {platform_name}.")
     return False
 
-
 # ============================================================
 # الوظيفة الرئيسية
 # ============================================================
 def process_tech_news():
     published_data = get_published_data()
-    published_titles = [link.split("/")[-1].replace("-", " ").replace(".html", "") for link in published_data.keys()]
+    published_titles = [info.get("title", "") for info in published_data.values() if info.get("title")]
 
     new_articles = get_new_articles(published_data)
 
@@ -463,7 +470,7 @@ def process_tech_news():
     # فحص التكرار
     if is_duplicate(title, published_titles):
         print(f"⚠️ موضوع مكرر — تم التخطي وحفظه في الذاكرة.")
-        published_data[link] = {"telegram", "facebook", "instagram", "threads", "bluesky"}
+        published_data[link] = {"title": title, "platforms": {"telegram", "facebook", "instagram", "threads", "bluesky"}}
         save_published_data(published_data)
         return
 
@@ -483,9 +490,9 @@ def process_tech_news():
     # ملاحظة: إنستجرام مش في القائمة لأنه يحتاج صورة
 
     if link not in published_data:
-        published_data[link] = set()
-
-    missing_platforms = ALL_PLATFORMS - published_data[link]
+        published_data[link] = {"title": title, "platforms": set()}
+    
+    missing_platforms = ALL_PLATFORMS - published_data[link]["platforms"]
     results = {}
 
     if "telegram" in missing_platforms:
@@ -502,10 +509,10 @@ def process_tech_news():
 
     for platform, success in results.items():
         if success:
-            published_data[link].add(platform)
+            published_data[link]["platforms"].add(platform)
 
     save_published_data(published_data)
-    print(f"\n✅ تم الحفظ! المنصات: {published_data[link]}")
+    print(f"\n✅ تم الحفظ! المنصات: {published_data[link]['platforms']}")
 
 
 if __name__ == "__main__":
