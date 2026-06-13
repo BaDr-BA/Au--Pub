@@ -14,3 +14,4 @@ https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorney
 https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/ | Amazon CEO reportedly raised Anthropic model concerns before government crackdown | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/ | KPMG pulls report on AI usage due to apparent hallucinations | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/12/spacex-president-gwynne-shotwell-just-gave-another-hint-at-a-tesla-merger/ | SpaceX president Gwynne Shotwell just gave another hint at a Tesla merger | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/12/robinhood-sees-record-breaking-traffic-after-spacex-stock-debuts/ | Robinhood sees ‘record-breaking’ traffic after SpaceX stock debuts | bluesky,facebook,telegram,threads
