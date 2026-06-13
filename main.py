@@ -480,9 +480,9 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
         root_thread_id = last_thread_id
         print("✅ تم النشر على ثرادز!")
 
-# نشر باقي الأجزاء كردود
+        # نشر باقي الأجزاء كردود
         for i, part in enumerate(parts[1:], start=2):
-            time.sleep(30)
+            time.sleep(60)
             rep_payload = {
                 "media_type": "TEXT",
                 "text": part,
@@ -500,6 +500,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
                 print(f"📝 الجزء {i} على ثرادز!")
             else:
                 print(f"⚠️ فشل نشر الجزء {i}: {rep_pub}")
+                continue
 
         # وضع الرابط في رد أخير
         wait = random.randint(60, 90)
