@@ -296,7 +296,7 @@ def send_to_threads(ai_text, link):
 
         # نشر باقي الأجزاء كردود
         for i, part in enumerate(parts[1:], start=2):
-            time.sleep(15)
+            time.sleep(30)
             rep_payload = {"media_type": "TEXT", "text": part, "reply_to_id": last_thread_id, "access_token": THREADS_ACCESS_TOKEN}
             rep_create = requests.post(url, data=rep_payload).json()
             if "id" not in rep_create:
