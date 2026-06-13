@@ -435,80 +435,95 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
         print("⚠️ ثرادز يحتاج صورة. تم التخطي.")
         return False
 
-    # تنظيف النص وأخذ النص الصافي فقط بدون هاشتاجات نهائياً لثرادز
     clean_text, _ = clean_text_for_platforms(ai_text, main_hashtag)
-    threads_caption = clean_text
 
     try:
         print("\n🧵 جاري النشر على ثرادز...")
         url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
         pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
 
-        # الجزء الأول من النص مع الصورة
-        part1, part2 = split_text_at_word(threads_caption, 495)
+        # تقسيم النص لأجزاء غير محدودة
+        parts = []
+        remaining = clean_text
+        while remaining:
+            part, remaining = split_text_at_word(remaining, 495)
+            parts.append(part)
+            if not remaining:
+                break
+
+        # نشر الجزء الأول مع الصورة
         payload = {
             "media_type": "IMAGE",
             "image_url": image_url,
-            "text": part1,
+            "text": parts[0],
             "access_token": THREADS_ACCESS_TOKEN
         }
         res = requests.post(url, data=payload).json()
         print(f"📋 رد ثرادز (رفع الصورة): {res}")
 
-        if "id" in res:
-            creation_id = res["id"]
-            print("⏳ ننتظر 15 ثانية لمعالجة الصورة في ثرادز...")
-            time.sleep(15)
-
-            pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
-            print(f"📋 رد ثرادز (النشر): {pub_res}")
-
-            if "id" in pub_res:
-                thread_id = pub_res["id"]
-                print("✅ تم النشر على ثرادز!")
-
-                if part2:
-                    time.sleep(10)
-                    part2_final, _ = split_text_at_word(part2, 495)
-                    rep_payload = {
-                        "media_type": "TEXT",
-                        "text": part2_final,
-                        "reply_to_id": thread_id,
-                        "access_token": THREADS_ACCESS_TOKEN
-                    }
-                    rep_create = requests.post(url, data=rep_payload).json()
-                    if "id" in rep_create:
-                        requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
-                        print("📝 الجزء الثاني على ثرادز!")
-                        thread_id = rep_create["id"]
-                    time.sleep(10)
-
-                wait = random.randint(60, 90)
-                print(f"⏱️ ننتظر {wait} ثانية للرد...")
-                time.sleep(wait)
-
-                rep_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
-                link_payload = {
-                    "media_type": "TEXT",
-                    "text": f"🔗 الموضوع كامل:\n{link}",
-                    "reply_to_id": thread_id,
-                    "access_token": THREADS_ACCESS_TOKEN
-                }
-                link_create = requests.post(rep_url, data=link_payload).json()
-
-                if "id" in link_create:
-                    final_pub = requests.post(pub_url, data={"creation_id": link_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
-                    print(f"💬 رد ثرادز (التعليق): {final_pub}")
-                    print("💬 تم وضع الرابط في رد ثرادز!")
-                else:
-                    print(f"⚠️ فشل إنشاء الرد في ثرادز: {link_create}")
-                return True
-            else:
-                print(f"❌ فشل النشر النهائي على ثرادز: {pub_res}")
-                return False
-        else:
+        if "id" not in res:
             print(f"❌ فشل رفع الصورة على ثرادز: {res}")
             return False
+
+        creation_id = res["id"]
+        print("⏳ ننتظر 15 ثانية لمعالجة الصورة في ثرادز...")
+        time.sleep(15)
+
+        pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
+        print(f"📋 رد ثرادز (النشر): {pub_res}")
+
+        if "id" not in pub_res:
+            print(f"❌ فشل النشر النهائي على ثرادز: {pub_res}")
+            return False
+
+        last_thread_id = pub_res["id"]
+        root_thread_id = last_thread_id
+        print("✅ تم النشر على ثرادز!")
+
+        # نشر باقي الأجزاء كردود
+        for i, part in enumerate(parts[1:], start=2):
+            time.sleep(15)
+            rep_payload = {
+                "media_type": "TEXT",
+                "text": part,
+                "reply_to_id": last_thread_id,
+                "access_token": THREADS_ACCESS_TOKEN
+            }
+            rep_create = requests.post(url, data=rep_payload).json()
+            if "id" not in rep_create:
+                print(f"⚠️ فشل إنشاء الجزء {i}: {rep_create}")
+                break
+            rep_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
+            if "id" in rep_pub:
+                last_thread_id = rep_pub["id"]
+                print(f"📝 الجزء {i} على ثرادز!")
+            else:
+                print(f"⚠️ فشل نشر الجزء {i}: {rep_pub}")
+                break
+
+        # وضع الرابط في رد أخير
+        wait = random.randint(60, 90)
+        print(f"⏱️ ننتظر {wait} ثانية للرد بالرابط...")
+        time.sleep(wait)
+
+        link_payload = {
+            "media_type": "TEXT",
+            "text": f"🔗 الموضوع كامل:\n{link}",
+            "reply_to_id": last_thread_id,
+            "access_token": THREADS_ACCESS_TOKEN
+        }
+        link_create = requests.post(url, data=link_payload).json()
+        if "id" in link_create:
+            final_pub = requests.post(pub_url, data={"creation_id": link_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
+            if "id" in final_pub:
+                print("💬 تم وضع الرابط في رد ثرادز!")
+            else:
+                print(f"⚠️ فشل نشر رد الرابط: {final_pub}")
+        else:
+            print(f"⚠️ فشل إنشاء رد الرابط: {link_create}")
+
+        return True
+
     except Exception as e:
         print(f"❌ خطأ ثرادز: {e}")
         return False
@@ -672,11 +687,7 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
     post_text = f"{clean_text}\n\n{all_hashtags}"
 
     def find_facets(text):
-        """يحدد مواقع الهاشتاجات والروابط عشان تبقى clickable"""
         facets = []
-        encoded = text.encode("utf-8")
-
-        # هاشتاجات
         for match in re.finditer(r'#\w+', text):
             start = len(text[:match.start()].encode("utf-8"))
             end = len(text[:match.end()].encode("utf-8"))
@@ -684,8 +695,6 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
                 "index": {"byteStart": start, "byteEnd": end},
                 "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": match.group()[1:]}]
             })
-
-        # روابط
         for match in re.finditer(r'https?://[^\s]+', text):
             start = len(text[:match.start()].encode("utf-8"))
             end = len(text[:match.end()].encode("utf-8"))
@@ -693,13 +702,11 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
                 "index": {"byteStart": start, "byteEnd": end},
                 "features": [{"$type": "app.bsky.richtext.facet#link", "uri": match.group()}]
             })
-
         return facets
 
     try:
         print("\n🦋 جاري النشر على Bluesky...")
 
-        # 1. تسجيل الدخول
         session_res = requests.post(
             "https://bsky.social/xrpc/com.atproto.server.createSession",
             json={"identifier": BSKY_HANDLE, "password": BSKY_APP_PASSWORD}
@@ -711,23 +718,16 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
 
         access_token = session_res["accessJwt"]
         did = session_res["did"]
+        headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}
 
-        headers = {
-            "Authorization": f"Bearer {access_token}",
-            "Content-Type": "application/json"
-        }
-
-        # 2. رفع الصورة
+        # رفع الصورة
         image_blob = None
         if image_url:
             try:
                 img_data = requests.get(image_url).content
                 upload_res = requests.post(
                     "https://bsky.social/xrpc/com.atproto.repo.uploadBlob",
-                    headers={
-                        "Authorization": f"Bearer {access_token}",
-                        "Content-Type": "image/jpeg"
-                    },
+                    headers={"Authorization": f"Bearer {access_token}", "Content-Type": "image/jpeg"},
                     data=img_data
                 ).json()
                 if "blob" in upload_res:
@@ -736,15 +736,23 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
             except Exception as e:
                 print(f"⚠️ فشل رفع الصورة: {e}")
 
-        # 3. المنشور الأساسي مع التقسيم الذكي
-        part1, part2 = split_text_at_word(post_text, 300)
-        post_payload = {
+        # تقسيم النص لأجزاء غير محدودة
+        parts = []
+        remaining = post_text
+        while remaining:
+            part, remaining = split_text_at_word(remaining, 300)
+            parts.append(part)
+            if not remaining:
+                break
+
+        # نشر الجزء الأول مع الصورة
+        first_payload = {
             "repo": did,
             "collection": "app.bsky.feed.post",
             "record": {
                 "$type": "app.bsky.feed.post",
-                "text": part1,
-                "facets": find_facets(part1),
+                "text": parts[0],
+                "facets": find_facets(parts[0]),
                 "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 **({"embed": {
                     "$type": "app.bsky.embed.images",
@@ -756,71 +764,80 @@ def send_to_bluesky(image_url, ai_text, link, main_hashtag):
         post_res = requests.post(
             "https://bsky.social/xrpc/com.atproto.repo.createRecord",
             headers=headers,
-            json=post_payload
+            json=first_payload
         ).json()
 
-        if "uri" in post_res:
-            post_uri = post_res["uri"]
-            post_cid = post_res["cid"]
-            print("✅ تم النشر على Bluesky بنجاح!")
+        if "uri" not in post_res:
+            print(f"❌ فشل النشر على Bluesky: {post_res}")
+            return False
 
-            if part2:
-                time.sleep(10)
-                part2_final, _ = split_text_at_word(part2, 300)
-                part2_payload = {
-                    "repo": did,
-                    "collection": "app.bsky.feed.post",
-                    "record": {
-                        "$type": "app.bsky.feed.post",
-                        "text": part2_final,
-                        "facets": find_facets(part2_final),
-                        "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                        "reply": {"root": {"uri": post_uri, "cid": post_cid}, "parent": {"uri": post_uri, "cid": post_cid}}
-                    }
-                }
-                part2_res = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord", headers=headers, json=part2_payload).json()
-                if "uri" in part2_res:
-                    print("📝 الجزء الثاني على Bluesky!")
-                    post_uri = part2_res["uri"]
-                    post_cid = part2_res["cid"]
-                time.sleep(10)
+        root_uri = post_res["uri"]
+        root_cid = post_res["cid"]
+        last_uri = root_uri
+        last_cid = root_cid
+        print("✅ تم النشر على Bluesky بنجاح!")
 
-            # 4. الرد بالرابط
-            wait = random.randint(60, 90)
-            print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
-            time.sleep(wait)
-
-            reply_text = f"🔗 الموضوع كامل:\n{link}"
-            reply_payload = {
+        # نشر باقي الأجزاء كردود
+        for i, part in enumerate(parts[1:], start=2):
+            time.sleep(10)
+            part_payload = {
                 "repo": did,
                 "collection": "app.bsky.feed.post",
                 "record": {
                     "$type": "app.bsky.feed.post",
-                    "text": reply_text,
-                    "facets": find_facets(reply_text),
+                    "text": part,
+                    "facets": find_facets(part),
                     "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                     "reply": {
-                        "root": {"uri": post_uri, "cid": post_cid},
-                        "parent": {"uri": post_uri, "cid": post_cid}
+                        "root": {"uri": root_uri, "cid": root_cid},
+                        "parent": {"uri": last_uri, "cid": last_cid}
                     }
                 }
             }
-
-            reply_res = requests.post(
+            part_res = requests.post(
                 "https://bsky.social/xrpc/com.atproto.repo.createRecord",
                 headers=headers,
-                json=reply_payload
+                json=part_payload
             ).json()
-
-            if "uri" in reply_res:
-                print("💬 تم وضع الرابط في رد Bluesky!")
+            if "uri" in part_res:
+                last_uri = part_res["uri"]
+                last_cid = part_res["cid"]
+                print(f"📝 الجزء {i} على Bluesky!")
             else:
-                print(f"⚠️ فشل الرد: {reply_res}")
+                print(f"⚠️ فشل الجزء {i}: {part_res}")
+                break
 
-            return True
+        # وضع الرابط في رد أخير
+        wait = random.randint(60, 90)
+        print(f"⏱️ ننتظر {wait} ثانية لوضع الرابط في رد...")
+        time.sleep(wait)
+
+        reply_text = f"🔗 الموضوع كامل:\n{link}"
+        reply_payload = {
+            "repo": did,
+            "collection": "app.bsky.feed.post",
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "text": reply_text,
+                "facets": find_facets(reply_text),
+                "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "reply": {
+                    "root": {"uri": root_uri, "cid": root_cid},
+                    "parent": {"uri": last_uri, "cid": last_cid}
+                }
+            }
+        }
+        reply_res = requests.post(
+            "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+            headers=headers,
+            json=reply_payload
+        ).json()
+        if "uri" in reply_res:
+            print("💬 تم وضع الرابط في رد Bluesky!")
         else:
-            print(f"❌ فشل النشر على Bluesky: {post_res}")
-            return False
+            print(f"⚠️ فشل الرد: {reply_res}")
+
+        return True
 
     except Exception as e:
         print(f"❌ خطأ في Bluesky: {e}")
