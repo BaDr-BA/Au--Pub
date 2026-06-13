@@ -244,31 +244,55 @@ def send_to_threads(ai_text, link):
         return False
     clean_text, all_hashtags = clean_text_for_platforms(ai_text)
     threads_text = f"{clean_text}\n\n{all_hashtags}"
+
     try:
         print("\n🧵 جاري النشر على ثرادز...")
         url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads"
         pub_url = f"https://graph.threads.net/v1.0/{THREADS_ACCOUNT_ID}/threads_publish"
-        part1, part2 = split_text_at_word(threads_text, 495)
-        payload = {"media_type": "TEXT", "text": part1, "access_token": THREADS_ACCESS_TOKEN}
+
+        # تقسيم النص لأجزاء غير محدودة
+        parts = []
+        remaining = threads_text
+        while remaining:
+            part, remaining = split_text_at_word(remaining, 495)
+            parts.append(part)
+            if not remaining:
+                break
+
+        # نشر الجزء الأول
+        payload = {"media_type": "TEXT", "text": parts[0], "access_token": THREADS_ACCESS_TOKEN}
         res = requests.post(url, data=payload).json()
-        if "id" in res:
-            creation_id = res["id"]
-            time.sleep(5)
-            pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
-            if "id" in pub_res:
-                thread_id = pub_res["id"]
-                print("✅ ثرادز!")
-                if part2:
-                    time.sleep(10)
-                    part2_final, _ = split_text_at_word(part2, 495)
-                    rep_payload = {"media_type": "TEXT", "text": part2_final, "reply_to_id": thread_id, "access_token": THREADS_ACCESS_TOKEN}
-                    rep_create = requests.post(url, data=rep_payload).json()
-                    if "id" in rep_create:
-                        requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN})
-                        print("📝 الجزء الثاني على ثرادز!")
-                return True
-        print(f"❌ ثرادز: {res}")
-        return False
+        if "id" not in res:
+            print(f"❌ ثرادز: {res}")
+            return False
+
+        time.sleep(5)
+        pub_res = requests.post(pub_url, data={"creation_id": res["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
+        if "id" not in pub_res:
+            print(f"❌ ثرادز: {pub_res}")
+            return False
+
+        last_thread_id = pub_res["id"]
+        print("✅ ثرادز!")
+
+        # نشر باقي الأجزاء كردود
+        for i, part in enumerate(parts[1:], start=2):
+            time.sleep(15)
+            rep_payload = {"media_type": "TEXT", "text": part, "reply_to_id": last_thread_id, "access_token": THREADS_ACCESS_TOKEN}
+            rep_create = requests.post(url, data=rep_payload).json()
+            if "id" not in rep_create:
+                print(f"⚠️ فشل الجزء {i}: {rep_create}")
+                break
+            rep_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
+            if "id" in rep_pub:
+                last_thread_id = rep_pub["id"]
+                print(f"📝 الجزء {i} على ثرادز!")
+            else:
+                print(f"⚠️ فشل نشر الجزء {i}: {rep_pub}")
+                break
+
+        return True
+
     except Exception as e:
         print(f"❌ خطأ ثرادز: {e}")
         return False
@@ -307,55 +331,82 @@ def send_to_bluesky(ai_text, link):
         if "accessJwt" not in session_res:
             print(f"❌ فشل تسجيل الدخول Bluesky: {session_res}")
             return False
+
         access_token = session_res["accessJwt"]
         did = session_res["did"]
         headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}
 
-        part1, part2 = split_text_at_word(post_text, 300)
-        post_payload = {
+        # تقسيم النص لأجزاء غير محدودة
+        parts = []
+        remaining = post_text
+        while remaining:
+            part, remaining = split_text_at_word(remaining, 300)
+            parts.append(part)
+            if not remaining:
+                break
+
+        # نشر الجزء الأول
+        first_payload = {
             "repo": did,
             "collection": "app.bsky.feed.post",
             "record": {
                 "$type": "app.bsky.feed.post",
-                "text": part1,
-                "facets": find_facets(part1),
-                "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "text": parts[0],
+                "facets": find_facets(parts[0]),
+                "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
             }
         }
         post_res = requests.post(
             "https://bsky.social/xrpc/com.atproto.repo.createRecord",
             headers=headers,
-            json=post_payload
+            json=first_payload
         ).json()
-        if "uri" in post_res:
-            post_uri = post_res["uri"]
-            post_cid = post_res["cid"]
-            print("✅ تم النشر على Bluesky بنجاح!")
-            if part2:
-                time.sleep(10)
-                part2_payload = {
-                    "repo": did,
-                    "collection": "app.bsky.feed.post",
-                    "record": {
-                        "$type": "app.bsky.feed.post",
-                        "text": part2[:300],
-                        "facets": find_facets(part2[:300]),
-                        "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                        "reply": {"root": {"uri": post_uri, "cid": post_cid}, "parent": {"uri": post_uri, "cid": post_cid}}
+
+        if "uri" not in post_res:
+            print(f"❌ Bluesky: {post_res}")
+            return False
+
+        root_uri = post_res["uri"]
+        root_cid = post_res["cid"]
+        last_uri = root_uri
+        last_cid = root_cid
+        print("✅ Bluesky!")
+
+        # نشر باقي الأجزاء كردود
+        for i, part in enumerate(parts[1:], start=2):
+            time.sleep(10)
+            part_payload = {
+                "repo": did,
+                "collection": "app.bsky.feed.post",
+                "record": {
+                    "$type": "app.bsky.feed.post",
+                    "text": part,
+                    "facets": find_facets(part),
+                    "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "reply": {
+                        "root": {"uri": root_uri, "cid": root_cid},
+                        "parent": {"uri": last_uri, "cid": last_cid}
                     }
                 }
-                part2_res = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord", headers=headers, json=part2_payload).json()
-                if "uri" in part2_res:
-                    print("📝 الجزء الثاني على Bluesky!")
-                    post_uri = part2_res["uri"]
-                    post_cid = part2_res["cid"]
-            return True
-        print(f"❌ Bluesky: {post_res}")
-        return False
+            }
+            part_res = requests.post(
+                "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+                headers=headers,
+                json=part_payload
+            ).json()
+            if "uri" in part_res:
+                last_uri = part_res["uri"]
+                last_cid = part_res["cid"]
+                print(f"📝 الجزء {i} على Bluesky!")
+            else:
+                print(f"⚠️ فشل الجزء {i}: {part_res}")
+                break
+
+        return True
+
     except Exception as e:
         print(f"❌ خطأ Bluesky: {e}")
         return False
-
 
 # ============================================================
 # وظيفة إعادة المحاولة
