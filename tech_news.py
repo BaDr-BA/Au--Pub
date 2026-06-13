@@ -302,7 +302,7 @@ def send_to_threads(ai_text, link):
             if "id" not in rep_create:
                 print(f"⚠️ فشل الجزء {i}: {rep_create}")
                 continue
-            time.sleep(30)
+            time.sleep(60)
             rep_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
             if "id" in rep_pub:
                 last_thread_id = rep_pub["id"]
