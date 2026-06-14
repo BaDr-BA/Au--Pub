@@ -78,7 +78,7 @@ https://t8ngy.blogspot.com/2026/05/learn-programming-from-scratch.html | bluesky
 https://t8ngy.blogspot.com/2026/05/gemini-3-5-flash-specs.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/gemini-3-5-flash-vs-gemini-3-1-pro.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/gemini-spark-ai-agent.html | bluesky,facebook,instagram,telegram,threads
-https://t8ngy.blogspot.com/2026/05/develop-apps-with-gemini-api.html | facebook,instagram,telegram
+https://t8ngy.blogspot.com/2026/05/develop-apps-with-gemini-api.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/05/eid-al-adha-greeting-design-prompts.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/make-money-programming-ai.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/05/best-day-of-arafah-ai-prompts.html | facebook,instagram,telegram
