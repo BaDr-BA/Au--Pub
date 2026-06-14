@@ -285,7 +285,7 @@ def send_to_threads(ai_text, link):
             print(f"❌ ثرادز: {res}")
             return False
 
-        time.sleep(5)
+        time.sleep(15)
         pub_res = requests.post(pub_url, data={"creation_id": res["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
         if "id" not in pub_res:
             print(f"❌ ثرادز: {pub_res}")
@@ -296,13 +296,13 @@ def send_to_threads(ai_text, link):
 
         # نشر باقي الأجزاء كردود
         for i, part in enumerate(parts[1:], start=2):
-            time.sleep(30)
+            time.sleep(100)
             rep_payload = {"media_type": "TEXT", "text": part, "reply_to_id": last_thread_id, "access_token": THREADS_ACCESS_TOKEN}
             rep_create = requests.post(url, data=rep_payload).json()
             if "id" not in rep_create:
                 print(f"⚠️ فشل الجزء {i}: {rep_create}")
                 continue
-            time.sleep(60)
+            time.sleep(100)
             rep_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
             if "id" in rep_pub:
                 last_thread_id = rep_pub["id"]
