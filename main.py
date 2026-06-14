@@ -466,8 +466,8 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
             return False
 
         creation_id = res["id"]
-        print("⏳ ننتظر 15 ثانية لمعالجة الصورة في ثرادز...")
-        time.sleep(15)
+        print("⏳ ننتظر 30 ثانية لمعالجة الصورة في ثرادز...")
+        time.sleep(30)
 
         pub_res = requests.post(pub_url, data={"creation_id": creation_id, "access_token": THREADS_ACCESS_TOKEN}).json()
         print(f"📋 رد ثرادز (النشر): {pub_res}")
@@ -482,7 +482,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
 
         # نشر باقي الأجزاء كردود
         for i, part in enumerate(parts[1:], start=2):
-            time.sleep(60)
+            time.sleep(100)
             rep_payload = {
                 "media_type": "TEXT",
                 "text": part,
@@ -493,7 +493,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
             if "id" not in rep_create:
                 print(f"⚠️ فشل إنشاء الجزء {i}: {rep_create}")
                 continue
-            time.sleep(30)
+            time.sleep(100)
             rep_pub = requests.post(pub_url, data={"creation_id": rep_create["id"], "access_token": THREADS_ACCESS_TOKEN}).json()
             if "id" in rep_pub:
                 last_thread_id = rep_pub["id"]
@@ -503,7 +503,7 @@ def send_to_threads(image_url, ai_text, link, main_hashtag):
                 continue
 
         # وضع الرابط في رد أخير
-        wait = random.randint(60, 90)
+        wait = random.randint(90, 100)
         print(f"⏱️ ننتظر {wait} ثانية للرد بالرابط...")
         time.sleep(wait)
 
