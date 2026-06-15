@@ -90,6 +90,6 @@ https://t8ngy.blogspot.com/2026/06/gemini-omni-ai-prompts-guide.html | bluesky,f
 https://t8ngy.blogspot.com/2026/06/nvidia-rtx-spark-specs.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/06/nvidia-rtx-spark-processor.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/06/run-local-ai-agents-on-rtx-spark.html | bluesky,facebook,instagram,telegram,threads
-https://t8ngy.blogspot.com/2026/06/activate-gemini-annual-free.html | facebook,instagram,telegram
+https://t8ngy.blogspot.com/2026/06/activate-gemini-annual-free.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/06/nvidia-rtx-spark-gaming-test.html | facebook,instagram,telegram
 https://t8ngy.blogspot.com/2026/06/comparison-dgx-spark-vs-rtx-spark.html | facebook,instagram,telegram
