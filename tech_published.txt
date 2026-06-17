@@ -31,3 +31,4 @@ https://techcrunch.com/2026/06/15/sundar-pichai-faces-boos-walkout-at-stanford-g
 https://techcrunch.com/2026/06/16/india-temporarily-blocks-access-to-telegram-over-exam-fraud-concerns/ | India orders temporary ban on Telegram over exam fraud concerns | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/16/spacex-is-public-everything-you-need-to-know-post-ipo/ | SpaceX is public: Everything you need to know post-IPO | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/06/16/apple-plans-to-change-its-hide-my-email-privacy-feature-that-could-make-it-less-effective/ | Apple plans to change its Hide My Email privacy feature that could make it less effective | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/17/spacex-alum-nabs-22m-to-turn-rocket-engines-into-geothermal-power-plants/ | SpaceX alum nabs $22M to turn rocket engines into geothermal power plants | bluesky,facebook,telegram,threads
