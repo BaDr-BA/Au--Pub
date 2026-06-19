@@ -48,3 +48,4 @@ https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-he
 https://techcrunch.com/2026/06/19/every-fusion-startup-that-has-raised-over-100m/ | Every fusion startup that has raised over $100M | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/ | Billionaire Ambani wants AI in every call, app, and home | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/ | Go eyes robotaxis and acquisitions after Japan’s biggest IPO of 2026. Here’s why it matters | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/ | Encryption, spyware, and now Mythos: History shows why cyber export control doesn’t work | bluesky,facebook,telegram,threads
