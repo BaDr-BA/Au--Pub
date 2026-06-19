@@ -44,3 +44,4 @@ https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raisin
 https://techcrunch.com/2026/06/18/telegram-ban-in-india-sparks-a-rush-to-vpns-rival-apps/ | Telegram ban in India sparks a rush to VPNs, rival apps | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/ | The US says ASML’s top chip tool may be in China. ASML says it isn’t | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/ | The CEO of Allbirds’ new AI biz has a plan, but no employees | bluesky,facebook,telegram,threads
+https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/ | Is the US government’s Anthropic ban accidentally helping the brand? | bluesky,facebook,telegram,threads
