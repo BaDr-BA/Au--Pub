@@ -72,3 +72,4 @@ https://techcrunch.com/2026/06/23/password-manager-maker-lastpass-says-hackers-s
 https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/ | Anthropic’s Claude Tag is learning your company, one Slack message at a time | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/23/after-betting-the-firm-on-anthropic-menlo-ventures-raises-victorious-3b-fund/ | After betting the firm on Anthropic, Menlo Ventures raises victorious $3B fund | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/23/superhuman-acquires-ai-detection-startup-gptzero/ | Superhuman acquires AI detection startup GPTZero | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/ | India’s MoEngage bets that the future of marketing is millions of AI agents | bluesky,facebook,telegram,threads
