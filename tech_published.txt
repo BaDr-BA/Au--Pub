@@ -78,3 +78,4 @@ https://techcrunch.com/2026/06/23/klue-says-hackers-stole-credential-from-2022-t
 https://techcrunch.com/2026/06/23/how-to-invest-when-everything-is-moving-too-fast/ | How to invest when everything is moving too fast | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/23/mark-zuckerberg-wants-meta-to-launch-its-own-prediction-market/ | Mark Zuckerberg wants Meta to launch its own prediction market | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/24/zoox-upgrades-its-robotaxi-as-it-prepares-for-commercial-service/ | Zoox upgrades its robotaxi as it prepares for commercial service | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/ | Facebook rolls out an AI companion app for creators | bluesky,facebook,telegram,threads
