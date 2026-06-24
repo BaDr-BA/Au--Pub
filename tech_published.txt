@@ -73,3 +73,4 @@ https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company
 https://techcrunch.com/2026/06/23/after-betting-the-firm-on-anthropic-menlo-ventures-raises-victorious-3b-fund/ | After betting the firm on Anthropic, Menlo Ventures raises victorious $3B fund | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/23/superhuman-acquires-ai-detection-startup-gptzero/ | Superhuman acquires AI detection startup GPTZero | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/ | India’s MoEngage bets that the future of marketing is millions of AI agents | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/23/walmart-backed-flipkart-expands-quick-commerce-push-as-amazon-ramps-up-in-india/ | Walmart-backed Flipkart expands quick-commerce push as Amazon ramps up in India | bluesky,facebook,telegram,threads
