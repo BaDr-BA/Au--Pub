@@ -86,3 +86,4 @@ https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war
 https://techcrunch.com/2026/06/24/elon-suffers-another-day-short-of-trillionaire-status/ | Elon suffers another day short of trillionaire status | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/25/cellebrite-said-it-cut-off-russia-but-russia-used-is-tools-anyway/ | Cellebrite said it cut off Russia, but Russia used is tools anyway | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/ | Amazon ups India bet with fresh $13B AI infrastructure investment | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/ | From Fortnite to robots: General Intuition raises $2.3B on bet that video games can train AI agents for the real world | bluesky,facebook,telegram,threads
