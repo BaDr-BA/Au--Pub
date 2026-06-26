@@ -94,3 +94,4 @@ https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-
 https://techcrunch.com/2026/06/25/polymarket-says-hackers-stole-users-funds/ | Polymarket says hackers stole users’ funds | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/25/xbox-follows-apple-with-price-increases/ | Xbox follows Apple with price increases | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/this-silicon-valley-startup-has-raised-10m-to-build-pitstops-to-clean-and-charge-robotaxis/ | Robotaxis drive miles just to get cleaned and charged; this new startup wants to fix that | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/26/xprize-founder-says-humans-behave-better-when-theyre-being-watched/ | Xprize founder says ‘humans behave better when they’re being watched’ | bluesky,facebook,telegram,threads
