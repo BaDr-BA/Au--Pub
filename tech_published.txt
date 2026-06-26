@@ -95,3 +95,4 @@ https://techcrunch.com/2026/06/25/polymarket-says-hackers-stole-users-funds/ | P
 https://techcrunch.com/2026/06/25/xbox-follows-apple-with-price-increases/ | Xbox follows Apple with price increases | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/this-silicon-valley-startup-has-raised-10m-to-build-pitstops-to-clean-and-charge-robotaxis/ | Robotaxis drive miles just to get cleaned and charged; this new startup wants to fix that | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/xprize-founder-says-humans-behave-better-when-theyre-being-watched/ | Xprize founder says ‘humans behave better when they’re being watched’ | bluesky,facebook,telegram,threads
+https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/ | Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia) | bluesky,facebook,telegram,threads
