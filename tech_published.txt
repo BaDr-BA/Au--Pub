@@ -110,3 +110,4 @@ https://techcrunch.com/2026/06/26/tiktoks-road-to-becoming-a-super-app/ | TikTok
 https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/ | Apple Vision Pro exec is reportedly leaving for OpenAI | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/ | It’s not about Anthropic vs. OpenAI anymore | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/early-bird-pricing-ends-tonight-for-techcrunch-founder-summit/ | Early Bird pricing ends tonight for TechCrunch Founder Summit | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/27/instagram-is-testing-more-ways-for-users-to-customize-your-algorithm/ | Instagram is testing more ways to customize ‘Your Algorithm’ | bluesky,facebook,telegram,threads
