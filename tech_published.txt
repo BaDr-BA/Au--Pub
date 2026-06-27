@@ -104,3 +104,4 @@ https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-us
 https://techcrunch.com/2026/06/26/ftc-gives-musk-the-ok-to-acquire-spacex-alumni-startup-mesh/ | FTC gives Musk the OK to acquire SpaceX alumni startup Mesh | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/russian-hackers-were-behind-2-5-billion-hack-of-jaguar-land-rover-report/ | Russian hackers were behind $2.5B hack of Jaguar Land Rover: Report | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/tesla-settles-fsd-crash-lawsuit-as-federal-investigations-continue/ | Tesla settles FSD crash lawsuit as federal investigations continue | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/ | Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on | bluesky,facebook,instagram,telegram,threads
