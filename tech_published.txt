@@ -102,3 +102,4 @@ https://techcrunch.com/2026/06/26/corgi-the-buzzy-y-combinator-backed-insurance-
 https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/ | OpenAI poaches Uber India chief to lead its biggest market outside the US | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/ | Trump Admin releases Anthropic  Mythos to be used by more than 100 US companies, agencies | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/06/26/ftc-gives-musk-the-ok-to-acquire-spacex-alumni-startup-mesh/ | FTC gives Musk the OK to acquire SpaceX alumni startup Mesh | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/06/26/russian-hackers-were-behind-2-5-billion-hack-of-jaguar-land-rover-report/ | Russian hackers were behind $2.5B hack of Jaguar Land Rover: Report | bluesky,facebook,telegram,threads
