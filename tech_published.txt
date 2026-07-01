@@ -126,3 +126,4 @@ https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-
 https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/ | Wayve launches $85M employee tender offer at $8.5B valuation | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/ | Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/01/even-honda-is-pivoting-to-data-centers/ | Even Honda is pivoting to data centers | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/01/apples-hide-my-email-feature-has-a-bug-thats-been-exposing-real-email-addresses-researcher-claims/ | Apple’s Hide My Email feature has a bug that’s been exposing real email addresses, researcher claims | bluesky,facebook,telegram,threads
