@@ -128,3 +128,4 @@ https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-
 https://techcrunch.com/2026/07/01/even-honda-is-pivoting-to-data-centers/ | Even Honda is pivoting to data centers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/01/apples-hide-my-email-feature-has-a-bug-thats-been-exposing-real-email-addresses-researcher-claims/ | Apple’s Hide My Email feature has a bug that’s been exposing real email addresses, researcher claims | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/ | SpaceX has an AI device prototype, and it sure sounds phone-ish | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/01/after-18b-ipo-bending-spoons-founder-says-success-comes-from-minimizing-luck/ | After $18B IPO, Bending Spoons founder says success comes from minimizing luck | bluesky,facebook,telegram,threads
