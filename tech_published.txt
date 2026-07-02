@@ -137,3 +137,4 @@ https://techcrunch.com/2026/07/02/melinda-gates-venture-firm-backs-magnify-ventu
 https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/ | OpenAI proposed donating 5% of its equity to a US sovereign wealth fund | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/ | Meta quietly launches vibe-coded gaming app Pocket | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/02/jersey-mikes-ipo-illustrates-how-bad-the-ai-hype-has-become/ | Jersey Mike’s IPO illustrates how bad the AI hype has become | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/ | IQM, Europe’s first public quantum company, admits the future of the tech is uncertain | bluesky,facebook,telegram,threads
