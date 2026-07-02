@@ -134,3 +134,4 @@ https://techcrunch.com/2026/07/01/bending-spoons-defies-saas-slump-surges-40-on-
 https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office/ | Indian tech tycoon bets $30M of his own money to build AI alternative to Microsoft Office | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/02/rivian-thinks-it-will-sell-more-evs-than-expected-this-year/ | Rivian raises EV sales forecast as Q2 production ramps up | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/02/melinda-gates-venture-firm-backs-magnify-ventures-46-6m-fund-ii/ | Melinda Gates’ venture firm backs Magnify Ventures’ $46.6M Fund II | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/ | OpenAI proposed donating 5% of its equity to a US sovereign wealth fund | bluesky,facebook,telegram,threads
