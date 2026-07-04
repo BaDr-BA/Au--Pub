@@ -153,3 +153,4 @@ https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with
 https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/ | Midjourney wants Hollywood studios to reveal the details of their AI usage | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/ | Alibaba reportedly bans employees from using Claude Code | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/ | New Google commercial imagines a Declaration of Independence written with help from AI | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/ | What is Mistral AI? Everything to know about the OpenAI competitor | bluesky,facebook,telegram,threads
