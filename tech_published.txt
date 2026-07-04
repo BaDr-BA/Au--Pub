@@ -151,3 +151,4 @@ https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-ha
 https://techcrunch.com/2026/07/02/travel-app-hopper-to-pay-35m-in-ftc-settlement-over-unfairly-charging-hidden-fees/ | Travel app Hopper to pay $35M in FTC settlement over ‘unfairly’ charging hidden fees | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/ | Anthropic is discussing a new custom chip with Samsung | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/ | Midjourney wants Hollywood studios to reveal the details of their AI usage | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/ | Alibaba reportedly bans employees from using Claude Code | bluesky,facebook,telegram,threads
