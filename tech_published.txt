@@ -170,3 +170,4 @@ https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-neede
 https://techcrunch.com/2026/07/07/googles-pixel-event-is-set-for-august-12/ | Google’s Pixel event is set for August 12 | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/ | Why the rise of open source AI isn’t hurting Anthropic … yet | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/07/final-extension-startup-battlefield-australia-applications-now-close-july-20/ | Final extension: Startup Battlefield Australia applications now close July 20 | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/ | Meta rolls out Muse, a new AI image generator | bluesky,facebook,telegram,threads
