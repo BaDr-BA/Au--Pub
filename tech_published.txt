@@ -167,3 +167,4 @@ https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-spl
 https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/ | You can now customize Siri’s pace and expressivity in the latest iOS 27 beta | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/06/netflix-invented-binge-watching-now-it-may-have-outgrown-it/ | Netflix invented binge-watching. Now it may have outgrown it. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/ | The ‘first’ AI-run ransomware attack still needed a human | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/07/googles-pixel-event-is-set-for-august-12/ | Google’s Pixel event is set for August 12 | bluesky,facebook,telegram,threads
