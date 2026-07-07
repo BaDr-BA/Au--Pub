@@ -168,3 +168,4 @@ https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressiv
 https://techcrunch.com/2026/07/06/netflix-invented-binge-watching-now-it-may-have-outgrown-it/ | Netflix invented binge-watching. Now it may have outgrown it. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/ | The ‘first’ AI-run ransomware attack still needed a human | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/07/googles-pixel-event-is-set-for-august-12/ | Google’s Pixel event is set for August 12 | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/ | Why the rise of open source AI isn’t hurting Anthropic … yet | bluesky,facebook,telegram,threads
