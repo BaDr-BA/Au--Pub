@@ -173,3 +173,4 @@ https://techcrunch.com/2026/07/07/final-extension-startup-battlefield-australia-
 https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/ | Meta rolls out Muse, a new AI image generator | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/ | Microsoft joins AI cost-cutting trend by relying more on its own models | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/ | Hot French startup ZML releases free product to speed inference across lots of AI chips | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/ | AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | bluesky,facebook,telegram,threads
