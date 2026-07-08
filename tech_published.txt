@@ -178,3 +178,4 @@ https://techcrunch.com/2026/07/08/another-massive-data-breach-exposed-millions-o
 https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/ | SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/ | Google’s deepfake detector system used to debunk McConnell hoax pic | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/ | Feds demand autonomous vehicle companies stop interfering with first responders | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/08/despite-misgivings-judge-approves-elon-musks-1-5-million-sec-settlement/ | Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement | bluesky,facebook,telegram,threads
