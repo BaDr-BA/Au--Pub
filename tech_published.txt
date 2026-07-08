@@ -177,3 +177,4 @@ https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-
 https://techcrunch.com/2026/07/08/another-massive-data-breach-exposed-millions-of-drivers-license-numbers/ | Another massive data breach exposed millions of driver’s license numbers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/ | SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/ | Google’s deepfake detector system used to debunk McConnell hoax pic | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/ | Feds demand autonomous vehicle companies stop interfering with first responders | bluesky,facebook,telegram,threads
