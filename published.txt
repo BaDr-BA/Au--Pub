@@ -115,3 +115,4 @@ https://t8ngy.blogspot.com/2026/07/generate-youtube-thumbnails-automatically-ai.
 https://t8ngy.blogspot.com/2026/07/ai-tools-guide.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/claude-fable-5-guide.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/programming-with-claude-fable-5.html | bluesky,facebook,instagram,telegram,threads
+https://t8ngy.blogspot.com/2026/07/claude-fable-5-prompts.html | bluesky,facebook,instagram,telegram,threads
