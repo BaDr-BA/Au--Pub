@@ -179,3 +179,4 @@ https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describe
 https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/ | Google’s deepfake detector system used to debunk McConnell hoax pic | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/ | Feds demand autonomous vehicle companies stop interfering with first responders | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/08/despite-misgivings-judge-approves-elon-musks-1-5-million-sec-settlement/ | Despite ‘misgivings,’ judge approves Elon Musk’s $1.5M SEC settlement | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/08/truecaller-clashes-with-indias-telecom-regulator-over-anti-spam-rules/ | Truecaller clashes with India’s telecom regulator over anti-spam rules | bluesky,facebook,telegram,threads
