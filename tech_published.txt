@@ -193,3 +193,4 @@ https://techcrunch.com/2026/07/10/filing-college-app-fizz-accuses-vc-of-sharing-
 https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/ | Apple sues OpenAI over alleged trade secret theft | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/10/blueskys-interim-ceo-toni-schneider-drops-the-interim/ | Bluesky’s interim CEO, Toni Schneider, drops the ‘interim’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/ | US cyber agency CISA had to build its incident playbook during the incident, agency reveals | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/10/phia-accused-of-cookie-stuffing-taking-affiliate-credit-on-purchases-it-didnt-earn/ | Phia accused of ‘cookie stuffing,’ taking affiliate credit on purchases it didn’t earn | bluesky,facebook,telegram,threads
