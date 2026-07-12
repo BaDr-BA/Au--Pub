@@ -206,3 +206,4 @@ https://techcrunch.com/2026/07/10/dumb-co-dared-me-to-trade-my-iphone-for-a-hack
 https://techcrunch.com/2026/07/12/techcrunch-mobility-a-robotaxi-ultimatum/ | TechCrunch Mobility: A robotaxi ultimatum | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/10/oratomic-raises-300m-to-build-a-viable-quantum-computer-that-needs-only-20k-qubits/ | Oratomic raises $300M to build a viable quantum computer that needs only 20K qubits | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/10/netflix-could-be-planning-always-on-live-tv-channels/ | Netflix could be planning ‘always-on’ live TV channels | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/ | EU threatens Meta with fines over addictive features on Facebook and Instagram | bluesky,facebook,telegram,threads
