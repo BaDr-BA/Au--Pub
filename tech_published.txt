@@ -208,3 +208,4 @@ https://techcrunch.com/2026/07/10/oratomic-raises-300m-to-build-a-viable-quantum
 https://techcrunch.com/2026/07/10/netflix-could-be-planning-always-on-live-tv-channels/ | Netflix could be planning ‘always-on’ live TV channels | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/ | EU threatens Meta with fines over addictive features on Facebook and Instagram | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/10/florida-ransomware-negotiator-convicted-for-helping-ransomware-gang-extort-us-companies/ | Florida ransomware negotiator convicted for helping ransomware gang extort US companies | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/13/ubers-robotaxi-lobbying-effort-has-put-it-on-a-collision-course-with-waymo/ | Uber’s robotaxi lobbying effort puts it on a collision course with Waymo | bluesky,facebook,instagram,telegram,threads
