@@ -223,3 +223,4 @@ https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-
 https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/ | Superhuman’s new auto-draft feature almost makes me like AI replies | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/ | New York State halts construction of all new data centers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/ | DeepSeek reportedly in talks to raise $1.5B, then IPO | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/ | Google faces another AI training lawsuit from major publishers | bluesky,facebook,telegram,threads
