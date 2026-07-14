@@ -226,3 +226,4 @@ https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-the
 https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/ | Google faces another AI training lawsuit from major publishers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/ | Apple opens its new Siri AI to everyone with the iOS 27 public beta | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/ | Anthropic’s newest ad is creeping people out | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/ | OpenAI pushes back on Apple trade secret lawsuit | bluesky,facebook,instagram,telegram,threads
