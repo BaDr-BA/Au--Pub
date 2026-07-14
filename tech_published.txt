@@ -220,3 +220,4 @@ https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-
 https://techcrunch.com/2026/07/13/x-just-tweaked-its-algorithm-to-make-it-more-friendly-less-battleground/ | X just tweaked its algorithm to make it more friendly, less battleground | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/pinwheel-launches-a-retro-inspired-landline-phone-for-kids/ | Pinwheel launches a retro-inspired landline phone for kids | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/ | Hermes agent maker Nous Research in talks for new funding at $1.5B valuation | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/ | Superhuman’s new auto-draft feature almost makes me like AI replies | bluesky,facebook,telegram,threads
