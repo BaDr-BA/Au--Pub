@@ -224,3 +224,4 @@ https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-make
 https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/ | New York State halts construction of all new data centers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/ | DeepSeek reportedly in talks to raise $1.5B, then IPO | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/ | Google faces another AI training lawsuit from major publishers | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/ | Apple opens its new Siri AI to everyone with the iOS 27 public beta | bluesky,facebook,telegram,threads
