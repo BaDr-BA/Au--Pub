@@ -239,3 +239,4 @@ https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-
 https://techcrunch.com/2026/07/15/apple-quietly-reveals-how-its-maps-ads-will-differ-from-googles/ | Apple quietly reveals how its Maps ads will differ from Google’s | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/ | Daniel Ek’s body-scanning startup Neko Health raises another $700M | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/15/tesla-driver-in-fatal-texas-crash-pressed-accelerator-100-ntsb-confirms/ | Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/ | Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex | bluesky,facebook,telegram,threads
