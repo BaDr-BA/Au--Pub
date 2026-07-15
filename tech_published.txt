@@ -236,3 +236,4 @@ https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-un
 https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/ | Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not models | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/15/stripe-and-advent-reportedly-offered-to-buy-paypal-for-around-53-4b/ | Stripe and Advent reportedly offered to buy PayPal for around $53.4B | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/ | Hack suggests AI music generator Suno scraped YouTube for training data | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/15/apple-quietly-reveals-how-its-maps-ads-will-differ-from-googles/ | Apple quietly reveals how its Maps ads will differ from Google’s | bluesky,facebook,telegram,threads
