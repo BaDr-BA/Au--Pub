@@ -243,3 +243,4 @@ https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-2
 https://techcrunch.com/2026/07/15/microsoft-patches-bug-in-video-game-age-of-empires-ii/ | Microsoft patches bug in video game Age of Empires II | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/15/why-greylock-capped-its-new-fund-at-1-5b-when-it-says-it-could-have-raised-more/ | Why Greylock capped its new fund at $1.5B when it says it could have raised more | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/15/lululemon-backs-nylon-recycling-startup-syntetica-in-30m-series-a/ | Lululemon backs nylon recycling startup Syntetica in $30M Series A | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/ | Applied Computing wants to give oil and gas operators an AI model for the entire plant | bluesky,facebook,telegram,threads
