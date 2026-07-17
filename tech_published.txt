@@ -266,3 +266,4 @@ https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-pl
 https://techcrunch.com/2026/07/17/i-replaced-my-space-heater-and-ceiling-fan-with-one-dyson-appliance/ | I replaced my space heater and ceiling fan with one Dyson appliance | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/ | Agility Robotics plants its flag in Tesla’s backyard | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/ | The Zoom hack that says, ‘Don’t record me’ | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/ | Databricks hits $188B valuation, extending its run as AI’s favorite second act | bluesky,facebook,telegram,threads
