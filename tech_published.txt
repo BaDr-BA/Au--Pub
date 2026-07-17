@@ -254,3 +254,4 @@ https://techcrunch.com/2026/07/16/founders-fund-hires-former-openai-exec-ryan-be
 https://techcrunch.com/2026/07/16/coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomware-attack/ | Coca-Cola suspended production at its Fairlife dairy after a ransomware attack | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/16/spacex-suddenly-aborts-second-starship-v3-launch-after-ignition/ | SpaceX suddenly aborts second Starship V3 launch after ignition | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/ | San Francisco mayor pushes for tougher rules after the Waymo traffic fiasco | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/ | Roblox launches an AI-powered game-creation feature in its mobile app | bluesky,facebook,telegram,threads
