@@ -257,3 +257,4 @@ https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-a
 https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/ | Roblox launches an AI-powered game-creation feature in its mobile app | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/16/ubers-14-8b-delivery-hero-deal-would-nearly-double-its-global-footprint/ | Uber’s $14.8B Delivery Hero deal would nearly double its global footprint | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/16/newsletter-platform-beehiiv-now-lets-subscribers-chat-with-each-other-adds-ai/ | Newsletter platform Beehiiv now lets subscribers chat with each other, adds AI | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/ | AI-powered travel agency Fora hits unicorn status, raises $60M | bluesky,facebook,telegram,threads
