@@ -262,3 +262,4 @@ https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact
 https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/ | Why the first GPU financiers are turning to inference chips in a $400 million deal | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/remarkables-new-paper-pure-is-good-thats-why-i-wrote-this-review-on-it/ | Remarkable’s new Paper Pure is good. That’s why I wrote this review on it. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/fbi-arrests-man-accused-of-using-steam-games-to-drain-victims-crypto-wallets/ | FBI arrests man accused of using Steam games to drain victims’ crypto wallets | bluesky,facebook,telegram,threads
+https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/ | How Apple’s big lawsuit could disrupt OpenAI’s IPO plans | bluesky,facebook,telegram,threads
