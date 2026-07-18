@@ -276,3 +276,4 @@ https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-rais
 https://techcrunch.com/2026/07/17/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/ | Parents want safer phones for kids. These companies are answering the call. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/amazon-fixing-bug-that-billed-some-aws-customers-billions-of-dollars/ | Amazon fixing bug that billed some AWS customers billions of dollars | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/ | Patreon stops asking AI bots not to scrape — and starts blocking them | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/18/a-600-mile-road-trip-and-data-proves-ev-charging-doesnt-suck-anymore/ | A 600-mile road trip (and data) proves EV charging doesn’t suck anymore | bluesky,facebook,telegram,threads
