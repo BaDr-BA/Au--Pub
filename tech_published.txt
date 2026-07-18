@@ -275,3 +275,4 @@ https://techcrunch.com/2026/07/17/apple-and-google-ordered-to-purge-nudify-apps-
 https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/ | Nuclear startup Valar Atomics in talks to raise new funding at $6B valuation | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/ | Parents want safer phones for kids. These companies are answering the call. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/17/amazon-fixing-bug-that-billed-some-aws-customers-billions-of-dollars/ | Amazon fixing bug that billed some AWS customers billions of dollars | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/ | Patreon stops asking AI bots not to scrape — and starts blocking them | bluesky,facebook,telegram,threads
