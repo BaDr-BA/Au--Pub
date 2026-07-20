@@ -288,3 +288,4 @@ https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-r
 https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/ | Can an Apple lawsuit derail OpenAI’s hardware plans? | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/07/19/netflix-paid-587m-for-ben-afflecks-ai-filmmaking-startup/ | Netflix paid $587M for Ben Affleck’s AI filmmaking startup | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/ | What to watch for after Jensen Huang’s Japan visit | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/ | Hugging Face confirms breach affected internal datasets and credentials, urges users to take action | bluesky,facebook,telegram,threads
