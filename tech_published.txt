@@ -299,3 +299,4 @@ https://techcrunch.com/2026/07/20/colossal-biosciences-reportedly-in-talks-to-ra
 https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/ | Anthropic’s landmark $1.5B copyright settlement is approved | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/ | AI’s most important protocol is getting a little bit easier to use | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/ | OpenAI is scared of open-weight models. Should the US be? | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/ | Gritt exits stealth with $34 million for robots to build solar plants—then, everything else | bluesky,facebook,telegram,threads
