@@ -305,3 +305,4 @@ https://techcrunch.com/2026/07/21/light-is-modernizing-the-flip-phone-with-light
 https://techcrunch.com/2026/07/21/instagram-now-lets-you-swap-out-the-music-in-your-old-posts/ | Instagram now lets you swap out the music in your old posts | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/ | Google releases three new Gemini models — but no 3.5 Pro | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/ | Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/21/social-media-ban-children-countries-list/ | These are the countries moving to ban social media for children | bluesky,facebook,telegram,threads
