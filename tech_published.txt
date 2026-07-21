@@ -303,3 +303,4 @@ https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots
 https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/ | Natural raises $30M to reinvent payments for AI agents — and take on Stripe | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/light-is-modernizing-the-flip-phone-with-light-flip/ | Light made a flip phone. It’s colorful and it’s cheap. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/instagram-now-lets-you-swap-out-the-music-in-your-old-posts/ | Instagram now lets you swap out the music in your old posts | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/ | Google releases three new Gemini models — but no 3.5 Pro | bluesky,facebook,telegram,threads
