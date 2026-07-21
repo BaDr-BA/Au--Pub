@@ -301,3 +301,4 @@ https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-littl
 https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/ | OpenAI is scared of open-weight models. Should the US be? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/ | Gritt exits stealth with $34 million for robots to build solar plants—then, everything else | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/ | Natural raises $30M to reinvent payments for AI agents — and take on Stripe | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/21/light-is-modernizing-the-flip-phone-with-light-flip/ | Light made a flip phone. It’s colorful and it’s cheap. | bluesky,facebook,telegram,threads
