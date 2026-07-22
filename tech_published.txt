@@ -310,3 +310,4 @@ https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-o
 https://techcrunch.com/2026/07/21/ai-and-the-rise-of-the-universal-entertainment-app/ | AI and the rise of the universal entertainment app | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/meta-is-testing-an-ai-bedtime-story-app-for-people-with-no-imagination/ | Meta is testing an AI bedtime story app for people with no imagination | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/ | The Anthropic-Physical Intelligence rumor roiling AI Twitter | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/21/dimension-capitals-800m-third-fund-shows-the-intersection-of-science-and-compute-is-booming/ | Dimension Capital’s $800M third fund shows the intersection of science and compute is booming | bluesky,facebook,telegram,threads
