@@ -317,3 +317,4 @@ https://techcrunch.com/2026/07/22/cascade-raises-3-5m-to-help-construction-firms
 https://techcrunch.com/2026/07/22/if-you-pay-a-hackers-ransom-chances-are-that-theyll-come-back-for-more/ | If you pay a hacker’s ransom, chances are that they’ll come back for more | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/22/google-is-making-it-easier-to-switch-from-iphone-to-android/ | Google is making it easier to switch from iPhone to Android | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/22/science-corporations-vision-restoring-chip-wins-eu-approval/ | Science Corporation’s vision-restoring chip wins EU approval | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/22/soundcloud-acquires-decentralized-music-platform-nina-protocol-months-after-its-shutdown/ | SoundCloud acquires decentralized music platform Nina Protocol months after its shutdown | bluesky,facebook,telegram,threads
