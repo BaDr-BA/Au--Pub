@@ -330,3 +330,4 @@ https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10
 https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/ | OpenAI makes ChatGPT Health available to all U.S. users | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/23/us-government-says-iran-linked-hackers-are-disrupting-american-water-and-energy-providers/ | US government says Iran-linked hackers are disrupting American water and energy providers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/23/meta-drops-out-of-a-major-clean-energy-pact-as-its-natural-gas-buildout-accelerates/ | Meta drops out of a major clean energy pact as its natural gas buildout accelerates | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/ | AMD takes on Nvidia with its Helios AI rack-scale system | bluesky,facebook,telegram,threads
