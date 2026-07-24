@@ -334,3 +334,4 @@ https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-sc
 https://techcrunch.com/2026/07/23/patreon-lays-off-off-20-of-its-workforce/ | Patreon lays off 20% of its workforce | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/ | Mobileye CEO Amnon Shashua to step aside as company pushes into robotaxis, robotics | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/ | How AI guardrails are impeding the work of offensive cybersecurity researchers | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/23/meet-the-judges-who-will-crown-australias-next-breakout-startup/ | Meet the judges who will crown Australia’s next breakout startup | bluesky,facebook,telegram,threads
