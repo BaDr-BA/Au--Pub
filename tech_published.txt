@@ -339,3 +339,4 @@ https://techcrunch.com/2026/07/23/insurance-startup-corgi-reportedly-raised-more
 https://techcrunch.com/2026/07/23/teslas-door-handles-may-spur-new-u-s-safety-rules/ | Tesla’s door handles may spur new US safety rules | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/ | Anthropic updates Claude voice mode with more capable models | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/ | OpenAI’s new voice mode makes it to the ChatGPT desktop app | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/24/rivian-sues-the-us-government-for-full-refund-of-trump-tariffs/ | Rivian sues the US government for ‘full refund’ of Trump tariffs | bluesky,facebook,telegram,threads
