@@ -362,3 +362,4 @@ https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/ | Anthropic launche
 https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/ | India’s move against Jack Dorsey’s Bitchat sparks legal debate | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/ | Monday.com is the latest tech company to blame AI for layoffs — here are 20 others | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/26/inside-one-london-founder-house-rewriting-the-founder-house-rules/ | Inside one London founder house rewriting the founder-house rules | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/ | Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack | bluesky,facebook,telegram,threads
