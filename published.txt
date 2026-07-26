@@ -131,3 +131,4 @@ https://t8ngy.blogspot.com/2026/07/python-automate-blogger-posts.html | bluesky,
 https://t8ngy.blogspot.com/2026/07/claude-ai-vs-chatgpt-review.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/leonardo-ai-full-tutorial.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/create-youtube-shorts-channel-ai.html | bluesky,facebook,instagram,telegram,threads
+https://t8ngy.blogspot.com/2026/07/seo-prompts.html | bluesky,facebook,instagram,telegram,threads
