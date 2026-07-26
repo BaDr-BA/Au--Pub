@@ -364,3 +364,4 @@ https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-wh
 https://techcrunch.com/2026/07/26/inside-one-london-founder-house-rewriting-the-founder-house-rules/ | Inside one London founder house rewriting the founder-house rules | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/ | Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/26/techcrunch-mobility-uber-bets-on-its-former-ceo/ | TechCrunch Mobility: Uber bets on its former CEO | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/ | Making sense of the panic over Chinese AI | bluesky,facebook,telegram,threads
