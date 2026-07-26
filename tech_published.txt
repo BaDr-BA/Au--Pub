@@ -365,3 +365,4 @@ https://techcrunch.com/2026/07/26/inside-one-london-founder-house-rewriting-the-
 https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/ | Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/26/techcrunch-mobility-uber-bets-on-its-former-ceo/ | TechCrunch Mobility: Uber bets on its former CEO | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/ | Making sense of the panic over Chinese AI | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/ | Can Apple make smart glasses that aren’t a constant privacy threat? | bluesky,facebook,telegram,threads
