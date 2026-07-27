@@ -135,3 +135,4 @@ https://t8ngy.blogspot.com/2026/07/seo-prompts.html | bluesky,facebook,instagram
 https://t8ngy.blogspot.com/2026/07/link-elevenlabs-to-make-automation.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/v0-dev-ui-generation-guide.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/build-ecommerce-website-with-ai.html | bluesky,facebook,instagram,telegram,threads
+https://t8ngy.blogspot.com/2026/07/sell-ai-prompts-promptbase-guide.html | bluesky,facebook,instagram,telegram,threads
