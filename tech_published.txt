@@ -368,3 +368,4 @@ https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/ | M
 https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/ | Can Apple make smart glasses that aren’t a constant privacy threat? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/ | Are brain waves the next unlock for physical AI? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/27/europe-got-its-own-tbpn-style-live-show-and-its-already-a-hot-spot-on-a-press-tour/ | Europe got its own TBPN-style live show, and everyone’s angling for a guest spot | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/ | Threads users can now chat with Meta AI in their DMs | bluesky,facebook,telegram,threads
