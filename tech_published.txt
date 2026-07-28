@@ -378,3 +378,4 @@ https://techcrunch.com/2026/07/28/lyft-and-baidu-enter-londons-robotaxi-battlegr
 https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/ | Cursor makes its biggest India push yet ahead of SpaceX acquisition with localized pricing | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/28/granola-launches-an-apple-watch-app/ | Granola launches an Apple Watch app | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/28/paypal-leaves-the-door-open-to-a-higher-takeover-offer-following-earnings-beat/ | PayPal leaves the door open to a higher takeover offer following earnings beat | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/28/data-centers-may-face-temporary-power-cuts-to-prevent-blackouts-on-largest-us-grid/ | Data centers may face temporary power cuts to prevent blackouts on largest US grid | bluesky,facebook,instagram,telegram,threads
