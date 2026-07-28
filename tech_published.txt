@@ -376,3 +376,4 @@ https://techcrunch.com/2026/07/27/thea-energy-lands-20m-federal-grant-to-build-i
 https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/ | Anthropic’s Dario Amodei responds: doesn’t oppose open-weight models, but fears Chinese AI | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/07/28/lyft-and-baidu-enter-londons-robotaxi-battleground-as-testing-begins/ | Lyft and Baidu enter London’s robotaxi battleground as testing begins | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/ | Cursor makes its biggest India push yet ahead of SpaceX acquisition with localized pricing | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/28/granola-launches-an-apple-watch-app/ | Granola launches an Apple Watch app | bluesky,facebook,telegram,threads
