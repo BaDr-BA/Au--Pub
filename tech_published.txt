@@ -380,3 +380,4 @@ https://techcrunch.com/2026/07/28/granola-launches-an-apple-watch-app/ | Granola
 https://techcrunch.com/2026/07/28/paypal-leaves-the-door-open-to-a-higher-takeover-offer-following-earnings-beat/ | PayPal leaves the door open to a higher takeover offer following earnings beat | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/28/data-centers-may-face-temporary-power-cuts-to-prevent-blackouts-on-largest-us-grid/ | Data centers may face temporary power cuts to prevent blackouts on largest US grid | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/07/28/ebay-reaches-56m-settlement-with-e-commerce-newsletter-writers-it-terrorized-in-2019/ | eBay reaches $56M settlement with e-commerce newsletter writers it terrorized in 2019 | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/ | Sam Altman is ready to decelerate | bluesky,facebook,telegram,threads
