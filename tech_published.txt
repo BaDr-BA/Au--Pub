@@ -386,3 +386,4 @@ https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-
 https://techcrunch.com/2026/07/28/mcp-startup-runlayer-accuses-rippling-of-stealing-its-product-idea/ | MCP startup Runlayer accuses Rippling of stealing its product idea | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/28/ozlos-sleepbuds-2-build-on-boses-sleep-earbud-legacy/ | Ozlo’s Sleepbuds 2 build on Bose’s sleep earbud legacy | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/28/the-robot-nasa-hired-to-lift-a-orbital-telescope-is-tumbling-out-of-control/ | The robot NASA hired to lift a orbital telescope tumbled out of control | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/29/fast-metals-is-treating-waste-with-more-waste-to-extract-critical-minerals/ | Fast Metals is treating waste with more waste to extract critical minerals | bluesky,facebook,telegram,threads
