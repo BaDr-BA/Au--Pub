@@ -142,3 +142,4 @@ https://t8ngy.blogspot.com/2026/07/elevenlabs-ai-voice-review.html | bluesky,fac
 https://t8ngy.blogspot.com/2026/07/gamma-ai-presentation-tutorial.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/sell-tshirts-ai-redbubble-guide.html | bluesky,facebook,instagram,telegram,threads
 https://t8ngy.blogspot.com/2026/07/keyword-research-prompts-seo.html | bluesky,facebook,instagram,telegram,threads
+https://t8ngy.blogspot.com/2026/07/build-telegram-news-bot-ai.html | bluesky,facebook,instagram,telegram,threads
