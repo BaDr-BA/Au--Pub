@@ -411,3 +411,4 @@ https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-f
 https://techcrunch.com/2026/07/31/tesla-reportedly-might-sell-its-china-business-ahead-of-a-spacex-merger/ | Tesla reportedly might sell its China business ahead of a SpaceX merger | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users/ | Siri AI could come with a paywall for power users | bluesky,facebook,telegram,threads
 https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/ | Sam Altman isn’t the only one who wants to pump the brakes on AI | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/ | Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation | bluesky,facebook,telegram,threads
