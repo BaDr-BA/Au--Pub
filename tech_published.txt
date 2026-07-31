@@ -414,3 +414,4 @@ https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-
 https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/ | Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/india-is-starting-to-pay-for-apps-not-just-download-them/ | India is starting to pay for apps, not just download them | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/rivian-spinoff-also-to-start-delivering-e-bikes-after-months-of-delays/ | Rivian spinoff Also to start delivering e-bikes after months of delays | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/ | OpenAI reportedly finds evidence that more of its agents ran amok | bluesky,facebook,telegram,threads
