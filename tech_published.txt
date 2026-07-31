@@ -409,3 +409,4 @@ https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-s
 https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/ | Reddit reports a solid quarter but shows signs of AI’s impact | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/ | Repeat founder Ryan Williams raises $10M seed for an AI startup for private credit managers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/tesla-reportedly-might-sell-its-china-business-ahead-of-a-spacex-merger/ | Tesla reportedly might sell its China business ahead of a SpaceX merger | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users/ | Siri AI could come with a paywall for power users | bluesky,facebook,telegram,threads
