@@ -419,3 +419,4 @@ https://techcrunch.com/2026/07/31/build-in-public-fail-in-public-what-its-like-t
 https://techcrunch.com/2026/07/31/fresh-off-its-wiz-payout-index-ventures-raises-2b-across-three-funds/ | Fresh off its Wiz payout, Index Ventures raises $2B across three funds | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/vc-backed-startups-commit-more-fraud-and-researchers-think-they-know-why/ | VC-backed startups commit more fraud, and researchers think they know why | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/ | Snapchat no longer rewards fully AI-generated Spotlight content | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/31/gm-and-ford-are-talking-less-and-less-about-evs/ | GM and Ford are talking less and less about EVs | bluesky,facebook,telegram,threads
