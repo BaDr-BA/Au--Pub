@@ -415,3 +415,4 @@ https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-afte
 https://techcrunch.com/2026/07/31/india-is-starting-to-pay-for-apps-not-just-download-them/ | India is starting to pay for apps, not just download them | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/rivian-spinoff-also-to-start-delivering-e-bikes-after-months-of-delays/ | Rivian spinoff Also to start delivering e-bikes after months of delays | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/ | OpenAI reportedly finds evidence that more of its agents ran amok | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/31/build-in-public-fail-in-public-what-its-like-to-be-a-founder-under-20-right-now/ | Silicon Valley loves young founders. Until it doesn’t. | bluesky,facebook,telegram,threads
