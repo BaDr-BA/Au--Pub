@@ -418,3 +418,4 @@ https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-
 https://techcrunch.com/2026/07/31/build-in-public-fail-in-public-what-its-like-to-be-a-founder-under-20-right-now/ | Silicon Valley loves young founders. Until it doesn’t. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/fresh-off-its-wiz-payout-index-ventures-raises-2b-across-three-funds/ | Fresh off its Wiz payout, Index Ventures raises $2B across three funds | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/07/31/vc-backed-startups-commit-more-fraud-and-researchers-think-they-know-why/ | VC-backed startups commit more fraud, and researchers think they know why | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/ | Snapchat no longer rewards fully AI-generated Spotlight content | bluesky,facebook,telegram,threads
