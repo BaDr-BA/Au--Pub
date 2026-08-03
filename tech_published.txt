@@ -436,3 +436,4 @@ https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/ | Sam Altman 
 https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/ | The global memory shortage hits the MacBook Air | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/ | A Marc Benioff-backed startup thinks AI can solve the AI deployment problem | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/ | Horizon3 hits $2 billion valuation with $250M Series E as AI threats escalate | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/ | Congress’s favorite AI tool? ChatGPT | bluesky,facebook,telegram,threads
