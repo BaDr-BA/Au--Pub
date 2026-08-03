@@ -439,3 +439,4 @@ https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-se
 https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/ | Congress’s favorite AI tool? ChatGPT | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/03/outernet-turns-your-saved-posts-into-real-world-adventures/ | Outernet turns your saved posts into real-world adventures | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/ | AWS is helping vibe-coding startup Superblocks, and the implications are big | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/03/whos-legally-to-blame-for-anthropic-and-openais-autonomous-ai-hacks-its-complicated/ | Who’s legally to blame for Anthropic and OpenAI’s autonomous AI hacks? It’s complicated | bluesky,facebook,instagram,telegram,threads
