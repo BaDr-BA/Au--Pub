@@ -434,3 +434,4 @@ https://techcrunch.com/2026/08/02/malaysia-is-reportedly-shutting-down-balaji-sr
 https://techcrunch.com/2026/08/02/these-app-store-hidden-gems-prove-theres-still-room-for-great-software-in-the-ai-era/ | These App Store hidden gems prove there’s still room for great software in the AI era | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/ | Sam Altman and AI’s decel debate | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/ | The global memory shortage hits the MacBook Air | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/ | A Marc Benioff-backed startup thinks AI can solve the AI deployment problem | bluesky,facebook,telegram,threads
