@@ -445,3 +445,4 @@ https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-ca
 https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/ | Design Arena creators raise $7.9 million to bring taste to AI models | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/ | Influencers draw backlash for attending OpenAI’s first luxury trip | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/03/apple-challenges-uk-governments-latest-demand-for-icloud-backdoor-report/ | Apple challenges UK government’s latest demand for iCloud backdoor: report | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/ | Is the future of data centers portable? Runware builds a pod to find out | bluesky,facebook,telegram,threads
