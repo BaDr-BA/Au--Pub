@@ -449,3 +449,4 @@ https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware
 https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/ | Spotify expands AI remix and covers project with Merlin partnership | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/04/waymo-opens-up-robotaxi-service-in-dallas-to-everyone/ | Waymo opens up robotaxi service in Dallas to everyone | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/ | Anthropic signs $10 billion deal with AI cloud startup Volta | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/ | SpaceX has bought $329M worth of Tesla Megapacks so far this year | bluesky,facebook,telegram,threads
