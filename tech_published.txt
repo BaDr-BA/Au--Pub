@@ -455,3 +455,4 @@ https://techcrunch.com/2026/08/04/lucids-turnaround-plan-hinges-on-1-4b-in-cash-
 https://techcrunch.com/2026/08/04/how-to-get-the-best-hotel-deals-for-techcrunch-disrupt-2026/ | How to get the best hotel deals for TechCrunch Disrupt 2026 | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/04/spacex-doubles-revenues-on-anthropic-and-google-compute-deals-starlink-growth/ | SpaceX doubles revenue on Anthropic and Google compute deals, Starlink growth | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/05/wispr-flow-is-preparing-to-launch-a-meeting-notetaker-updated-terms-suggest/ | Wispr Flow launches a Granola-styled meeting notetaker | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/04/android-app-developers-may-be-unwittingly-sharing-their-users-location-data-with-advertisers/ | Android app developers may be unwittingly sharing their users’ location data with advertisers | bluesky,facebook,telegram,threads
