@@ -467,3 +467,4 @@ https://techcrunch.com/2026/08/05/get-up-to-400-off-your-techcrunch-disrupt-2026
 https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/ | Meta launches Muse Code, an AI agent for large code bases | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/05/trumps-doj-gains-oversight-of-openais-green-card-employee-sponsorships/ | Trump’s DOJ gains oversight of OpenAI’s green-card employee sponsorships | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/ | Moove raises $250M to become the backbone of the robotaxi industry | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/06/ebay-continues-to-bet-on-live-shopping-after-record-quarter/ | eBay continues to bet on live shopping after record quarter | bluesky,facebook,telegram,threads
