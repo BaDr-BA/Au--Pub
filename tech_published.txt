@@ -479,3 +479,4 @@ https://techcrunch.com/2026/08/07/the-founders-guide-to-techcrunch-disrupt-2026-
 https://techcrunch.com/2026/08/07/host-your-own-piece-of-disrupt-apply-to-run-a-side-event-at-techcrunch-disrupt-2026/ | Host your own piece of Disrupt: Apply to run a Side Event at TechCrunch Disrupt 2026 | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/07/todays-the-last-day-to-get-up-to-400-off-your-techcrunch-disrupt-2026-ticket/ | Today’s the last day to get up to $400 off your TechCrunch Disrupt 2026 ticket | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/ | Cloudflare launches Kitesurf, a browser built for AI agents | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/07/computer-maker-framework-notifies-all-customers-of-a-data-breach/ | Computer maker Framework notifies ‘all customers’ of a data breach | bluesky,facebook,telegram,threads
