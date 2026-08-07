@@ -481,3 +481,4 @@ https://techcrunch.com/2026/08/07/todays-the-last-day-to-get-up-to-400-off-your-
 https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/ | Cloudflare launches Kitesurf, a browser built for AI agents | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/07/computer-maker-framework-notifies-all-customers-of-a-data-breach/ | Computer maker Framework notifies ‘all customers’ of a data breach | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/07/trump-administration-has-spent-nearly-4b-to-cancel-offshore-wind-farms/ | Trump administration has spent nearly $4B to cancel offshore wind farms | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/07/chinese-ai-model-kimi-escaped-its-cybersecurity-testing-environment-researchers-say/ | Chinese AI model Kimi escaped its cybersecurity testing environment, researchers say | bluesky,facebook,telegram,threads
