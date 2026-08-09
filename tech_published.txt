@@ -499,3 +499,4 @@ https://techcrunch.com/2026/08/09/this-adversarial-pattern-can-prevent-surveilla
 https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/ | The AI safety test is becoming a safety risk | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/ | Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/09/techcrunch-mobility-zoox-prepares-for-launch-and-ubers-av-empire/ | TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/ | Anthropic is turning Claude Code’s auto mode on by default | bluesky,facebook,telegram,threads
