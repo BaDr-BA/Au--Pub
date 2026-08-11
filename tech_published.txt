@@ -516,3 +516,4 @@ https://techcrunch.com/2026/08/10/jeff-bezos-might-finally-get-his-hands-on-a-sp
 https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/ | OpenAI reportedly completed a $7 billion employee tender offer | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/ | As AI-led attacks multiply, OpenAI launches a new cyber model | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/10/youtube-now-requires-creators-to-have-twice-as-many-watch-hours-to-start-earning-money/ | YouTube now requires creators to have twice as many watch hours to start earning money | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/10/clicks-power-keyboard-brings-blackberry-style-typing-to-any-phone-with-some-compromises/ | Clicks’ Power Keyboard brings BlackBerry-style typing to any phone — with some compromises | bluesky,facebook,telegram,threads
