@@ -514,3 +514,4 @@ https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-p
 https://techcrunch.com/2026/08/10/now-rippling-is-counter-suing-tiny-startup-runlayer/ | Now Rippling is counter suing tiny startup Runlayer | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/10/jeff-bezos-might-finally-get-his-hands-on-a-sports-team/ | Jeff Bezos might finally get his hands on a sports team | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/ | OpenAI reportedly completed a $7 billion employee tender offer | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/ | As AI-led attacks multiply, OpenAI launches a new cyber model | bluesky,facebook,telegram,threads
