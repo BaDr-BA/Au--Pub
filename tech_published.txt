@@ -520,3 +520,4 @@ https://techcrunch.com/2026/08/10/clicks-power-keyboard-brings-blackberry-style-
 https://techcrunch.com/2026/08/10/signed-up-for-klaviyo-dozens-of-advertisers-may-have-seen-your-password/ | Signed up for Klaviyo? Dozens of advertisers may have seen your password | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/10/google-play-adds-venmo-as-a-payment-option/ | Google Play adds Venmo as a payment option | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/ | Spotify will label ‘AI Persona’ profiles and exclude their music from recommendations | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/11/bumble-ditches-its-rule-that-kept-men-from-making-the-first-move/ | Bumble ditches its rule that kept men from making the first move | bluesky,facebook,telegram,threads
