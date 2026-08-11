@@ -529,3 +529,4 @@ https://techcrunch.com/2026/08/11/fbi-says-cybercriminals-are-hacking-into-victi
 https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/ | Uber surprised robotics company Serve by selling its entire stake | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/11/phoebe-gates-and-sophia-kianni-reportedly-knew-phia-was-cookie-stuffing-for-months/ | Phoebe Gates and Sophia Kianni reportedly knew Phia was ‘cookie stuffing’ for months | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/ | Accel closes oversubscribed $550M India fund within weeks, 19 months after its last | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/ | OpenAI launches ChatGPT desktop app for Linux | bluesky,facebook,telegram,threads
