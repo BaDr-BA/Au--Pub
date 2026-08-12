@@ -531,3 +531,4 @@ https://techcrunch.com/2026/08/11/phoebe-gates-and-sophia-kianni-reportedly-knew
 https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/ | Accel closes oversubscribed $550M India fund within weeks, 19 months after its last | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/ | OpenAI launches ChatGPT desktop app for Linux | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/ | Google’s Gemini app surges to 1 billion users | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/ | Brad Lightcap, OpenAI’s longtime COO, is leaving to ‘start something new’ | bluesky,facebook,telegram,threads
