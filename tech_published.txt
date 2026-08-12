@@ -541,3 +541,4 @@ https://techcrunch.com/2026/08/11/2025s-most-downloaded-game-block-blast-is-goin
 https://techcrunch.com/2026/08/12/pixel-11-has-few-hardware-changes-and-more-gemini/ | Google’s Pixel 11 lineup offer fewer hardware changes, but much more Gemini | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/12/silkroad-innovation-hubs-road-to-battlefield-competition-continues/ | Silkroad Innovation Hub’s Road to Battlefield competition continues | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/12/tesla-wants-to-build-a-10b-solar-factory-in-texas/ | Tesla wants to build a $10B solar factory in Texas | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/12/uber-freight-reportedly-investigating-after-hacking-group-claims-data-breach/ | Uber Freight reportedly investigating after hacking group claims data breach | bluesky,facebook,telegram,threads
