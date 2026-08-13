@@ -560,3 +560,4 @@ https://techcrunch.com/2026/08/13/can-social-media-start-over-blueskys-ceo-and-c
 https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/ | Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/13/x-open-sources-its-ranking-algorithm-letting-users-see-if-theyve-been-shadowbanned/ | X open sources its ranking algorithm, letting users see if they’ve been ‘shadowbanned’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/ | OpenAI hires new CRO as executive shake-up continues | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/ | Anthropic set AI agents loose on the same task. They started a turf war. | bluesky,facebook,telegram,threads
