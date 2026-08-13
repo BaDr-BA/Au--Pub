@@ -550,3 +550,4 @@ https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-
 https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/ | AI nuclear power firm Fermi finally has a new CEO | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/ | As AI safety concerns mount, three pioneers make the case for staying open | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/ | OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android/ | Mesh, Automattic’s CRM for everyone, comes to Android | bluesky,facebook,telegram,threads
