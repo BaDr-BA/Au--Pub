@@ -584,3 +584,4 @@ https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-v
 https://techcrunch.com/2026/08/14/what-we-know-about-the-alleged-iranian-hacks-on-u-s-water-utilities/ | What we know about the alleged Iranian hacks on US water utilities | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/ | Self-driving trucks are officially testing on California highways | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/14/read-it-later-app-pocket-is-shutting-down-here-are-the-best-alternatives/ | Read-it-later app Pocket shut down — here are the best alternatives | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/ | Kog is going deeper to squeeze more inference out of GPUs | bluesky,facebook,telegram,threads
