@@ -580,3 +580,4 @@ https://techcrunch.com/2026/08/14/apple-proposes-to-take-a-15-cut-of-purchases-m
 https://techcrunch.com/2026/08/14/unforgetful-is-a-new-reminders-app-for-people-who-cant-stop-hitting-snooze/ | Unforgetful is a new reminders app for people who can’t stop hitting snooze | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/ | Google will now allow users to remove visible watermark from its AI generations | bluesky,facebook,telegram,threads
 https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/ | Does Mark Zuckerberg really believe AI is ‘for everyone’? | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/ | Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria | bluesky,facebook,telegram,threads
