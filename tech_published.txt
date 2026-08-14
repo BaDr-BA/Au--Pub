@@ -577,3 +577,4 @@ https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-si
 https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/ | In a first, US will allow some private firms to carry out cyberattacks | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/ | Hyperscalers might regret embracing natural gas if new forecast proves correct | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/14/apple-proposes-to-take-a-15-cut-of-purchases-made-outside-the-app-store/ | Apple proposes to take a 15% cut of purchases made outside the App Store | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/14/unforgetful-is-a-new-reminders-app-for-people-who-cant-stop-hitting-snooze/ | Unforgetful is a new reminders app for people who can’t stop hitting snooze | bluesky,facebook,telegram,threads
