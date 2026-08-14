@@ -574,3 +574,4 @@ https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-w
 https://techcrunch.com/2026/08/13/bartesian-duet-cocktail-maker-review/ | Who really needs a cocktail robot? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/ | Uber and Pony.ai plan to bring 2,000 robotaxis to Europe | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/ | Apple in talks to pay publishers to provide Siri with current news: report | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/ | In a first, US will allow some private firms to carry out cyberattacks | bluesky,facebook,telegram,threads
