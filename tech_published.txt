@@ -567,3 +567,4 @@ https://techcrunch.com/2026/08/13/if-apple-sends-you-a-push-notification-alertin
 https://techcrunch.com/2026/08/13/investors-sue-selena-gomez-alleging-fraud-tied-to-her-mental-health-startup/ | Investors sue Selena Gomez alleging fraud tied to her mental health startup | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/13/flock-says-its-new-tool-will-help-identify-police-abuse-but-hasnt-explained-how-it-works/ | Flock says its new tool will help identify police abuse, but hasn’t explained how it works | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/ | Writer introduces new AI model and upgraded harness to contain token costs | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/ | IBM partners with OpenAI to bolster enterprise AI push | bluesky,facebook,telegram,threads
