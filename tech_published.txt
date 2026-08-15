@@ -591,3 +591,4 @@ https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m
 https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/ | SpaceX officially closes its Cursor acquisition | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have-been-hacked/ | How to tell if your AI platforms’ accounts have been hacked | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/ | Anthropic shares more details about how Claude’s new watermarks will work | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/ | Woman claims her stepfather used Grok to transform childhood photo into explicit imagery | bluesky,facebook,telegram,threads
