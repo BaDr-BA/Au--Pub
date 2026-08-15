@@ -589,3 +589,4 @@ https://techcrunch.com/2026/08/14/us-courts-will-start-publishing-how-often-the-
 https://techcrunch.com/2026/08/14/talks-to-sell-paypal-to-stripe-and-advent-are-heating-up/ | Talks to sell PayPal to Stripe and Advent are heating up | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m/ | Every fusion startup that has raised over $100M | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/ | SpaceX officially closes its Cursor acquisition | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have-been-hacked/ | How to tell if your AI platforms’ accounts have been hacked | bluesky,facebook,telegram,threads
