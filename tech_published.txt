@@ -593,3 +593,4 @@ https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have
 https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/ | Anthropic shares more details about how Claude’s new watermarks will work | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/ | Woman claims her stepfather used Grok to transform childhood photo into explicit imagery | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/16/techcrunch-mobility-the-shifting-flight-path-of-electric-air-taxis/ | TechCrunch Mobility: The shifting flight path of electric air taxis | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/ | Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’ | bluesky,facebook,telegram,threads
