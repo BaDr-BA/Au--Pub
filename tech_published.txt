@@ -606,3 +606,4 @@ https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying
 https://techcrunch.com/2026/08/17/feedly-attributes-weeklong-slowdown-to-bug-not-its-ai-pivot/ | Feedly attributes weeklong slowdown to bug, not its AI pivot | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/ | Groq raises $350M to fuel its pivot from AI chips to neocloud | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/reddit-begins-testing-a-new-audio-and-video-experience-similar-to-popular-tiktok-videos/ | Reddit begins testing a new audio and video experience, similar to popular TikTok videos | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/17/save-up-to-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/ | Save up to $300 on your TechCrunch Disrupt 2026 pass until August 21 | bluesky,facebook,telegram,threads
