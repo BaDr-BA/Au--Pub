@@ -600,3 +600,4 @@ https://techcrunch.com/2026/08/17/crypto-hardware-wallet-owners-face-fresh-secur
 https://techcrunch.com/2026/08/17/uber-adds-zipline-drones-to-its-eats-delivery-network/ | Uber adds Zipline drones to its Eats delivery network | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/ | Wispr raises $280M at $2B valuation as it looks beyond dictation | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/wordpress-com-targets-the-next-generation-of-web-creators-with-a-free-student-plan/ | WordPress.com targets the next generation of web creators with a free student plan | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/ | Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project | bluesky,facebook,telegram,threads
