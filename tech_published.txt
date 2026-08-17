@@ -596,3 +596,4 @@ https://techcrunch.com/2026/08/16/techcrunch-mobility-the-shifting-flight-path-o
 https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/ | Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/ | Why people aren’t buying Mark Zuckerberg’s AI future | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/ | Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+ | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/17/crypto-hardware-wallet-owners-face-fresh-security-risks-after-recent-spate-of-personal-data-thefts/ | Crypto hardware wallet owners face fresh security risks after recent spate of personal data thefts | bluesky,facebook,telegram,threads
