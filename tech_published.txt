@@ -609,3 +609,4 @@ https://techcrunch.com/2026/08/17/reddit-begins-testing-a-new-audio-and-video-ex
 https://techcrunch.com/2026/08/17/save-up-to-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/ | Save up to $300 on your TechCrunch Disrupt 2026 pass until August 21 | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/spotifys-new-playlist-notes-let-users-and-editors-explain-their-song-picks/ | Spotify’s new Playlist Notes let users and editors explain their song picks | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/unprecedented-number-of-apple-users-received-recent-spyware-alert-say-investigators/ | ‘Unprecedented’ number of Apple users received recent spyware alert, say investigators | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/ | AI automation startup Relay shuts down, staff joins Google’s Chrome team | bluesky,facebook,telegram,threads
