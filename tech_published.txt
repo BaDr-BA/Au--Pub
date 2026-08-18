@@ -630,3 +630,4 @@ https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/ |
 https://techcrunch.com/2026/08/18/apple-overhauls-its-eu-app-store-fees-loosens-rules-for-alternative-app-stores/ | Apple overhauls its EU App Store fees, loosens rules for alternative app stores | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/ | Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/tiktok-explores-peer-to-peer-payments-via-dms-report-says/ | TikTok explores peer-to-peer payments via DMs, report says | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/18/dojs-probe-into-andreessen-horowitz-over-board-seats-baffles-vcs/ | DOJ’s probe into Andreessen Horowitz over board seats baffles VCs | bluesky,facebook,telegram,threads
