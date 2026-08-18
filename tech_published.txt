@@ -622,3 +622,4 @@ https://techcrunch.com/2026/08/18/daniel-eks-body-scanning-startup-neko-health-o
 https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/ | OpenAI launches a safer ChatGPT for teens — years after teens started using it | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/anthro-energy-breaks-ground-on-factory-that-could-pave-the-road-to-solid-state-batteries/ | Anthro Energy breaks ground on factory that could pave the road to solid-state batteries | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/peacock-is-raising-prices-across-all-of-its-streaming-plans/ | Peacock is raising prices across all of its streaming plans | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/18/bluesky-says-its-recent-outage-was-caused-by-another-ddos-attack/ | Bluesky says its recent outage was caused by another DDoS attack | bluesky,facebook,telegram,threads
