@@ -634,3 +634,4 @@ https://techcrunch.com/2026/08/18/dojs-probe-into-andreessen-horowitz-over-board
 https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/ | Warp’s new system is an out-of-the-box software factory for AI development | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/ | Perplexity’s free AI offer left it with millions more users in India | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/ | Cursor capitalizes on Github frustration, launches rival hosting platform | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/18/apples-new-macos-update-reportedly-contains-a-video-of-airpods-with-a-camera/ | Apple’s new macOS update reportedly contains a video of AirPods with a camera | bluesky,facebook,instagram,telegram,threads
