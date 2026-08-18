@@ -615,3 +615,4 @@ https://techcrunch.com/2026/08/17/sound-powered-fire-protection-startup-gets-15m
 https://techcrunch.com/2026/08/17/youtube-will-now-count-a-view-as-soon-as-a-video-starts-playing/ | YouTube will now count a view as soon as a video starts playing | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/ | Anthropic’s annualized revenue surges to $65B | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/einride-strikes-deal-to-add-500-tesla-semis-to-its-fleet/ | Einride strikes deal to add 500 Tesla Semis to its fleet | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/18/reach-capital-raises-265m-fund-v-to-back-ai-founders-building-to-expand-human-potential/ | Reach Capital raises $265M Fund V to back AI founders building to ‘expand human potential’ | bluesky,facebook,telegram,threads
