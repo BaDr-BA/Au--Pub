@@ -632,3 +632,4 @@ https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-
 https://techcrunch.com/2026/08/18/tiktok-explores-peer-to-peer-payments-via-dms-report-says/ | TikTok explores peer-to-peer payments via DMs, report says | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/dojs-probe-into-andreessen-horowitz-over-board-seats-baffles-vcs/ | DOJ’s probe into Andreessen Horowitz over board seats baffles VCs | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/ | Warp’s new system is an out-of-the-box software factory for AI development | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/ | Perplexity’s free AI offer left it with millions more users in India | bluesky,facebook,telegram,threads
