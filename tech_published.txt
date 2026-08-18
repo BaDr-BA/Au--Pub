@@ -613,3 +613,4 @@ https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-j
 https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/ | Higgsfield raises $400M Series B, quadrupling its valuation in 8 months to $5.4B | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/sound-powered-fire-protection-startup-gets-15m-to-snuff-out-fires-before-they-turn-catastrophic/ | Sound-powered fire protection startup gets $15M to snuff out fires before they turn catastrophic | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/17/youtube-will-now-count-a-view-as-soon-as-a-video-starts-playing/ | YouTube will now count a view as soon as a video starts playing | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/ | Anthropic’s annualized revenue surges to $65B | bluesky,facebook,telegram,threads
