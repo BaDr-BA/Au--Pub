@@ -625,3 +625,4 @@ https://techcrunch.com/2026/08/18/peacock-is-raising-prices-across-all-of-its-st
 https://techcrunch.com/2026/08/18/bluesky-says-its-recent-outage-was-caused-by-another-ddos-attack/ | Bluesky says its recent outage was caused by another DDoS attack | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/comcast-adds-motion-sensing-to-millions-of-its-newer-routers-with-a-privacy-catch/ | Comcast adds motion sensing to millions of its newer routers, with a privacy catch | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/save-up-to-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/ | Save up to $300 on your TechCrunch Disrupt 2026 pass until August 21 | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/ | OpenAI institutes new safeguards after Hugging Face breach | bluesky,facebook,telegram,threads
