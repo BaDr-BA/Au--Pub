@@ -628,3 +628,4 @@ https://techcrunch.com/2026/08/18/save-up-to-300-on-your-techcrunch-disrupt-2026
 https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/ | OpenAI institutes new safeguards after Hugging Face breach | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/ | Etched’s valuation doubles to $21B in a month | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/18/apple-overhauls-its-eu-app-store-fees-loosens-rules-for-alternative-app-stores/ | Apple overhauls its EU App Store fees, loosens rules for alternative app stores | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/ | Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear | bluesky,facebook,telegram,threads
