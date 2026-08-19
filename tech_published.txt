@@ -646,3 +646,4 @@ https://techcrunch.com/2026/08/19/times-running-out-save-300-on-your-techcrunch-
 https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/ | Meet the startup helping Wall Street put a price on AI compute | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/19/t-mobile-chopped-a-cable-to-expel-chinese-hackers-from-its-network/ | T-Mobile ‘chopped a cable’ to expel Chinese hackers from its network | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/ | Researchers say OpenAI revoked their access to limited cyber program | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/ | AI was supposed to win people over by now — it hasn’t | bluesky,facebook,telegram,threads
