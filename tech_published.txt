@@ -645,3 +645,4 @@ https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapo
 https://techcrunch.com/2026/08/19/times-running-out-save-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/ | Time’s running out! Save $300 on your TechCrunch Disrupt 2026 pass until August 21 | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/ | Meet the startup helping Wall Street put a price on AI compute | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/19/t-mobile-chopped-a-cable-to-expel-chinese-hackers-from-its-network/ | T-Mobile ‘chopped a cable’ to expel Chinese hackers from its network | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/ | Researchers say OpenAI revoked their access to limited cyber program | bluesky,facebook,telegram,threads
