@@ -664,3 +664,4 @@ https://techcrunch.com/2026/08/20/ai-data-giant-alation-confirms-cyberattack/ | 
 https://techcrunch.com/2026/08/20/apollo-atomics-wants-to-make-nuclear-power-cheaper-by-shrinking-an-overlooked-part/ | Apollo Atomics wants to make nuclear power cheaper by shrinking an overlooked part | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/for-a16z-ai-gives-foreign-founders-an-advantage/ | For a16z, AI gives foreign founders an advantage | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/us-says-hackers-are-targeting-vulnerable-water-systems-with-the-help-of-ai/ | US says hackers are targeting vulnerable water systems with the help of AI | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/ | Meta brings Pocket, an app that lets you vibe-code and share games, to US users | bluesky,facebook,telegram,threads
