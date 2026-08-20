@@ -661,3 +661,4 @@ https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire
 https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/ | Amazon’s Prime Air is taking off in nearly 500 US cities | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/ | Binance now lets AI agents trade, but keeping them in check is largely up to users | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/ai-data-giant-alation-confirms-cyberattack/ | AI data giant Alation confirms cyberattack | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/08/20/apollo-atomics-wants-to-make-nuclear-power-cheaper-by-shrinking-an-overlooked-part/ | Apollo Atomics wants to make nuclear power cheaper by shrinking an overlooked part | bluesky,facebook,telegram,threads
