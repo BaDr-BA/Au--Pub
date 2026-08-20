@@ -673,3 +673,4 @@ https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-
 https://techcrunch.com/2026/08/20/someone-targeted-security-researchers-using-a-fake-crypto-conference-as-a-lure/ | Someone targeted security researchers using a fake crypto conference as a lure | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/the-enhanced-games-techs-steroid-extravaganza-didnt-pay-off-as-company-posts-60-million-loss/ | The Enhanced Games — tech’s steroid extravaganza — didn’t pay off, as company posts $60 million loss | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/ | Ok, can we actually cool data centers with our pee? | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/ | ChatGPT can now send texts for you with new Apple Messages plug-in | bluesky,facebook,telegram,threads
