@@ -689,3 +689,4 @@ https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-
 https://techcrunch.com/2026/08/21/oura-faces-lawsuit-accusing-it-of-misleading-consumers-about-sleep-tracking-accuracy/ | Oura faces lawsuit accusing it of misleading consumers about sleep-tracking accuracy | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/walmart-to-finally-start-accepting-apple-pay-and-google-pay/ | Walmart to finally start accepting Apple Pay and Google Pay | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/us-government-lab-is-probing-chinese-lidar-for-security-vulnerabilities/ | US government lab is probing Chinese lidar for security vulnerabilities | bluesky,facebook,telegram,threads
+https://techcrunch.com/video/why-is-the-doj-investigating-andreessen-horowitzs-board-seats/ | Why is the DOJ investigating Andreessen Horowitz’s board seats? | bluesky,facebook,telegram,threads
