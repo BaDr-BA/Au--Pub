@@ -699,3 +699,4 @@ https://techcrunch.com/2026/08/21/tiktok-reaches-400m-settlement-over-childrens-
 https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/ | Apple is reportedly cutting hundreds of jobs from Siri, Vision Pro teams | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/ | Nvidia just showed that the harness, not the AI model, is now the real hero | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/private-equity-firm-apollo-confirms-data-breach-amid-hacking-wave-targeting-financial-giants/ | Private equity firm Apollo confirms data breach amid hacking wave targeting financial giants | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/ | Nvidia partners with data center developer Cloverleaf | bluesky,facebook,telegram,threads
