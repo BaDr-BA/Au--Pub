@@ -676,3 +676,4 @@ https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-
 https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/ | ChatGPT can now send texts for you with new Apple Messages plug-in | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/ | OpenAI is gaining on Anthropic with business users, new data indicates | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/video/learn-what-vcs-actually-want-from-a-founder-whos-raised-1b/ | Learn what VCs actually want, from a founder who’s raised $1B | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/20/mark-buys-a-castle/ | Mark buys a castle | bluesky,facebook,telegram,threads
