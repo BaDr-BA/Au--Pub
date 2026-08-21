@@ -687,3 +687,4 @@ https://techcrunch.com/2026/08/20/senators-demand-answers-from-tiktok-over-exper
 https://techcrunch.com/2026/08/21/senator-asks-us-federal-watchdog-to-review-how-feds-use-hacking-tools/ | Senator asks US government watchdog to review how feds use hacking tools | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/ | Starcloud raises $250 million for orbital data centers as launch options dry up | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/oura-faces-lawsuit-accusing-it-of-misleading-consumers-about-sleep-tracking-accuracy/ | Oura faces lawsuit accusing it of misleading consumers about sleep-tracking accuracy | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/21/walmart-to-finally-start-accepting-apple-pay-and-google-pay/ | Walmart to finally start accepting Apple Pay and Google Pay | bluesky,facebook,telegram,threads
