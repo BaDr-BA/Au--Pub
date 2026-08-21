@@ -679,3 +679,4 @@ https://techcrunch.com/video/learn-what-vcs-actually-want-from-a-founder-whos-ra
 https://techcrunch.com/2026/08/20/mark-buys-a-castle/ | Mark buys a castle | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/ | Tesla, Uber, and Waymo all get the OK to operate thousands of robotaxis in Nevada | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/ | AI data startup Micro1 reaches $500M gross run rate amid AI training boom | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders/ | Runlayer, Rippling drop lawsuits — but the brouhaha is still a cautionary tale for founders | bluesky,facebook,telegram,threads
