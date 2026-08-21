@@ -691,3 +691,4 @@ https://techcrunch.com/2026/08/21/walmart-to-finally-start-accepting-apple-pay-a
 https://techcrunch.com/2026/08/21/us-government-lab-is-probing-chinese-lidar-for-security-vulnerabilities/ | US government lab is probing Chinese lidar for security vulnerabilities | bluesky,facebook,telegram,threads
 https://techcrunch.com/video/why-is-the-doj-investigating-andreessen-horowitzs-board-seats/ | Why is the DOJ investigating Andreessen Horowitz’s board seats? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/tesla-recalls-3-million-cars-as-part-of-china-wide-push-to-stop-hidden-door-handles/ | Tesla recalls 3 million cars as part of China-wide push to stop hidden door handles | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/21/teslas-solar-roof-is-dead-heres-what-went-wrong/ | Tesla’s solar roof is dead. Here’s what went wrong | bluesky,facebook,telegram,threads
