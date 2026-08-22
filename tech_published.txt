@@ -708,3 +708,4 @@ https://techcrunch.com/2026/08/22/pixel-11-pro-xl-review-snappier-cameras-cant-h
 https://techcrunch.com/2026/08/22/us-battery-startups-have-found-a-lifeline-in-defense/ | US battery startups have found a lifeline in defense | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/ | OpenAI says California should strengthen its AI safety bill | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/ | Frontier AI labs still won’t say how they’d contain a rogue model | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/ | Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research | bluesky,facebook,telegram,threads
