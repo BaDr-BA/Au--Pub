@@ -705,3 +705,4 @@ https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-a
 https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/ | Michael Polansky is training an AI model on skin that’s still alive | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/21/japanese-space-tech-startup-letara-expands-beyond-satellite-thrusters-with-16m/ | Japanese space tech startup Letara expands beyond satellite thrusters with $16M | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/22/pixel-11-pro-xl-review-snappier-cameras-cant-hide-an-iterative-upgrade/ | Pixel 11 Pro XL review: Snappier cameras can’t hide an iterative upgrade | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/22/us-battery-startups-have-found-a-lifeline-in-defense/ | US battery startups have found a lifeline in defense | bluesky,facebook,telegram,threads
