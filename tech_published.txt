@@ -706,3 +706,4 @@ https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-sk
 https://techcrunch.com/2026/08/21/japanese-space-tech-startup-letara-expands-beyond-satellite-thrusters-with-16m/ | Japanese space tech startup Letara expands beyond satellite thrusters with $16M | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/22/pixel-11-pro-xl-review-snappier-cameras-cant-hide-an-iterative-upgrade/ | Pixel 11 Pro XL review: Snappier cameras can’t hide an iterative upgrade | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/22/us-battery-startups-have-found-a-lifeline-in-defense/ | US battery startups have found a lifeline in defense | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/ | OpenAI says California should strengthen its AI safety bill | bluesky,facebook,telegram,threads
