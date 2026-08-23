@@ -716,3 +716,4 @@ https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-
 https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/ | Flock CEO calls for ‘compromise’ as surveillance company faces growing backlash | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/23/techcrunch-mobility-the-custom-chip-driving-waymos-robotaxi-ambitions/ | TechCrunch Mobility: The custom chip driving Waymo’s robotaxi ambitions | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-driver-suspensions/ | Uber faces fine of nearly $1B over automated driver suspensions | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/23/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/ | Linkdaze’s smart calendar is built to run a household, not just track a schedule | bluesky,facebook,telegram,threads
