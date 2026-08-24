@@ -730,3 +730,4 @@ https://techcrunch.com/2026/08/24/zillow-and-redfin-settle-ftc-antitrust-case/ |
 https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/ | Trump bought SpaceX shares two weeks after blockbuster IPO | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/ | Alabama launches investigation into OpenAI’s hack of Hugging Face | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/24/amazon-hikes-hardware-prices-by-60-percent-blaming-memory-shortage/ | Amazon hikes hardware prices by 60%, blaming memory shortage | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/24/oura-is-reportedly-eyeing-a-september-ipo-that-could-value-it-at-more-than-16b/ | Oura is reportedly eyeing a September IPO that could value it at more than $16B | bluesky,facebook,telegram,threads
