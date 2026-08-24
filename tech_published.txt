@@ -719,3 +719,4 @@ https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-dr
 https://techcrunch.com/2026/08/23/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/ | Linkdaze’s smart calendar is built to run a household, not just track a schedule | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/ | Who’s behind the new ‘stealth model’ Ox Alpha? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/ | Hugging Face reportedly in talks to be acquired for $13B | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/ | OpenAI is building AI agents for everything. Will everyone use them? | bluesky,facebook,telegram,threads
