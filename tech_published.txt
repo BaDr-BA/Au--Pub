@@ -721,3 +721,4 @@ https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/ | 
 https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/ | Hugging Face reportedly in talks to be acquired for $13B | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/ | OpenAI is building AI agents for everything. Will everyone use them? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/ | Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/24/brake-problems-in-gm-evs-draw-greater-federal-scrutiny/ | Brake problems in GM EVs draw greater federal scrutiny | bluesky,facebook,telegram,threads
