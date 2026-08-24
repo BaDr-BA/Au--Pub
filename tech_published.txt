@@ -718,3 +718,4 @@ https://techcrunch.com/2026/08/23/techcrunch-mobility-the-custom-chip-driving-wa
 https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-driver-suspensions/ | Uber faces fine of nearly $1B over automated driver suspensions | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/23/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/ | Linkdaze’s smart calendar is built to run a household, not just track a schedule | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/ | Who’s behind the new ‘stealth model’ Ox Alpha? | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/ | Hugging Face reportedly in talks to be acquired for $13B | bluesky,facebook,telegram,threads
