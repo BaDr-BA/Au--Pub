@@ -738,3 +738,4 @@ https://techcrunch.com/2026/08/25/fgv-capital-bets-on-a-new-venture-model-raises
 https://techcrunch.com/2026/08/25/apple-rescues-hide-my-email-feature-from-the-privacy-scrap-heap/ | Apple rescues Hide My Email feature from the privacy scrap heap | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/that-fake-grand-theft-auto-vi-demo-is-actually-just-malware/ | That fake Grand Theft Auto VI demo is actually just malware | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/life360-expands-pet-tracking-with-new-8-scannable-tags-and-zoomie-alerts/ | Life360 expands pet tracking with new $8 scannable tags and zoomie alerts | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/25/pacific-fusion-next-fusion-machine-could-clear-key-hurdle-to-commercial-power/ | Pacific Fusion’s next fusion machine could clear a key hurdle to commercial power | bluesky,facebook,telegram,threads
