@@ -740,3 +740,4 @@ https://techcrunch.com/2026/08/25/that-fake-grand-theft-auto-vi-demo-is-actually
 https://techcrunch.com/2026/08/25/life360-expands-pet-tracking-with-new-8-scannable-tags-and-zoomie-alerts/ | Life360 expands pet tracking with new $8 scannable tags and zoomie alerts | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/pacific-fusion-next-fusion-machine-could-clear-key-hurdle-to-commercial-power/ | Pacific Fusion’s next fusion machine could clear a key hurdle to commercial power | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/ | Claude Cowork finally remembers what you told the app in chat | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/25/spacex-will-build-a-second-100b-starbase-spaceport-in-louisiana/ | SpaceX will build a second, $100B ‘Starbase’ spaceport in Louisiana | bluesky,facebook,telegram,threads
