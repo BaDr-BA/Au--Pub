@@ -742,3 +742,4 @@ https://techcrunch.com/2026/08/25/pacific-fusion-next-fusion-machine-could-clear
 https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/ | Claude Cowork finally remembers what you told the app in chat | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/spacex-will-build-a-second-100b-starbase-spaceport-in-louisiana/ | SpaceX will build a second, $100B ‘Starbase’ spaceport in Louisiana | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/instagrams-first-draft-feature-aims-to-make-editing-reels-less-tedious/ | Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/25/x-sends-cease-and-desist-to-open-source-project-nitter-over-alleged-scraping/ | X sends cease-and-desist to open-source project Nitter over alleged scraping | bluesky,facebook,telegram,threads
