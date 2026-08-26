@@ -749,3 +749,4 @@ https://techcrunch.com/2026/08/25/tonight-marks-your-last-chance-to-save-up-to-3
 https://techcrunch.com/2026/08/25/waymo-robotaxis-are-headed-to-munich/ | Waymo robotaxis are headed to Munich | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica/ | Gamma acquires Accel-backed design startup Lica | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/ | Robotics startup Generalist reaches $3B valuation, sources say | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/ | OpenAI loses a top data center exec, as stream of high-profile departures continues | bluesky,facebook,telegram,threads
