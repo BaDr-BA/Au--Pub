@@ -775,3 +775,4 @@ https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-bra
 https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/ | “We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/29/hollywood-celebs-are-getting-into-microdrama-apps/ | Hollywood celebs are getting into microdrama apps | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/ | Nvidia’s AI advantage is moving beyond the GPU | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/ | An Anthropic researcher just gave us a peek at self-improving AI | bluesky,facebook,telegram,threads
