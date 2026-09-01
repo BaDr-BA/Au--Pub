@@ -776,3 +776,4 @@ https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-b
 https://techcrunch.com/2026/08/29/hollywood-celebs-are-getting-into-microdrama-apps/ | Hollywood celebs are getting into microdrama apps | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/ | Nvidia’s AI advantage is moving beyond the GPU | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/ | An Anthropic researcher just gave us a peek at self-improving AI | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/01/john-ternus-hypes-huge-launch-next-week-in-first-memo-as-apple-ceo/ | John Ternus hypes ‘huge launch next week’ in first memo as Apple CEO | bluesky,facebook,telegram,threads
