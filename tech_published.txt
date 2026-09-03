@@ -791,3 +791,4 @@ https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-sta
 https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/ | OpenAI’s new reasoning technique alarms AI safety experts | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/ | Google’s latest AI weather model gives you no excuse to forget your umbrella | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/ | Abliteration.ai is making a business out of removing AI guardrails | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/03/startup-arr-is-less-secure-than-ever-new-research-shows/ | Startup ARR is less secure than ever, new research shows | bluesky,facebook,telegram,threads
