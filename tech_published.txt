@@ -792,3 +792,4 @@ https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safe
 https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/ | Google’s latest AI weather model gives you no excuse to forget your umbrella | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/ | Abliteration.ai is making a business out of removing AI guardrails | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/03/startup-arr-is-less-secure-than-ever-new-research-shows/ | Startup ARR is less secure than ever, new research shows | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/03/oura-files-to-go-public/ | Oura files to go public | bluesky,facebook,telegram,threads
