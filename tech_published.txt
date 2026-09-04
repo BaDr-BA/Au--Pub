@@ -794,3 +794,4 @@ https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-re
 https://techcrunch.com/2026/09/03/startup-arr-is-less-secure-than-ever-new-research-shows/ | Startup ARR is less secure than ever, new research shows | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/03/oura-files-to-go-public/ | Oura files to go public | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/ | Crusoe reportedly raises $3B at a  $30B valuation | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/ | The sameness problem behind those unappetizing AI-generated menus | bluesky,facebook,telegram,threads
