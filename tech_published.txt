@@ -813,3 +813,4 @@ https://techcrunch.com/2026/09/04/krafton-doubles-down-on-india-with-another-250
 https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/ | Google’s Gemini Spark can now manage your Google Photos library | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event/ | Less than 24 hours to apply for your TechCrunch Disrupt 2026 Side Event | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/ | Travis Kalanick’s Atoms might be getting into the robotaxi business | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/06/techcrunch-mobility-tesla-cybercab-hits-the-road-and-a-snag/ | TechCrunch Mobility: Tesla Cybercab hits the road — and a snag | bluesky,facebook,instagram,telegram,threads
