@@ -815,3 +815,4 @@ https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunc
 https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/ | Travis Kalanick’s Atoms might be getting into the robotaxi business | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/06/techcrunch-mobility-tesla-cybercab-hits-the-road-and-a-snag/ | TechCrunch Mobility: Tesla Cybercab hits the road — and a snag | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/06/phil-schillers-app-store-exit-reportedly-driven-by-wariness-over-future-plans/ | Phil Schiller’s App Store exit reportedly driven by wariness over future plans | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/ | Authors push back as publishers and agents make claims on Anthropic settlement | bluesky,facebook,instagram,telegram,threads
