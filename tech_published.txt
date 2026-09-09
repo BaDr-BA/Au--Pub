@@ -823,3 +823,4 @@ https://techcrunch.com/2026/09/07/what-we-expect-from-the-upcoming-apple-launch/
 https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/ | Mistral raises €3B as sovereign AI becomes big business | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/08/how-to-watch-apples-foldable-iphone-announcement/ | How to watch Apple’s foldable iPhone announcement | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/08/white-house-takes-down-build-the-wall-game-after-the-tetris-company-complains/ | White House takes down ‘Build the Wall’ game after the Tetris Company complains | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/08/google-deepmind-alumni-are-building-tools-to-accelerate-fusion-power-for-the-grid/ | Google DeepMind alumni are building tools to accelerate fusion power for the grid | bluesky,facebook,telegram,threads
