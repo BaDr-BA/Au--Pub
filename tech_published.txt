@@ -824,3 +824,4 @@ https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big
 https://techcrunch.com/2026/09/08/how-to-watch-apples-foldable-iphone-announcement/ | How to watch Apple’s foldable iPhone announcement | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/08/white-house-takes-down-build-the-wall-game-after-the-tetris-company-complains/ | White House takes down ‘Build the Wall’ game after the Tetris Company complains | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/08/google-deepmind-alumni-are-building-tools-to-accelerate-fusion-power-for-the-grid/ | Google DeepMind alumni are building tools to accelerate fusion power for the grid | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/08/cloudnc-raises-20m-to-automate-manufacturings-most-pressing-bottlenecks/ | CloudNC raises $20M to automate manufacturing’s most pressing bottlenecks | bluesky,facebook,telegram,threads
