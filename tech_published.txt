@@ -830,3 +830,4 @@ https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-bu
 https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/ | Massachusetts hits data centers with new clean power rules | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/ | Automattic’s board forces CEO Matt Mullenweg into leave of absence | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/ | AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/ | OpenAI adds a prominent AI doomer to its board of directors | bluesky,facebook,telegram,threads
