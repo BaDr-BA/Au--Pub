@@ -833,3 +833,4 @@ https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5
 https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/ | OpenAI adds a prominent AI doomer to its board of directors | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/10/google-signs-its-biggest-rice-methane-carbon-credit-deal-with-indian-startup-mitti-labs/ | Google signs its biggest rice-methane carbon credit deal with Indian startup Mitti Labs | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/10/instagrams-latest-feature-lets-you-add-tagged-posts-to-your-profile-grid/ | Instagram’s latest feature lets you add tagged posts to your profile grid | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/ | Meta’s AI agent Muse is now the No. 2 app in the US | bluesky,facebook,telegram,threads
