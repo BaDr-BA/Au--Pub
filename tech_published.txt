@@ -828,3 +828,4 @@ https://techcrunch.com/2026/09/08/cloudnc-raises-20m-to-automate-manufacturings-
 https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/ | Superintelligence is coming. Should we let it? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/ | The hinge for Apple’s new foldable phone was built with AI | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/ | Massachusetts hits data centers with new clean power rules | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/ | Automattic’s board forces CEO Matt Mullenweg into leave of absence | bluesky,facebook,telegram,threads
