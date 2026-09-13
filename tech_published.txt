@@ -849,3 +849,4 @@ https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-fronti
 https://techcrunch.com/2026/09/12/automattic-confirms-mullenweg-has-returned-as-ceo-after-attempted-ouster-by-board/ | Automattic confirms Mullenweg has returned as CEO after attempted ouster by board | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/ | OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026 | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/12/tesla-says-it-will-finally-unveil-the-second-generation-roadster-on-october-1/ | Tesla says it will finally unveil the second generation Roadster on October 1 | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/13/techcrunch-mobility-lyft-has-entered-the-robotaxi-chat/ | TechCrunch Mobility: Lyft has entered the robotaxi chat | bluesky,facebook,telegram,threads
