@@ -847,3 +847,4 @@ https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escal
 https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/ | Final, final, final call for TechCrunch Disrupt 2026 Side Events | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/ | Anthropic CEO outlines plan to ‘pace the frontier’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/12/automattic-confirms-mullenweg-has-returned-as-ceo-after-attempted-ouster-by-board/ | Automattic confirms Mullenweg has returned as CEO after attempted ouster by board | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/ | OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026 | bluesky,facebook,telegram,threads
