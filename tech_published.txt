@@ -846,3 +846,4 @@ https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-
 https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/ | OpenAI’s feud with mathematicians is only escalating | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/ | Final, final, final call for TechCrunch Disrupt 2026 Side Events | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/ | Anthropic CEO outlines plan to ‘pace the frontier’ | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/12/automattic-confirms-mullenweg-has-returned-as-ceo-after-attempted-ouster-by-board/ | Automattic confirms Mullenweg has returned as CEO after attempted ouster by board | bluesky,facebook,instagram,telegram,threads
