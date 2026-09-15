@@ -861,3 +861,4 @@ https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed
 https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/ | AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/15/the-worst-hacks-and-breaches-of-2026-so-far/ | Leaks, data breaches, and ransom notes: The worst hacks of 2026 so far | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/ | The AI graveyard: a running list of projects and startups that didn’t make it | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/ | The AI data center boom is colliding with cities scarred by big industry | bluesky,facebook,telegram,threads
