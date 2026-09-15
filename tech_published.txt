@@ -857,3 +857,4 @@ https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-lat
 https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/ | What’s behind the AI industry’s latest warnings of doom? | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/ | Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/ | OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/ | Jensen Huang took a call from Trump, and showed off something else, too | bluesky,facebook,instagram,telegram,threads
