@@ -859,3 +859,4 @@ https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-g
 https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/ | OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/ | Jensen Huang took a call from Trump, and showed off something else, too | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/ | AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/15/the-worst-hacks-and-breaches-of-2026-so-far/ | Leaks, data breaches, and ransom notes: The worst hacks of 2026 so far | bluesky,facebook,instagram,telegram,threads
