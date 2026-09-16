@@ -865,3 +865,4 @@ https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-citi
 https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/ | We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/ | Meta now lets AI agents handle the boring parts of WhatsApp Business setup | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/ | Amazon launches Alexa+ in India with Hindi support | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/16/former-waymo-cfo-jumps-to-self-driving-startup-wayve/ | Former Waymo CFO jumps to self-driving startup Wayve | bluesky,facebook,telegram,threads
