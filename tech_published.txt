@@ -868,3 +868,4 @@ https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-supp
 https://techcrunch.com/2026/09/16/former-waymo-cfo-jumps-to-self-driving-startup-wayve/ | Former Waymo CFO jumps to self-driving startup Wayve | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/16/noise-wants-to-help-everyday-people-become-paid-content-creators/ | Noise wants to help everyday people  become paid content creators | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/ | Musk’s long-time backer is giving SpaceX stock to its investors | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/ | Iceland-based Treble raises $18 million for its voice simulation platform | bluesky,facebook,telegram,threads
