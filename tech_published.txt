@@ -873,3 +873,4 @@ https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-age
 https://techcrunch.com/2026/09/17/last-call-disrupt-volunteer-application-closes-soon/ | Last call: Disrupt volunteer application closes soon | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/17/waymo-restarts-san-antonio-service-five-months-after-flooding-troubles/ | Waymo restarts San Antonio service 5 months after flooding troubles | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/17/the-fix-for-rogue-ai-agents-could-be-more-ai/ | The fix for rogue AI agents could be more AI | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/ | Khosla-backed Mazama Energy just raised $135M to drill deeper into super-hot-rock geothermal | bluesky,facebook,telegram,threads
