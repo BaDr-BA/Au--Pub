@@ -884,3 +884,4 @@ https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-
 https://techcrunch.com/2026/09/19/even-mid-sprint-to-a-secret-flight-the-navys-tech-chief-had-a-pitch-for-investors/ | Even mid-sprint to a secret flight, the Navy’s tech chief has a pitch for investors | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/ | Google’s Gemini is the latest AI model to hack other companies | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/ | Flock reportedly tries to shrink workforce with employee buyouts | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/ | Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force | bluesky,facebook,telegram,threads
