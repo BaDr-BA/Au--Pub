@@ -899,3 +899,4 @@ https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-sil
 https://techcrunch.com/2026/09/21/discover-whats-next-5-days-left-to-save-up-to-200-on-techcrunch-disrupt-2026/ | Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/ | Morphotonics raises €40M to expand its display tech into data centers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/22/tiktoks-us-arm-joins-lantern-a-cross-platform-child-safety-initiative/ | TikTok’s US arm joins Lantern, a cross-platform child safety initiative | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/ | OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes | bluesky,facebook,telegram,threads
