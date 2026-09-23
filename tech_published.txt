@@ -900,3 +900,4 @@ https://techcrunch.com/2026/09/21/discover-whats-next-5-days-left-to-save-up-to-
 https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/ | Morphotonics raises €40M to expand its display tech into data centers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/22/tiktoks-us-arm-joins-lantern-a-cross-platform-child-safety-initiative/ | TikTok’s US arm joins Lantern, a cross-platform child safety initiative | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/ | OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/ | TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4 | bluesky,facebook,telegram,threads
