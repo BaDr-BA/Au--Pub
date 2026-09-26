@@ -916,3 +916,4 @@ https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbine
 https://techcrunch.com/2026/09/25/automattic-has-a-new-board-after-failed-attempt-to-put-ceo-on-leave/ | Automattic has a new board after failed attempt to put CEO on leave | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/ | I created an interactive digital avatar of myself — and you can talk to it | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/ | Meta and YouTube say they will run ads for ‘Musk’ documentary after all | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/ | Insurers claim AI is already increasing healthcare costs | bluesky,facebook,telegram,threads
