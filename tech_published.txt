@@ -915,3 +915,4 @@ https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-wer
 https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/ | Crusoe abandons $1.25B plan to use Boom turbines at AI data centers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/25/automattic-has-a-new-board-after-failed-attempt-to-put-ceo-on-leave/ | Automattic has a new board after failed attempt to put CEO on leave | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/ | I created an interactive digital avatar of myself — and you can talk to it | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/ | Meta and YouTube say they will run ads for ‘Musk’ documentary after all | bluesky,facebook,telegram,threads
