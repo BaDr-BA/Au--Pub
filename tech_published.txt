@@ -924,3 +924,4 @@ https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incre
 https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/ | Anthropic’s Dario Amodei gets the SNL treatment | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/ | Anthropic’s CEO is about to have dinner with President Trump | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/ | Can Muse overcome Meta’s trust issues? | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/09/27/truecaller-takes-its-scam-intelligence-to-the-open-web-as-it-looks-beyond-caller-id/ | Truecaller takes its scam intelligence to the open web as it looks beyond caller ID | bluesky,facebook,telegram,threads
