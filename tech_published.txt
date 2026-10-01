@@ -934,3 +934,4 @@ https://techcrunch.com/2026/09/29/america-gov-gets-really-weird-when-you-ask-it-
 https://techcrunch.com/2026/09/29/apple-pay-set-to-launch-in-india-with-axis-bank-today-sources-say/ | Apple Pay finally launches in India after years on the sidelines | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/30/pledge-signed-by-president-trump-and-top-ai-leaders-misspells-the-united-states/ | Pledge signed by President Trump and top AI leaders misspells the United States | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/09/30/hackers-stole-millions-of-us-military-personnel-records-during-months-long-data-breach/ | Hackers stole millions of US military personnel records during months-long data breach | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/ | OpenAI cuts ties with three safety researchers, WSJ reports | bluesky,facebook,telegram,threads
