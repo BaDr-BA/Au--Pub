@@ -937,3 +937,4 @@ https://techcrunch.com/2026/09/30/hackers-stole-millions-of-us-military-personne
 https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/ | OpenAI cuts ties with three safety researchers, WSJ reports | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/01/robotaxi-operators-will-face-fines-for-blocking-first-responders/ | Robotaxi operators will face fines for blocking first responders | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/01/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/ | The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/ | TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants | bluesky,facebook,telegram,threads
