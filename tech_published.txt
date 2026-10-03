@@ -942,3 +942,4 @@ https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available
 https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/ | Sean Parker is rebuilding Stability AI around music | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/ | Meta wants your next gadget to be Muse-infused | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/10/02/sanders-introduces-bill-to-ban-the-federal-government-from-using-flock/ | Sanders introduces bill to ban the federal government from using Flock | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/ | OpenAI safety employee resigns, claiming the company’s ‘culture is broken’ | bluesky,facebook,telegram,threads
