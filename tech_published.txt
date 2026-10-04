@@ -948,3 +948,4 @@ https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-i
 https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/ | Jack Dorsey’s Bitchat disappears from app stores in India after government order | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/03/vessev-built-an-electric-ferry-that-almost-flies/ | Vessev built an electric ferry that almost flies | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/04/techcrunch-mobility-reining-in-robotaxis/ | TechCrunch Mobility: Reining in robotaxis | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/ | Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions | bluesky,facebook,telegram,threads
