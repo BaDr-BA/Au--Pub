@@ -945,3 +945,4 @@ https://techcrunch.com/2026/10/02/sanders-introduces-bill-to-ban-the-federal-gov
 https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/ | OpenAI safety employee resigns, claiming the company’s ‘culture is broken’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/ | Federal judge calls Flock ‘indiscriminate mass surveillance’ | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/ | Amazon responds to data center backlash, says it no longer uses NDAs | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/03/jack-dorseys-bitchat-disappears-from-app-stores-in-india-after-government-order/ | Jack Dorsey’s Bitchat disappears from app stores in India after government order | bluesky,facebook,telegram,threads
