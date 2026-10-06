@@ -952,3 +952,4 @@ https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-progra
 https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/ | Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem? | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/10/05/lucid-motors-ev-output-falls-to-lowest-level-in-almost-two-years/ | Lucid Motors’ EV output falls to lowest level in almost two years | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/ | OpenAI will start watermarking ChatGPT’s text in the EU | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/ | Anthropic is giving startups a free year of Claude Team and $1,000 in credits | bluesky,facebook,telegram,threads
