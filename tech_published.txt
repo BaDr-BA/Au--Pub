@@ -953,3 +953,4 @@ https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safet
 https://techcrunch.com/2026/10/05/lucid-motors-ev-output-falls-to-lowest-level-in-almost-two-years/ | Lucid Motors’ EV output falls to lowest level in almost two years | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/ | OpenAI will start watermarking ChatGPT’s text in the EU | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/ | Anthropic is giving startups a free year of Claude Team and $1,000 in credits | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/06/how-to-find-out-if-amazon-thinks-you-have-flat-buttocks/ | How to find out if Amazon thinks you have ‘flat buttocks’ | bluesky,facebook,telegram,threads
