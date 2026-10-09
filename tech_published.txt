@@ -959,3 +959,4 @@ https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after
 https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/ | Robot data startup Mecka AI nabs $60M from Sequoia | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/ | Google releases a new local-first Granola competitor | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-science-prizes/ | President Trump awards Big Tech donors with nation’s highest science prizes | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/09/lumenus-helps-automate-tedious-paperwork-in-times-of-grief/ | LumenUs helps automate tedious paperwork in times of grief | bluesky,facebook,telegram,threads
