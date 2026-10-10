@@ -961,3 +961,4 @@ https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-comp
 https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-science-prizes/ | President Trump awards Big Tech donors with nation’s highest science prizes | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/09/lumenus-helps-automate-tedious-paperwork-in-times-of-grief/ | LumenUs helps automate tedious paperwork in times of grief | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-starlink-india-launch-delay/ | Elon Musk intensifies attack on Ambani over Starlink India launch delay | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/ | Here are the top AI agents that can live in your text messages | bluesky,facebook,telegram,threads
