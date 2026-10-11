@@ -964,3 +964,4 @@ https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-st
 https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/ | Here are the top AI agents that can live in your text messages | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/10/petra-power-looks-to-modernize-energy-for-data-centers-and-defense-vehicles/ | Petra Power looks to modernize energy for data centers and defense vehicles | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/ | Microsoft’s Satya Nadella says AI models need an ‘emergency brake’ | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/ | Apple discloses deal to hire team and license tech from personalized podcast startup Huxe | bluesky,facebook,telegram,threads
