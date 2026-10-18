@@ -988,3 +988,4 @@ https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-adver
 https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/ | Meta removes language that raised scraping and AI training concerns | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/ | Anthropic says its workforce has become less junior and is spending more time in meetings | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/ | Replit makes OpenAI its default over Anthropic, CEO says | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/10/16/porsches-electric-macan-turbo-is-an-automotive-existential-crisis/ | Porsche’s electric Macan Turbo is an automotive existential crisis | bluesky,facebook,telegram,threads
