@@ -999,3 +999,4 @@ https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-ha
 https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/ | Anthropic pitches AI safety bill that may block a model if 50+ people could be killed | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/ | SpaceX and Tesla boards form special committees to review merger | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/ | Anthropic’s cloud partnerships are getting messy | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/21/foursquare-co-founder-says-equity-holders-saw-no-returns-from-the-companys-acquisition/ | Foursquare co-founder says equity holders saw no returns from the company’s acquisition | bluesky,facebook,telegram,threads
