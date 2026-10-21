@@ -1001,3 +1001,4 @@ https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committee
 https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/ | Anthropic’s cloud partnerships are getting messy | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/21/foursquare-co-founder-says-equity-holders-saw-no-returns-from-the-companys-acquisition/ | Foursquare co-founder says equity holders saw no returns from the company’s acquisition | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/ | Tesla stars Optimus robot production in California as profit falls 43% | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/ | Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown | bluesky,facebook,telegram,threads
