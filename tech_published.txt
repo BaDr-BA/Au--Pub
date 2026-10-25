@@ -1018,3 +1018,4 @@ https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-an
 https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/ | Starlink seems to be working normally again in Ukraine | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/ | Will AI expose the rickety infrastructure of the internet? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/ | Block’s new voice model sounds eerily human | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/24/php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet/ | PHP-ocalypse: How two critical web bugs almost broke the internet | bluesky,facebook,telegram,threads
