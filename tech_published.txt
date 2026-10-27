@@ -1025,3 +1025,4 @@ https://techcrunch.com/2026/10/25/cyberselfish-author-takes-aim-at-techno-libert
 https://techcrunch.com/2026/10/25/5-best-apps-track-reading-discover-new-books/ | The best apps for tracking your reading and discovering new books | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/ | TechCrunch Mobility: Blue-green is the color of autonomy | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/ | Watch out, YouTube — Instagram goes from short-form to 90-minute videos | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/ | Cohere says Alibaba’s Qwen model tried to send a file to Beijing | bluesky,facebook,telegram,threads
