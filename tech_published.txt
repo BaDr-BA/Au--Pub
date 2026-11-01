@@ -1038,3 +1038,4 @@ https://techcrunch.com/2026/10/30/pile-ins-payouts-and-pacing-pressure-the-inves
 https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/ | OpenAI reportedly lowers funding target for new round | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/ | Judge allows NAACP lawsuit over xAI data center pollution to move forward | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/ | Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’ | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/ | Data centers are now a midterm issue, even in Brooklyn | bluesky,facebook,instagram,telegram,threads
