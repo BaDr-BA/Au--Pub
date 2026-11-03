@@ -1044,3 +1044,4 @@ https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-he
 https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/ | OpenAI might rebrand its data centers as ‘AI compute campuses’ | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/ | AI can make tech CEOs’ lives easier. What about everyone else? | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/ | Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/ | Anthropic is still grappling with the economics of compute | bluesky,facebook,telegram,threads
