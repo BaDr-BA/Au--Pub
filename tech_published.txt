@@ -1046,3 +1046,4 @@ https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-
 https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/ | Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/ | Anthropic is still grappling with the economics of compute | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/ | Anthropic is working on a system to prove AI models’ identity | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/03/indias-eloelo-nabs-80m-from-nbc-universal-to-bet-on-the-countrys-rising-microdrama-market/ | India’s EloElo nabs $80M from NBCUniversal to bet on the country’s rising microdrama market | bluesky,facebook,telegram,threads
