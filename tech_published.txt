@@ -1050,3 +1050,4 @@ https://techcrunch.com/2026/11/03/indias-eloelo-nabs-80m-from-nbc-universal-to-b
 https://techcrunch.com/2026/11/04/sequoia-hits-rewind-undoing-20-years-of-expansion/ | Sequoia hits rewind, undoing 20 years of expansion | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/05/u-s-government-warns-of-ongoing-cyber-threat-amid-mass-hacks-of-industrial-retail-and-military-freezers/ | US government warns of ‘ongoing cyber threat’ amid mass hacks of industrial retail and military freezers | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/05/the-new-york-times-reportedly-in-talks-to-buy-letterboxd-for-330-million/ | The New York Times reportedly in talks to buy Letterboxd for $330 million | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/ | Hundreds of Artex AI hacking tools found publicly exposed to the web | bluesky,facebook,telegram,threads
