@@ -1052,3 +1052,4 @@ https://techcrunch.com/2026/11/05/u-s-government-warns-of-ongoing-cyber-threat-a
 https://techcrunch.com/2026/11/05/the-new-york-times-reportedly-in-talks-to-buy-letterboxd-for-330-million/ | The New York Times reportedly in talks to buy Letterboxd for $330 million | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/ | Hundreds of Artex AI hacking tools found publicly exposed to the web | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/ | OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/11/06/sequoia-shutting-down-its-scouts-program-marks-the-end-of-an-era/ | Sequoia shutting down its Scouts program marks the end of an era | bluesky,facebook,instagram,telegram,threads
