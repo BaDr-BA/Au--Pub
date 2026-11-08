@@ -1060,3 +1060,4 @@ https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ce
 https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/ | Parents want safer phones for kids. These companies are answering the call. | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/08/ninjas-autobarista-is-impressively-versatile-but-one-feature-was-a-dealbreaker-for-me/ | Ninja’s AutoBarista is impressively versatile, but one feature was a dealbreaker for me | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/08/sequoia-partners-reportedly-blindsided-when-roelof-botha-joined-spacex-board/ | Sequoia partners reportedly blindsided when Roelof Botha joined SpaceX board | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/08/apps-to-distract-you-from-the-endless-cycle-of-doomscrolling/ | Apps to distract you from the endless cycle of doomscrolling | bluesky,facebook,telegram,threads
