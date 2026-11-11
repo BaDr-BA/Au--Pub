@@ -1066,3 +1066,4 @@ https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey
 https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/ | Anthropic reportedly plans to move forward with IPO plans | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/ | Oura to acquire AI-native primary care startup Counsel Health for $625M | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/ | OpenAI acquires Odessia, travel startup created by Sonder founder | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/11/siri-co-founder-backs-helix-for-its-voice-id-tech/ | Siri co-founder backs Helix for its voice ID tech | bluesky,facebook,telegram,threads
