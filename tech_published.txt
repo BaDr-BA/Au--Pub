@@ -1065,3 +1065,4 @@ https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huang
 https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/ | Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50” | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/ | Anthropic reportedly plans to move forward with IPO plans | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/ | Oura to acquire AI-native primary care startup Counsel Health for $625M | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/ | OpenAI acquires Odessia, travel startup created by Sonder founder | bluesky,facebook,telegram,threads
