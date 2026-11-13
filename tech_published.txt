@@ -1069,3 +1069,4 @@ https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created
 https://techcrunch.com/2026/11/11/siri-co-founder-backs-helix-for-its-voice-id-tech/ | Siri co-founder backs Helix for its voice ID tech | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/ | The unfolding Jensen Huang scandal: a timeline | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/ | Who could replace Jensen Huang? A highly unscientific list of possible successors | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/ | Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump | bluesky,facebook,instagram,telegram,threads
