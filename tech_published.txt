@@ -1075,3 +1075,4 @@ https://techcrunch.com/2026/11/13/amazons-new-kindle-colorsoft-is-a-premium-e-re
 https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/ | Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/ | Where was Nvidia’s security team? | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/ | Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/ | Apple reveals new Mac security controls as AI agents raise privacy risks | bluesky,facebook,telegram,threads
