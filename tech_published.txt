@@ -1078,3 +1078,4 @@ https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calli
 https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/ | Apple reveals new Mac security controls as AI agents raise privacy risks | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/ | Cybersecurity AI startup Corma reaches $1B valuation in about 3 months | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/ | Microsoft CEO Satya Nadella explains why he asked 60K employees to quit | bluesky,facebook,telegram,threads
+https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/ | Apple may be developing its own AI agent that runs your Mac | bluesky,facebook,instagram,telegram,threads
