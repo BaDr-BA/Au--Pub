@@ -1081,3 +1081,4 @@ https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-as
 https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/ | Apple may be developing its own AI agent that runs your Mac | bluesky,facebook,instagram,telegram,threads
 https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/ | Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance | bluesky,facebook,telegram,threads
 https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/ | A tale of two Nvidias | bluesky,facebook,instagram,telegram,threads
+https://techcrunch.com/2026/11/22/you-can-see-everything-has-made-more-than-100m-worldwide/ | ‘You Can See Everything’ has made more than $100M worldwide | bluesky,facebook,telegram,threads
